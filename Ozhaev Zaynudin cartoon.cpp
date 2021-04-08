@@ -134,14 +134,12 @@ void DrawHouse1 (int x, int y, COLORREF HoleColor)
     POINT Door [4] = {{x - 95, y}, {x - 95, y - 50}, {x - 50, y - 50}, {x - 50, y}};
     txPolygon (Door, 4);
 
-    txCircle (x - 47, y - 160, 10);
-
     txSetFillColor (RGB (230, 230, 230));
     POINT Attic [4] = {{x - 65, y - 140}, {x - 65, y - 180}, {x - 30, y - 180}, {x - 30, y - 140}};
     txPolygon (Attic, 4);
 
-    //txSetFillColor (HoleColor);
-    //txCircle (x - 47, y - 160, 10);
+    txSetFillColor (HoleColor);
+    txCircle (x - 47, y - 160, 10);
     }
 
 void DrawHouse2 (int x, int y)
