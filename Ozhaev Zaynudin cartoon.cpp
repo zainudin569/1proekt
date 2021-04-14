@@ -3,7 +3,7 @@
 void DrawMir();
 void DrawHouse2 (int x, int y);
 void DrawHouse3 (int x, int y);
-void DrawTree1  (int x, int y, long sizeX, double sizeY, COLORREF TreeColor);
+void DrawTree1  (int x, int y, int sizeX, double sizeY, COLORREF TreeColor);
 void DrawTree2  (int x, int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawSun    (int x, double y, double sizeX, double sizeY, COLORREF SunColor);
 void DrawGirl   (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
