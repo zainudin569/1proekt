@@ -21,7 +21,7 @@ int main()
        while (t <=100)
         {
         txClear ();
-        int parabola = pow(t - 50,2)
+        double parabola = pow(t - 50,2);
 
         DrawBackground (RGB (0, 180 - parabola/25, 180 - parabola/25));
 
