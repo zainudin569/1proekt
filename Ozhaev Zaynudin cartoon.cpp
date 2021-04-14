@@ -189,7 +189,7 @@ void DrawHouse3(int x, int y)
 
     }
 
-=======
+
 #include "TXLib.h"
 
 void DrawMir();
@@ -378,4 +378,4 @@ void DrawHouse3(int x, int y)
 
     }
 
->>>>>>> 14707085e8852f9c5e9c397d47b4c9da18941d63
+
