@@ -18,15 +18,15 @@ int main()
     txBegin();
 
     int t = 0;
-    double parabola = pow(t-50,2);
-    while (t <=100)
+       while (t <=100)
         {
         txClear ();
+        int parabola = pow(t - 50,2)
+
         DrawBackground (RGB (0, 180 - parabola/25, 180 - parabola/25));
 
-        DrawSun    (  7 + 5*t, 75 + parabola/100*3,
-                    1.2 - parabola/2000, 1.2 - parabola/2000,
-                    RGB (255 - parabola/50, 255 - parabola/50, 0));
+        DrawSun    (  7 + 5*t, 75 + parabola/100*3, 1.2 - parabola/2000, 1.2 - parabola/2000,
+                        RGB ( 255 - parabola/50,    255 - parabola/50, 0));
 
         DrawHouse2 (290,  60);
         DrawHouse1 (320, 260, RGB (0, 180 - parabola/25, 180 - parabola/25));
