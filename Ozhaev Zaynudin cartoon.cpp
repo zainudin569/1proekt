@@ -18,7 +18,7 @@ int main()
     txBegin();
 
     int t = 0;
-    int parabola = pow(t-50,2);
+    double parabola = pow(t-50,2);
     while (t <=100)
         {
         txClear ();
