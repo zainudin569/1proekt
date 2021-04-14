@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "TXLib.h"
 
 void DrawMir();
