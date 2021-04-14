@@ -29,7 +29,8 @@ int main()
                         RGB ( 255 - parabola/50,    255 - parabola/50, 0));
 
         DrawHouse2 (290,  60);
-        DrawHouse1 (320, 260, RGB (0, 180 - parabola/25, 180 - parabola/25));
+        if (t > 70  or t < 90)
+            DrawHouse1 (320, 260, RGB (0, 180 - parabola/25, 180 - parabola/25));
         DrawMir();
         t ++;
         txSleep (100);
