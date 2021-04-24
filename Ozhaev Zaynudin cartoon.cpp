@@ -6,7 +6,7 @@ void DrawHouse3 (int x, int y);
 void DrawTree1  (int x, int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawTree2  (int x, int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawSun    (int x, double y, double sizeX, double sizeY, COLORREF SunColor);
-void DrawGirl   (int x, int y, long sizeX, double sizeY, COLORREF GirlColor,
+void DrawGirl   (int x, int y, char sizeX, double sizeY, COLORREF GirlColor,
                  double Glaz, double smayl);
 void DrawHouse1 (int x, int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
@@ -49,7 +49,7 @@ void DrawMir()
     DrawGirl   (215, 300, 0.5, 0.9, RGB (228,  50,   0), 1,  1);
     }
 
-void DrawGirl  (int x, int y, long sizeX, double sizeY, COLORREF GirlColor,
+void DrawGirl  (int x, int y, char sizeX, double sizeY, COLORREF GirlColor,
                 double Glaz, double smayl)
 
     {
