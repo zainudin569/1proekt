@@ -1,218 +1,286 @@
-In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
-                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:1:
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawGirl(int, int, float, double, COLORREF, double, double)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:57:29: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     txEllipse (x, y, x + 30*sizeX, y + 30*sizeY);
-                             ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     POINT Girl [3] = {{x + 15*sizeX, y + 30*sizeY}, {x + 5*sizeX, y + 75*sizeY},
-                               ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:60: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     POINT Girl [3] = {{x + 15*sizeX, y + 30*sizeY}, {x + 5*sizeX, y + 75*sizeY},
-                                                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:59:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-                       {x + 25*sizeX, y + 75*sizeY}};
-                               ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:26: warning: narrowing conversion of '((float)x + (sizeX * 1.5e+1f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl [3] = {{x + 15*sizeX, y + 30*sizeY}, {x + 5*sizeX, y + 75*sizeY},
-                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:26: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:40: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl [3] = {{x + 15*sizeX, y + 30*sizeY}, {x + 5*sizeX, y + 75*sizeY},
-                                        ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:56: warning: narrowing conversion of '((float)x + (sizeX * 5.0e+0f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl [3] = {{x + 15*sizeX, y + 30*sizeY}, {x + 5*sizeX, y + 75*sizeY},
-                                                        ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:56: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:69: warning: narrowing conversion of '((double)y + (sizeY * 7.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl [3] = {{x + 15*sizeX, y + 30*sizeY}, {x + 5*sizeX, y + 75*sizeY},
-                                                                     ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:58:69: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:59:26: warning: narrowing conversion of '((float)x + (sizeX * 2.5e+1f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                       {x + 25*sizeX, y + 75*sizeY}};
-                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:59:26: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:59:40: warning: narrowing conversion of '((double)y + (sizeY * 7.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                       {x + 25*sizeX, y + 75*sizeY}};
-                                        ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:59:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:32: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     POINT Girl2 [3] = {{x +  7*sizeX, y + 20*sizeY}, {x + 15*sizeX, y + 20*sizeY + smayl},
-                                ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:62: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     POINT Girl2 [3] = {{x +  7*sizeX, y + 20*sizeY}, {x + 15*sizeX, y + 20*sizeY + smayl},
-                                                              ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:32: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-                        {x + 23*sizeX, y + 20*sizeY}};
-                                ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:27: warning: narrowing conversion of '((float)x + (sizeX * 7.0e+0f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl2 [3] = {{x +  7*sizeX, y + 20*sizeY}, {x + 15*sizeX, y + 20*sizeY + smayl},
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawGirl(int, int, double, double, COLORREF, double, double)':
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:27: warning: narrowing conversion of '((double)x + (sizeX * 1.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Girl [3] = {{ x + 15*sizeX, y + 30*sizeY },
                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:27: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:41: warning: narrowing conversion of '((double)y + (sizeY * 2.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl2 [3] = {{x +  7*sizeX, y + 20*sizeY}, {x + 15*sizeX, y + 20*sizeY + smayl},
-                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:57: warning: narrowing conversion of '((float)x + (sizeX * 1.5e+1f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl2 [3] = {{x +  7*sizeX, y + 20*sizeY}, {x + 15*sizeX, y + 20*sizeY + smayl},
-                                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:57: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:82: warning: narrowing conversion of '(((double)y + (sizeY * 2.0e+1)) + smayl)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl2 [3] = {{x +  7*sizeX, y + 20*sizeY}, {x + 15*sizeX, y + 20*sizeY + smayl},
-                                                                                  ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:63:82: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:27: warning: narrowing conversion of '((float)x + (sizeX * 2.3e+1f))' from 'float' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 23*sizeX, y + 20*sizeY}};
-                           ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:27: warning: conversion to 'LONG {aka long int}' from 'float' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:41: warning: narrowing conversion of '((double)y + (sizeY * 2.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 23*sizeX, y + 20*sizeY}};
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:41: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Girl [3] = {{ x + 15*sizeX, y + 30*sizeY },
                                          ^
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
-                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:1:
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:68:23: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     txEllipse (x +  7*sizeX, y + 7*sizeY, x + 13*sizeX*Glaz, y + 13*sizeY*Glaz);
-                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:69:23: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]
-     txEllipse (x + 17*sizeX, y + 7*sizeY, x + 23*sizeX*Glaz, y + 13*sizeY*Glaz);
-                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawTree1(int, int, double, double, COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:27: warning: narrowing conversion of '((double)x + (sizeX * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree [4] = {{ x + 35*sizeX, y + 92*sizeY}, {x + 35*sizeX, y + 117*sizeY},
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:27: warning: narrowing conversion of '((double)x + (sizeX * 5.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x +  5*sizeX, y + 75*sizeY },
                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:41: warning: narrowing conversion of '((double)y + (sizeY * 9.2e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree [4] = {{ x + 35*sizeX, y + 92*sizeY}, {x + 35*sizeX, y + 117*sizeY},
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:41: warning: narrowing conversion of '((double)y + (sizeY * 7.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x +  5*sizeX, y + 75*sizeY },
                                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:57: warning: narrowing conversion of '((double)x + (sizeX * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree [4] = {{ x + 35*sizeX, y + 92*sizeY}, {x + 35*sizeX, y + 117*sizeY},
-                                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:57: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:71: warning: narrowing conversion of '((double)y + (sizeY * 1.17e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree [4] = {{ x + 35*sizeX, y + 92*sizeY}, {x + 35*sizeX, y + 117*sizeY},
-                                                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:76:71: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:27: warning: narrowing conversion of '((double)x + (sizeX * 5.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 57*sizeX, y+ 117*sizeY}, {x + 57*sizeX, y +  92*sizeY}};
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:27: warning: narrowing conversion of '((double)x + (sizeX * 2.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 25*sizeX, y + 75*sizeY }};
                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:40: warning: narrowing conversion of '((double)y + (sizeY * 1.17e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 57*sizeX, y+ 117*sizeY}, {x + 57*sizeX, y +  92*sizeY}};
-                                        ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:57: warning: narrowing conversion of '((double)x + (sizeX * 5.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 57*sizeX, y+ 117*sizeY}, {x + 57*sizeX, y +  92*sizeY}};
-                                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:57: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:71: warning: narrowing conversion of '((double)y + (sizeY * 9.2e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 57*sizeX, y+ 117*sizeY}, {x + 57*sizeX, y +  92*sizeY}};
-                                                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:77:71: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawTree2(int, int, double, double, COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:58: warning: narrowing conversion of '((double)x + (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree2 [7] = {{x,             y},            {x + 37*sizeX, y}, {x + 37*sizeX, y + 30*sizeY},
-                                                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:58: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:77: warning: narrowing conversion of '((double)x + (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree2 [7] = {{x,             y},            {x + 37*sizeX, y}, {x + 37*sizeX, y + 30*sizeY},
-                                                                             ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:77: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:91: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Tree2 [7] = {{x,             y},            {x + 37*sizeX, y}, {x + 37*sizeX, y + 30*sizeY},
-                                                                                           ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:91: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:27: warning: narrowing conversion of '((double)x + (sizeX * 6.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x +  63*sizeX, y + 30*sizeY}, {x + 63*sizeX, y},
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:41: warning: narrowing conversion of '((double)y + (sizeY * 7.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 25*sizeX, y + 75*sizeY }};
+                                         ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:70:28: warning: narrowing conversion of '((double)x + (sizeX * 7.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Girl2 [3] = {{ x +  7*sizeX, y + 20*sizeY },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:70:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:70:42: warning: narrowing conversion of '((double)y + (sizeY * 2.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Girl2 [3] = {{ x +  7*sizeX, y + 20*sizeY },
+                                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:70:42: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:71:28: warning: narrowing conversion of '((double)x + (sizeX * 1.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x + 15*sizeX, y + 20*sizeY + smayl },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:71:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:71:53: warning: narrowing conversion of '(((double)y + (sizeY * 2.0e+1)) + smayl)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x + 15*sizeX, y + 20*sizeY + smayl },
+                                                     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:71:53: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:72:28: warning: narrowing conversion of '((double)x + (sizeX * 2.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x + 23*sizeX, y + 20*sizeY }};
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:72:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:72:42: warning: narrowing conversion of '((double)y + (sizeY * 2.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x + 23*sizeX, y + 20*sizeY }};
+                                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:72:42: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawTree1(int, int, double, double, COLORREF)':
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:84:27: warning: narrowing conversion of '((double)x + (sizeX * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Tree [4] = {{ x + 35*sizeX, y +  92*sizeY },
+                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:84:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:84:41: warning: narrowing conversion of '((double)y + (sizeY * 9.2e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Tree [4] = {{ x + 35*sizeX, y +  92*sizeY },
+                                         ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:84:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:85:27: warning: narrowing conversion of '((double)x + (sizeX * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 35*sizeX, y + 117*sizeY },
+                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:85:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:85:41: warning: narrowing conversion of '((double)y + (sizeY * 1.17e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 35*sizeX, y + 117*sizeY },
+                                         ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:85:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:27: warning: narrowing conversion of '((double)x + (sizeX * 5.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 57*sizeX, y + 117*sizeY },
+                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:41: warning: narrowing conversion of '((double)y + (sizeY * 1.17e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 57*sizeX, y + 117*sizeY },
+                                         ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:27: warning: narrowing conversion of '((double)x + (sizeX * 5.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 57*sizeX, y +  92*sizeY }};
                            ^
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:42: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x +  63*sizeX, y + 30*sizeY}, {x + 63*sizeX, y},
-                                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:42: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:58: warning: narrowing conversion of '((double)x + (sizeX * 6.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x +  63*sizeX, y + 30*sizeY}, {x + 63*sizeX, y},
-                                                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:58: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:88:27: warning: narrowing conversion of '((double)x + (sizeX * 1.0e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 100*sizeX, y},            {x + 50*sizeX, y - 88*sizeY}};
-                           ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:88:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:88:58: warning: narrowing conversion of '((double)x + (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 100*sizeX, y},            {x + 50*sizeX, y - 88*sizeY}};
-                                                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:88:58: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:88:72: warning: narrowing conversion of '((double)y - (sizeY * 8.8e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                        {x + 100*sizeX, y},            {x + 50*sizeX, y - 88*sizeY}};
-                                                                        ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:88:72: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:41: warning: narrowing conversion of '((double)y + (sizeY * 9.2e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                       { x + 57*sizeX, y +  92*sizeY }};
+                                         ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:87:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawTree2(int, int, double, double, COLORREF)':
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:28: warning: narrowing conversion of '((double)x + (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  37*sizeX, y            },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:28: warning: narrowing conversion of '((double)x + (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  37*sizeX, y + 30*sizeY },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:43: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  37*sizeX, y + 30*sizeY },
+                                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:43: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:99:28: warning: narrowing conversion of '((double)x + (sizeX * 6.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  63*sizeX, y + 30*sizeY },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:99:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:99:43: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  63*sizeX, y + 30*sizeY },
+                                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:99:43: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:100:28: warning: narrowing conversion of '((double)x + (sizeX * 6.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  63*sizeX, y            },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:100:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:101:28: warning: narrowing conversion of '((double)x + (sizeX * 1.0e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x + 100*sizeX, y            },
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:101:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:102:28: warning: narrowing conversion of '((double)x + (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  50*sizeX, y - 88*sizeY }};
+                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:102:28: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:102:43: warning: narrowing conversion of '((double)y - (sizeY * 8.8e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                        { x +  50*sizeX, y - 88*sizeY }};
+                                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:102:43: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawSun(int, double, double, double, COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:25: warning: narrowing conversion of '((double)x - (sizeX * 2.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Sun [8] = {{x -  2*sizeX, y - 50*sizeY}, {x - 37*sizeX, y + 35*sizeY}, {x + 50*sizeX, y},
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:110:26: warning: narrowing conversion of '((double)x - (sizeX * 2.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Sun [8] = {{ x -  2*sizeX, y - 50*sizeY },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:110:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:110:40: warning: narrowing conversion of '(y - (sizeY * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+     POINT Sun [8] = {{ x -  2*sizeX, y - 50*sizeY },
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:110:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:111:26: warning: narrowing conversion of '((double)x - (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x - 37*sizeX, y + 35*sizeY },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:111:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:111:40: warning: narrowing conversion of '((sizeY * 3.5e+1) + y)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x - 37*sizeX, y + 35*sizeY },
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:111:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:112:26: warning: narrowing conversion of '((double)x + (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 50*sizeX, y            },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:112:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:52: warning: narrowing conversion of 'y' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 33*sizeX, y + 35*sizeY }};
+                                                    ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:52: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:113:26: warning: narrowing conversion of '((double)x - (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x - 37*sizeX, y - 35*sizeY },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:113:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:113:40: warning: narrowing conversion of '(y - (sizeY * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x - 37*sizeX, y - 35*sizeY },
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:113:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:114:26: warning: narrowing conversion of '((double)x - (sizeX * 2.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x -  2*sizeX, y + 50*sizeY },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:114:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:114:40: warning: narrowing conversion of '((sizeY * 5.0e+1) + y)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x -  2*sizeX, y + 50*sizeY },
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:114:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:115:26: warning: narrowing conversion of '((double)x + (sizeX * 3.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 33*sizeX, y - 35*sizeY },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:115:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:115:40: warning: narrowing conversion of '(y - (sizeY * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 33*sizeX, y - 35*sizeY },
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:115:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:116:26: warning: narrowing conversion of '((double)x - (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x - 50*sizeX, y            },
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:116:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:52: warning: narrowing conversion of 'y' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 33*sizeX, y + 35*sizeY }};
+                                                    ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:52: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:26: warning: narrowing conversion of '((double)x + (sizeX * 3.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 33*sizeX, y + 35*sizeY }};
+                          ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:26: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:40: warning: narrowing conversion of '((sizeY * 3.5e+1) + y)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
+                      { x + 33*sizeX, y + 35*sizeY }};
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
+                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:1:
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: At global scope:
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:248:5: error: expected ')' before '(' token
+     txSetFillColor (RGB (0, 100, 0));
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:249:24: error: 'x' was not declared in this scope
+     POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
+                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:249:27: error: 'y' was not declared in this scope
+     POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
+                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:249:32: error: 'x' was not declared in this scope
+     POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
+                                ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:249:40: error: 'y' was not declared in this scope
+     POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
+                                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:249:50: error: 'x' was not declared in this scope
+     POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
+                                                  ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:249:58: error: 'y' was not declared in this scope
+     POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
+                                                          ^
+In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
+                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:1:
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:250:5: error: expected ')' before '(' token
+     txPolygon (Roof, 3);
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:252:5: error: expected ')' before '(' token
+     txSetFillColor (RGB (50, 100, 0));
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:25: error: 'x' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
                          ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:25: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:39: warning: narrowing conversion of '(y - (sizeY * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Sun [8] = {{x -  2*sizeX, y - 50*sizeY}, {x - 37*sizeX, y + 35*sizeY}, {x + 50*sizeX, y},
-                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:39: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:55: warning: narrowing conversion of '((double)x - (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Sun [8] = {{x -  2*sizeX, y - 50*sizeY}, {x - 37*sizeX, y + 35*sizeY}, {x + 50*sizeX, y},
-                                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:55: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:69: warning: narrowing conversion of '((sizeY * 3.5e+1) + y)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Sun [8] = {{x -  2*sizeX, y - 50*sizeY}, {x - 37*sizeX, y + 35*sizeY}, {x + 50*sizeX, y},
-                                                                     ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:69: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:85: warning: narrowing conversion of '((double)x + (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Sun [8] = {{x -  2*sizeX, y - 50*sizeY}, {x - 37*sizeX, y + 35*sizeY}, {x + 50*sizeX, y},
-                                                                                     ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:96:85: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:80: warning: narrowing conversion of 'y' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 50*sizeX, y           }, {x + 33*sizeX, y + 35*sizeY}};
-                                                                                ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:80: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:25: warning: narrowing conversion of '((double)x - (sizeX * 3.7e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 37*sizeX, y - 35*sizeY}, {x -  2*sizeX, y + 50*sizeY}, {x + 33*sizeX, y - 35*sizeY},
-                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:25: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:39: warning: narrowing conversion of '(y - (sizeY * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 37*sizeX, y - 35*sizeY}, {x -  2*sizeX, y + 50*sizeY}, {x + 33*sizeX, y - 35*sizeY},
-                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:39: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:55: warning: narrowing conversion of '((double)x - (sizeX * 2.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 37*sizeX, y - 35*sizeY}, {x -  2*sizeX, y + 50*sizeY}, {x + 33*sizeX, y - 35*sizeY},
-                                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:55: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:69: warning: narrowing conversion of '((sizeY * 5.0e+1) + y)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 37*sizeX, y - 35*sizeY}, {x -  2*sizeX, y + 50*sizeY}, {x + 33*sizeX, y - 35*sizeY},
-                                                                     ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:69: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:85: warning: narrowing conversion of '((double)x + (sizeX * 3.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 37*sizeX, y - 35*sizeY}, {x -  2*sizeX, y + 50*sizeY}, {x + 33*sizeX, y - 35*sizeY},
-                                                                                     ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:85: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:99: warning: narrowing conversion of '(y - (sizeY * 3.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 37*sizeX, y - 35*sizeY}, {x -  2*sizeX, y + 50*sizeY}, {x + 33*sizeX, y - 35*sizeY},
-                                                                                                   ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:97:99: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:25: warning: narrowing conversion of '((double)x - (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 50*sizeX, y           }, {x + 33*sizeX, y + 35*sizeY}};
-                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:25: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:80: warning: narrowing conversion of 'y' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 50*sizeX, y           }, {x + 33*sizeX, y + 35*sizeY}};
-                                                                                ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:80: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:55: warning: narrowing conversion of '((double)x + (sizeX * 3.3e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 50*sizeX, y           }, {x + 33*sizeX, y + 35*sizeY}};
-                                                       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:55: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:69: warning: narrowing conversion of '((sizeY * 3.5e+1) + y)' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                      {x - 50*sizeX, y           }, {x + 33*sizeX, y + 35*sizeY}};
-                                                                     ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:98:69: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:33: error: 'y' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                 ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:43: error: 'x' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:51: error: 'y' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                                   ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:62: error: 'x' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                                              ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:70: error: 'y' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                                                      ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:81: error: 'x' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                                                                 ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:89: error: 'y' was not declared in this scope
+     POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
+                                                                                         ^
+In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
+                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:1:
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:254:5: error: expected ')' before '(' token
+     txPolygon (stena, 4);
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:256:5: error: expected ')' before '(' token
+     txSetFillColor (RGB (0, 0, 0));
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:24: error: 'x' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                        ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:32: error: 'y' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:43: error: 'x' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                           ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:51: error: 'y' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                                   ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:62: error: 'x' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                                              ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:65: error: 'y' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                                                 ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:76: error: 'x' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                                                            ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:257:79: error: 'y' was not declared in this scope
+     POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
+                                                                               ^
+In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
+                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:1:
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:258:5: error: expected ')' before '(' token
+     txPolygon (Door, 4);
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:260:5: error: expected ')' before '(' token
+     txCircle (x + 15, y + 100, 15);
+     ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:262:5: error: expected declaration before '}' token
+     }
+     ^
 ---------------------------------------------------------------------------------------------
-[24.04.2021 20:53:32,75 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
+[25.04.2021 12:49:03,03 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt> g++.exe "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp" -o "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC
