@@ -154,7 +154,7 @@ void DrawHouse1 (int x, int y, COLORREF HoleColor)
                             { corX + 20, y - 100 },
                             { corX + 20, y - 120 }};
         txPolygon (Window, 4);
-        {
+        }
 
     POINT Window2 [4] = {{ x - 70, y - 120 },
                          { x - 70, y - 100 },
