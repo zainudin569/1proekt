@@ -83,12 +83,13 @@ void DrawTree1 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
 
     {
     txSetFillColor (TreeColor);
-    POINT Tree [4] = {{ x + 35*sizeX, y +  92*sizeY },
-                      { x + 35*sizeX, y + 117*sizeY },
-                      { x + 57*sizeX, y + 117*sizeY },
-                      { x + 57*sizeX, y +  92*sizeY }};
+    POINT Tree [4] = {{ ROUND( x + 35*sizeX ), ROUND( y +  92*sizeY )},
+                      { ROUND( x + 35*sizeX ), ROUND( y + 117*sizeY )},
+                      { ROUND( x + 57*sizeX ), ROUND( y + 117*sizeY )},
+                      { ROUND( x + 57*sizeX ), ROUND( y +  92*sizeY )}};
     txPolygon (Tree, 4);
-    txEllipse ( x, y, x + 94*sizeX, y + 94*sizeY );
+    txEllipse ( x, y, ROUND( x + 94*sizeX ),
+                      ROUND( y + 94*sizeY ));
     }
 
 void DrawTree2 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
