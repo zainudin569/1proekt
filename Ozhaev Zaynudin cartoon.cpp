@@ -96,13 +96,13 @@ void DrawTree2 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
 
     {
     txSetFillColor (TreeColor);
-    POINT Tree2 [7] = {{ x            , y            },
-                       { x +  37*sizeX, y            },
-                       { x +  37*sizeX, y + 30*sizeY },
-                       { x +  63*sizeX, y + 30*sizeY },
-                       { x +  63*sizeX, y            },
-                       { x + 100*sizeX, y            },
-                       { x +  50*sizeX, y - 88*sizeY }};
+    POINT Tree2 [7] = {{        x              ,        y             },
+                       { ROUND( x +  37*sizeX ),        y             },
+                       { ROUND( x +  37*sizeX ), ROUND( y + 30*sizeY )},
+                       { ROUND( x +  63*sizeX ), ROUND( y + 30*sizeY )},
+                       { ROUND( x +  63*sizeX ), ROUND( y             },
+                       { ROUND( x + 100*sizeX ),        y             },
+                       { ROUND( x +  50*sizeX ), ROUND( y - 88*sizeY )}};
     txPolygon (Tree2, 7);
     }
 
@@ -110,19 +110,21 @@ void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
 
     {
     txSetFillColor (SunColor);
-    POINT Sun [8] = {{ x -  2*sizeX, y - 50*sizeY },
-                     { x - 37*sizeX, y + 35*sizeY },
-                     { x + 50*sizeX, y            },
-                     { x - 37*sizeX, y - 35*sizeY },
-                     { x -  2*sizeX, y + 50*sizeY },
-                     { x + 33*sizeX, y - 35*sizeY },
-                     { x - 50*sizeX, y            },
-                     { x + 33*sizeX, y + 35*sizeY }};
+    POINT Sun [8] = {{ ROUND( x -  2*sizeX ), ROUND( y - 50*sizeY )},
+                     { ROUND( x - 37*sizeX ), ROUND( y + 35*sizeY )},
+                     { ROUND( x + 50*sizeX ),        y             },
+                     { ROUND( x - 37*sizeX ), ROUND( y - 35*sizeY )},
+                     { ROUND( x -  2*sizeX ), ROUND( y + 50*sizeY )},
+                     { ROUND( x + 33*sizeX ), ROUND( y - 35*sizeY )},
+                     { ROUND( x - 50*sizeX ),        y             },
+                     { ROUND( x + 33*sizeX ), ROUND( y + 35*sizeY )}};
     txPolygon (Sun, 8);
     txSetFillColor (RGB (0, 180, 180));
-    txEllipse ( x - 32*sizeX, y - 32*sizeY, x + 32*sizeX, y + 32*sizeY );
+    txEllipse ( ROUND( x - 32*sizeX ), ROUND( y - 32*sizeY )),
+                ROUND( x + 32*sizeX ), ROUND( y + 32*sizeY ));
     txSetFillColor (SunColor);
-    txEllipse ( x - 27*sizeX, y - 27*sizeY, x + 27*sizeX, y + 27*sizeY );
+    txEllipse ( ROUND( x - 27*sizeX ), ROUND( y - 27*sizeY )),
+                ROUND( x + 27*sizeX ), ROUND( y + 27*sizeY ));
     }
 
 void DrawBackground (COLORREF SkyColor)
