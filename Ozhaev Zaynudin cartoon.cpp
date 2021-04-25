@@ -146,7 +146,7 @@ void DrawHouse1 (int x, int y, COLORREF HoleColor)
                         { x - 120, y - 140 },
                         { x      , y - 140 }};
     txPolygon (stena, 4);
-    for (int corX = ( x - 110 ); corX<= (x - 30); corX += 40 )
+    for (int corX = ( x - 110 ); corX <= (x - 30); corX += 40 )
         {
         txSetFillColor (RGB (0, 0, 0));
         POINT Window [4] = {{ corX     , y - 120 },
@@ -157,17 +157,17 @@ void DrawHouse1 (int x, int y, COLORREF HoleColor)
         }
 
     txSetFillColor (RGB (0, 0, 0));
-    POINT Door [4] =    {{ x - 95, y      },
-                         { x - 95, y - 50 },
-                         { x - 50, y - 50 },
-                         { x - 50, y      }};
+    POINT Door [4] =       {{ x - 95, y      },
+                            { x - 95, y - 50 },
+                            { x - 50, y - 50 },
+                            { x - 50, y      }};
     txPolygon (Door, 4);
 
     txSetFillColor (RGB (230, 230, 230));
-    POINT Attic [4] =  {{ x - 65, y - 140 },
-                        { x - 65, y - 180 },
-                        { x - 30, y - 180 },
-                        { x - 30, y - 140 }};
+    POINT Attic [4] =      {{ x - 65, y - 140 },
+                            { x - 65, y - 180 },
+                            { x - 30, y - 180 },
+                            { x - 30, y - 140 }};
     txPolygon (Attic, 4);
 
     txSetFillColor (HoleColor);
