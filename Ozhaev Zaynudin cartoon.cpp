@@ -244,19 +244,3 @@ void DrawHouse3(int x, int y)
     txCircle ( x + 15, y + 100, 15 );
 
     }
-
-    txSetFillColor (RGB (0, 100, 0));
-    POINT Roof [3] = {{x, y}, {x - 60, y + 70}, {x + 60, y + 70}};
-    txPolygon (Roof, 3);
-
-    txSetFillColor (RGB (50, 100, 0));
-    POINT stena [4] = {{x + 40, y + 70}, {x + 40, y + 170}, {x - 45, y + 170}, {x - 45, y + 70}};
-    txPolygon (stena, 4);
-
-    txSetFillColor (RGB (0, 0, 0));
-    POINT Door [4] = {{x - 35, y + 170}, {x - 35, y + 135}, {x, y + 135}, {x, y + 170}};
-    txPolygon (Door, 4);
-
-    txCircle (x + 15, y + 100, 15);
-
-    }
