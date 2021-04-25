@@ -1,26 +1,11 @@
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawHouse1(int, int, COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:149:62: warning: for increment expression has no effect [-Wunused-value]
-     for (int corX = ( x - 110 ); int corY = ( y - 120 ); corX<= (x - 30); corX ++ 40 )
-                                                              ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:149:73: error: expected ')' before ';' token
-     for (int corX = ( x - 110 ); int corY = ( y - 120 ); corX<= (x - 30); corX ++ 40 )
-                                                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:149:38: warning: unused variable 'corY' [-Wunused-variable]
-     for (int corX = ( x - 110 ); int corY = ( y - 120 ); corX<= (x - 30); corX ++ 40 )
-                                      ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:149:75: error: 'corX' was not declared in this scope
-     for (int corX = ( x - 110 ); int corY = ( y - 120 ); corX<= (x - 30); corX ++ 40 )
-                                                                           ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:149:83: error: expected ';' before numeric constant
-     for (int corX = ( x - 110 ); int corY = ( y - 120 ); corX<= (x - 30); corX ++ 40 )
-                                                                                   ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:191:5: error: a function-definition is not allowed here before '{' token
+     {
+     ^
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:5: error: expected '}' at end of input
      }
      ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: At global scope:
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:140:6: warning: unused parameter 'HoleColor' [-Wunused-parameter]
- void DrawHouse1 (int x, int y, COLORREF HoleColor)
-      ^
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:253:5: error: expected '}' at end of input
 ---------------------------------------------------------------------------------------------
-[25.04.2021 20:20:59,76 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
+[25.04.2021 20:23:04,06 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt> g++.exe "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp" -o "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC
