@@ -100,7 +100,7 @@ void DrawTree2 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
                        { ROUND( x +  37*sizeX ),        y             },
                        { ROUND( x +  37*sizeX ), ROUND( y + 30*sizeY )},
                        { ROUND( x +  63*sizeX ), ROUND( y + 30*sizeY )},
-                       { ROUND( x +  63*sizeX ), ROUND( y             },
+                       { ROUND( x +  63*sizeX ),        y             },
                        { ROUND( x + 100*sizeX ),        y             },
                        { ROUND( x +  50*sizeX ), ROUND( y - 88*sizeY )}};
     txPolygon (Tree2, 7);
