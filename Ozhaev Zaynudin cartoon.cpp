@@ -112,7 +112,7 @@ void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
     txSetFillColor (SunColor);
     POINT Sun [8] = {{ ROUND( x -  2*sizeX ), ROUND( y - 50*sizeY )},
                      { ROUND( x - 37*sizeX ), ROUND( y + 35*sizeY )},
-                     { ROUND( x + 50*sizeX ),        y             },
+                     { ROUND( x + 50*sizeX ), ROUND( y            )},
                      { ROUND( x - 37*sizeX ), ROUND( y - 35*sizeY )},
                      { ROUND( x -  2*sizeX ), ROUND( y + 50*sizeY )},
                      { ROUND( x + 33*sizeX ), ROUND( y - 35*sizeY )},
