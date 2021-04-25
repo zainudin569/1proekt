@@ -18,7 +18,7 @@ int main()
     txBegin();
 
     int t = 0;
-    while (t <=100)
+    while ( t <=100 )
         {
         txClear ();
         DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
@@ -61,13 +61,13 @@ void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
     {
     txSetFillColor (GirlColor);
     txEllipse (x, y, x + 30*sizeX, y + 30*sizeY);
-    POINT Girl [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY ) },
+    POINT Girl [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )},
                        { ROUND( x +  5*sizeX ), ROUND( y + 75*sizeY ) },
                        { ROUND( x + 25*sizeX ), ROUND( y + 75*sizeY ) }};
     txPolygon (Girl, 3);
     txSetColor (RGB (255, 128, 0), 1);
     txSetFillColor (RGB (255, 0, 0));
-    POINT Girl2 [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY ) },
+    POINT Girl2 [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY )},
                        { ROUND( x + 15*sizeX ), ROUND( y + 20*sizeY + smayl ) },
                        { ROUND( x + 23*sizeX ), ROUND( y + 20*sizeY ) }};
     txPolygon  (Girl2, 3);
