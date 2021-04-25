@@ -1,24 +1,4 @@
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawGirl(int, int, double, double, COLORREF, double, double)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:48: warning: narrowing conversion of '((double)y + (sizeY * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Girl [3] = {{ ROUND(x + 15*sizeX), y + 30*sizeY },
-                                                ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:64:48: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:27: warning: narrowing conversion of '((double)x + (sizeX * 5.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                       { x +  5*sizeX, y + 75*sizeY },
-                           ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:41: warning: narrowing conversion of '((double)y + (sizeY * 7.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                       { x +  5*sizeX, y + 75*sizeY },
-                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:65:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:27: warning: narrowing conversion of '((double)x + (sizeX * 2.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                       { x + 25*sizeX, y + 75*sizeY }};
-                           ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:27: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:41: warning: narrowing conversion of '((double)y + (sizeY * 7.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                       { x + 25*sizeX, y + 75*sizeY }};
-                                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:66:41: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:70:28: warning: narrowing conversion of '((double)x + (sizeX * 7.0e+0))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
      POINT Girl2 [3] = {{ x +  7*sizeX, y + 20*sizeY },
                             ^
@@ -179,5 +159,5 @@ C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:40: 
                                         ^
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:117:40: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
 ---------------------------------------------------------------------------------------------
-[25.04.2021 13:29:45,28 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
+[25.04.2021 13:31:13,40 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt> g++.exe "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp" -o "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC
