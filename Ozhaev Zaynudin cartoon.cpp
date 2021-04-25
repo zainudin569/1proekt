@@ -150,9 +150,9 @@ void DrawHouse1 (int x, int y, COLORREF HoleColor)
 
         txSetFillColor (RGB (0, 0, 0));
         POINT Window [4] = {{ corX     , corY      },
-                            { corX     , corY - 20 },
-                            { corX - 20, corY - 20 },
-                            { corX - 20, corY      }};
+                            { corX     , corY + 20 },
+                            { corX + 20, corY + 20 },
+                            { corX + 20, corY      }};
         txPolygon (Window, 4);
 
 
