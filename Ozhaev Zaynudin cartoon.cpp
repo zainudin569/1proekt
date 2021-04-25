@@ -60,19 +60,19 @@ void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
 
     {
     txSetFillColor (GirlColor);
-    txEllipse (x, y, x + 30*sizeX, y + 30*sizeY);
+    txEllipse (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
     POINT Girl [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )},
-                       { ROUND( x +  5*sizeX ), ROUND( y + 75*sizeY ) },
-                       { ROUND( x + 25*sizeX ), ROUND( y + 75*sizeY ) }};
+                       { ROUND( x +  5*sizeX ), ROUND( y + 75*sizeY )},
+                       { ROUND( x + 25*sizeX ), ROUND( y + 75*sizeY )}};
     txPolygon (Girl, 3);
-    txSetColor (RGB (255, 128, 0), 1);
-    txSetFillColor (RGB (255, 0, 0));
-    POINT Girl2 [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY )},
-                       { ROUND( x + 15*sizeX ), ROUND( y + 20*sizeY + smayl ) },
-                       { ROUND( x + 23*sizeX ), ROUND( y + 20*sizeY ) }};
+    txSetColor     (RGB (255, 128, 0), 1);
+    txSetFillColor (RGB (255,   0, 0));
+    POINT Girl2 [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY         )},
+                       { ROUND( x + 15*sizeX ), ROUND( y + 20*sizeY + smayl )},
+                       { ROUND( x + 23*sizeX ), ROUND( y + 20*sizeY         )}};
     txPolygon  (Girl2, 3);
-    txSetColor (RGB (200, 200, 0), 1);
-    txSetFillColor (RGB (200, 200,   0));
+    txSetColor     (RGB (200, 200, 0), 1);
+    txSetFillColor (RGB (200, 200, 0));
     txEllipse ( ROUND( x +  7*sizeX      ), ROUND( y + 7*sizeY       ),
                 ROUND( x + 13*sizeX*Glaz ), ROUND( y + 13*sizeY*Glaz ));
     txEllipse ( ROUND( x + 17*sizeX      ), ROUND( y + 7*sizeY       ),
