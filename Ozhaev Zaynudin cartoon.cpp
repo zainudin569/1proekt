@@ -146,7 +146,7 @@ void DrawHouse1 (int x, int y, COLORREF HoleColor)
                         { x - 120, y - 140 },
                         { x      , y - 140 }};
     txPolygon (stena, 4);
-    for (int corX ( x - 110 ); int corY ( y - 120 ); corX<= (x - 30); corX ++ 40 )
+    for (int corX = ( x - 110 ); int corY = ( y - 120 ); corX<= (x - 30); corX ++ 40 )
         {
         txSetFillColor (RGB (0, 0, 0));
         POINT Window [4] = {{ corX     , corY      },
