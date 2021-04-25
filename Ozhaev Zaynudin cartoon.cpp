@@ -61,7 +61,7 @@ void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
     {
     txSetFillColor (GirlColor);
     txEllipse (x, y, x + 30*sizeX, y + 30*sizeY);
-    POINT Girl [3] = {{ x + 15*sizeX, y + 30*sizeY },
+    POINT Girl [3] = {{ ROUND(x + 15*sizeX), y + 30*sizeY },
                       { x +  5*sizeX, y + 75*sizeY },
                       { x + 25*sizeX, y + 75*sizeY }};
     txPolygon (Girl, 3);
