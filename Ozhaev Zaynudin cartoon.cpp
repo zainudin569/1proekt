@@ -54,7 +54,7 @@ int main()
             }
         if (t>80 and t<=90)
             {
-            DrawTrain  ((400, 370, -.45, .45);
+            DrawTrain  (400, 370, -.45, .45);
             }
 
         t ++;
