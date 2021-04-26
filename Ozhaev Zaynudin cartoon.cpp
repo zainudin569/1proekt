@@ -1,6 +1,6 @@
 #include "TXLib.h"
 
-void DrawMir();
+void DrawMir(int t);
 void DraTrainFare(int t);
 void DrawTrain   (int x,     int y);
 void DrawHouse2  (int x,     int y);
@@ -26,19 +26,8 @@ int main()
     while ( t <=100 )
         {
         txClear ();
-        DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
-                                180 - pow(t-50,2)/25));
 
-        DrawSun    (  7 + 5*t              ,
-                     75 + pow(t-50,2)/100*3,
-                    1.2 - pow(t-50,2)/2000 ,
-                    1.2 - pow(t-50,2)/2000 ,
-               RGB (255 - pow(t-50,2)/50   , 255 - pow(t-50,2)/50, 0));
-
-        DrawHouse2 (290,  60);
-        DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25,
-                                      180 - pow(t-50,2)/25));
-        DrawMir();
+        DrawMir(t);
         DraTrainFare(t);
         t ++;
         txSleep (100);
@@ -77,8 +66,17 @@ void DraTrainFare(int t)
         }
     }
 
-void DrawMir()
+void DrawMir(int t)
     {
+    DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
+                            180 - pow(t-50,2)/25));
+    DrawSun    (  7 + 5*t              ,
+                 75 + pow(t-50,2)/100*3,
+                1.2 - pow(t-50,2)/2000 ,
+                1.2 - pow(t-50,2)/2000 ,
+                RGB (255 - pow(t-50,2)/50, 255 - pow(t-50,2)/50, 0));
+    DrawHouse2 (290,  60);
+    DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
     DrawHouse3 (355, 120);
     DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
     DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
