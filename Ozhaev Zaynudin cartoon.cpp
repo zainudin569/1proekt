@@ -82,9 +82,9 @@ void DrawMir()
     DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
     DrawGirl   ( 50, 320,   1,   1, RGB (  0, 255,   0), 1,  3);
     DrawGirl   (100, 320,   1,   1, RGB (228, 100, 100), 1,  3);
-    DrawGirl   (300, 300,   1, 0.8, RGB (234, 255, 255), 1, -2);
-    DrawGirl   (415, 215, 0.5, 0.4, RGB (234, 255, 255), 1,  1);
-    DrawGirl   (215, 300, 0.5, 0.9, RGB (228,  50,   0), 1,  1);
+    //DrawGirl   (300, 300,   1, 0.8, RGB (234, 255, 255), 1, -2);
+    //DrawGirl   (415, 215, 0.5, 0.4, RGB (234, 255, 255), 1,  1);
+    //DrawGirl   (215, 300, 0.5, 0.9, RGB (228,  50,   0), 1,  1);
     }
 
 void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
