@@ -10,9 +10,9 @@ void DrawTree1   (int x,     int y, double sizeX, double sizeY, COLORREF TreeCol
 void DrawTree2   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawSun     (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
 void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
-                                    double Glaz,  double smayl);
+                                    double eyes,  double smayl);
 void DrawMan     (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
-                                    double Glaz,  double smayl);
+                                    double eyes,  double smayl);
 void DrawHouse1 (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
@@ -88,51 +88,51 @@ void DrawMir()
     }
 
 void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
-                              double Glaz,  double smayl)
+                              double eyes,  double smayl)
 
     {
     txSetFillColor (GirlColor);
-    txEllipse (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
-    POINT Girl [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )},
+    txEllipse     (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
+    POINT Body [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )},
                        { ROUND( x +  5*sizeX ), ROUND( y + 75*sizeY )},
                        { ROUND( x + 25*sizeX ), ROUND( y + 75*sizeY )}};
-    txPolygon (Girl, 3);
+    txPolygon (Body, 3);
     txSetColor     (RGB (255, 128, 0), 1);
     txSetFillColor (RGB (255,   0, 0));
-    POINT Girl2 [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY         )},
+    POINT Mouth [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY         )},
                        { ROUND( x + 15*sizeX ), ROUND( y + 20*sizeY + smayl )},
                        { ROUND( x + 23*sizeX ), ROUND( y + 20*sizeY         )}};
-    txPolygon  (Girl2, 3);
+    txPolygon  (Mouth, 3);
     txSetColor     (RGB (200, 200, 0), 1);
     txSetFillColor (RGB (200, 200, 0));
     txEllipse ( ROUND( x +  7*sizeX      ), ROUND( y + 7*sizeY       ),
-                ROUND( x + 13*sizeX*Glaz ), ROUND( y + 13*sizeY*Glaz ));
+                ROUND( x + 13*sizeX*eyes ), ROUND( y + 13*sizeY*eyes ));
     txEllipse ( ROUND( x + 17*sizeX      ), ROUND( y + 7*sizeY       ),
-                ROUND( x + 23*sizeX*Glaz ), ROUND( y + 13*sizeY*Glaz ));
+                ROUND( x + 23*sizeX*eyes ), ROUND( y + 13*sizeY*eyes ));
     }
 
 void DrawMan  (int x, int y, double sizeX, double sizeY, COLORREF ManColor,
-                             double Glaz,  double smayl)
+                             double eyes,  double smayl)
 
     {
     txSetFillColor (ManColor);
-    txEllipse (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
-    POINT Man [3] =  {{ ROUND( x + 1*sizeX ), ROUND( y + 30*sizeY )},
-                       { ROUND( x +  29*sizeX ), ROUND( y + 30*sizeY )},
-                       { ROUND( x + 15*sizeX ), ROUND( y + 75*sizeY )}};
-    txPolygon (Man, 3);
+    txEllipse    (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
+    POINT Body [3] =  {{ ROUND( x +  1*sizeX ), ROUND( y + 30*sizeY )},
+                      { ROUND( x + 29*sizeX ), ROUND( y + 30*sizeY )},
+                      { ROUND( x + 15*sizeX ), ROUND( y + 75*sizeY )}};
+    txPolygon (Body, 3);
     txSetColor     (RGB (255, 128, 0), 1);
     txSetFillColor (RGB (255,   0, 0));
-    POINT Man2 [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY         )},
-                       { ROUND( x + 15*sizeX ), ROUND( y + 20*sizeY + smayl )},
-                       { ROUND( x + 23*sizeX ), ROUND( y + 20*sizeY         )}};
-    txPolygon  (Man2, 3);
+    POINT Mouth [3] = {{ ROUND( x +  7*sizeX ), ROUND( y + 20*sizeY         )},
+                      { ROUND( x + 15*sizeX ), ROUND( y + 20*sizeY + smayl )},
+                      { ROUND( x + 23*sizeX ), ROUND( y + 20*sizeY         )}};
+    txPolygon  (Mouth, 3);
     txSetColor     (RGB (200, 200, 0), 1);
     txSetFillColor (RGB (200, 200, 0));
     txEllipse ( ROUND( x +  7*sizeX      ), ROUND( y + 7*sizeY       ),
-                ROUND( x + 13*sizeX*Glaz ), ROUND( y + 13*sizeY*Glaz ));
+                ROUND( x + 13*sizeX*eyes ), ROUND( y + 13*sizeY*eyes ));
     txEllipse ( ROUND( x + 17*sizeX      ), ROUND( y + 7*sizeY       ),
-                ROUND( x + 23*sizeX*Glaz ), ROUND( y + 13*sizeY*Glaz ));
+                ROUND( x + 23*sizeX*eyes ), ROUND( y + 13*sizeY*eyes ));
     }
 
 void DrawTree1 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
