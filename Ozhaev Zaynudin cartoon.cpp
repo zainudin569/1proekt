@@ -12,7 +12,7 @@ void DrawSun     (int x,  double y, double sizeX, double sizeY, COLORREF SunColo
 void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
                                     double Glaz,  double smayl);
 void DrawMan     (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
-                                    double Glaz,  double smayl)
+                                    double Glaz,  double smayl);
 void DrawHouse1 (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
