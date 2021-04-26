@@ -1,6 +1,7 @@
 #include "TXLib.h"
 
 void DrawMir();
+void DraTrainFare();
 void DrawTrain  (int x,     int y);
 void DrawHouse2 (int x,     int y);
 void DrawHouse3 (int x,     int y);
@@ -36,38 +37,42 @@ int main()
         DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25,
                                       180 - pow(t-50,2)/25));
         DrawMir();
-        if (t<=10)
-            {
-            DrawTrain  (480-t*30, 370, .45, .45);
-            }
-        if (t>10 and t<=20)
-            {
-            DrawTrain  (180, 370, .45, .45);
-            }
-        if (t>20 and t<=70)
-            {
-            DrawTrain  (480-(t-10)*30, 370, .45, .45);
-            }
-        if (t>70 and t<=80)
-            {
-            DrawTrain  ((t-70)*40, 370, -.45, .45);
-            }
-        if (t>80 and t<=90)
-            {
-            DrawTrain  (400, 370, -.45, .45);
-            }
-        if (t>90 and t<=100)
-            {
-            DrawTrain  ((t-80)*40, 370, -.45, .45);
-            }
-
+        DraTrainFare();
         t ++;
-        txSleep (100);
+        txSleep (200);
         }
 
     txEnd();
 
     return 0;
+    }
+
+void DraTrainFare()
+    {
+    if (t<=10)
+        {
+        DrawTrain  (480 - t*30, 370, .45, .45);
+        }
+    if (t>10 and t<=20)
+        {
+        DrawTrain  (180, 370, .45, .45);
+        }
+    if (t>20 and t<=70)
+        {
+        DrawTrain  (480 - (t-10)*30, 370, .45, .45);
+        }
+    if (t>70 and t<=80)
+        {
+        DrawTrain  ((t-70)*40, 370, -.45, .45);
+        }
+    if (t>80 and t<=90)
+        {
+        DrawTrain  (400, 370, -.45, .45);
+        }
+    if (t>90 and t<=100)
+        {
+        DrawTrain  ((t-80)*40, 370, -.45, .45);
+        }
     }
 
 void DrawMir()
