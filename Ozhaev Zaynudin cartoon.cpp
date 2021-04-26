@@ -44,6 +44,10 @@ int main()
             {
             DrawTrain  (180, 370, .45, .45);
             }
+        if (t>20 and t<=70)
+            {
+            DrawTrain  (480-t*30, 370, .45, .45);
+            }
 
         t ++;
         txSleep (100);
