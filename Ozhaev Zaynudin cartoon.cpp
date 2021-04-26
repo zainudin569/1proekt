@@ -268,7 +268,8 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
                   ROUND( x +  66*sizeX ), ROUND( y + 33*sizeY ) );
     txEllipse   ( ROUND( x +  82*sizeX ), ROUND( y - 33*sizeY ),
                   ROUND( x + 148*sizeX ), ROUND( y + 33*sizeY ) );
-    for (int corX = 0; corX <= ROUND( 200*sizeX ); corX += ROUND( 200*sizeX ) )
+    int corX = 0;
+    for (int temp = 1; temp <= 2; temp += 1 )
         {
         txSetFillColor (RGB (255, 0, 0));
         txRectangle ( ROUND( (x + 180*sizeX) + corX ),        y              ,
@@ -282,5 +283,6 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
                       ROUND( (x + 258*sizeX) + corX ), ROUND( y + 33*sizeY ) );
         txEllipse   ( ROUND( (x + 282*sizeX) + corX ), ROUND( y - 33*sizeY ),
                       ROUND( (x + 348*sizeX) + corX ), ROUND( y + 33*sizeY ));
+        corX = ROUND( corX + 200*sizeX );
         }
     }
