@@ -117,9 +117,9 @@ void DrawMan  (int x, int y, double sizeX, double sizeY, COLORREF ManColor,
     {
     txSetFillColor (ManColor);
     txEllipse (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
-    POINT Man [3] =  {{ ROUND( x + 5*sizeX ), ROUND( y + 75*sizeY )},
-                       { ROUND( x +  25*sizeX ), ROUND( y + 75*sizeY )},
-                       { ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )}};
+    POINT Man [3] =  {{ ROUND( x + 5*sizeX ), ROUND( y + 30*sizeY )},
+                       { ROUND( x +  25*sizeX ), ROUND( y + 30*sizeY )},
+                       { ROUND( x + 15*sizeX ), ROUND( y + 75*sizeY )}};
     txPolygon (Man, 3);
     txSetColor     (RGB (255, 128, 0), 1);
     txSetFillColor (RGB (255,   0, 0));
