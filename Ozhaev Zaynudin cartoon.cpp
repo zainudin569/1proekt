@@ -36,7 +36,10 @@ int main()
         DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25,
                                       180 - pow(t-50,2)/25));
         DrawMir();
-        DrawTrain  (480-t*10, 370, .45, .45);
+        if (t<=10)
+            {
+            DrawTrain  (480-t*100, 370, .45, .45);
+            }
         t ++;
         txSleep (100);
         }
