@@ -36,7 +36,7 @@ int main()
         DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25,
                                       180 - pow(t-50,2)/25));
         DrawMir();
-        DrawTrain  (100, 200, .3, .3);
+        DrawTrain  (400, 300, .4, .4);
         t ++;
         txSleep (100);
         }
