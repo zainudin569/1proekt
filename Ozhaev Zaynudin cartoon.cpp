@@ -38,7 +38,7 @@ int main()
         DrawMir();
         if (t<=10)
             {
-            DrawTrain  (480-t*20, 370, .45, .45);
+            DrawTrain  (480-t*30, 370, .45, .45);
             }
         t ++;
         txSleep (100);
