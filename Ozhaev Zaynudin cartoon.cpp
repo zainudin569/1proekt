@@ -260,7 +260,7 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
                             { ROUND( x - 50*sizeX ),        y              },
                             {        x             , ROUND( y - 50*sizeY ) }};
     txPolygon (Spout, 3);
-    txSetFillColor (RGB (50, 50, 50));
+    txSetFillColor (RGB (150, 150, 150));
     txRectangle ( ROUND( x +  90*sizeX ), ROUND( y - 110*sizeY ),
                   ROUND( x + 140*sizeX ), ROUND( y - 150*sizeY ) );
     txSetFillColor (RGB (255, 255, 0));
