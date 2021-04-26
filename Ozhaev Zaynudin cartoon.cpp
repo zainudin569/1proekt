@@ -41,7 +41,7 @@ int main()
         DrawMir();
         DraTrainFare(t);
         t ++;
-        txSleep (200);
+        txSleep (100);
         }
 
     txEnd();
@@ -82,8 +82,8 @@ void DrawMir()
     DrawHouse3 (355, 120);
     DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
     DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
-    DrawGirl   ( 50, 320,   1,   1, RGB (  0, 255,   0), 1,  3);
-    DrawMan    (100, 320,   1,   1, RGB (228, 100, 100), 1,  3);
+    DrawGirl   ( 50, 270,   1,   1, RGB (  0, 255,   0), 1,  3);
+    DrawMan    (100, 270,   1,   1, RGB (228, 100, 100), 1,  3);
 
     }
 
