@@ -43,7 +43,7 @@ void DraTrainFare(int t)
     if (t<=10)
         {
         DrawTrain  (480 - t*30, 370, .45, .45);
-        DrawGirl   (220 + t*5, 220 + t*5 + ((t%2)*5), 0.7, 0.7, RGB (  0, 255,   0), 1,  3);
+        DrawGirl   (220 + t*5, 220 + t*5 + ((t%2)*5), 0.7 + t%5, 0.7, RGB (  0, 255,   0), 1,  3);
         }
     if (t>10 and t<=20)
         {
