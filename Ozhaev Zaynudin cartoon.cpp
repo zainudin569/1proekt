@@ -1,15 +1,15 @@
 #include "TXLib.h"
 
 void DrawMir();
-void DraTrainFare();
-void DrawTrain  (int x,     int y);
-void DrawHouse2 (int x,     int y);
-void DrawHouse3 (int x,     int y);
-void DrawTrain  (int x,     int y, double sizeX, double sizeY);
-void DrawTree1  (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawTree2  (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawSun    (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
-void DrawGirl   (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
+void DraTrainFare(int t);
+void DrawTrain   (int x,     int y);
+void DrawHouse2  (int x,     int y);
+void DrawHouse3  (int x,     int y);
+void DrawTrain   (int x,     int y, double sizeX, double sizeY);
+void DrawTree1   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawTree2   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawSun     (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
+void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
                                    double Glaz,  double smayl);
 void DrawHouse1 (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
@@ -37,7 +37,7 @@ int main()
         DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25,
                                       180 - pow(t-50,2)/25));
         DrawMir();
-        DraTrainFare();
+        DraTrainFare(t);
         t ++;
         txSleep (200);
         }
@@ -47,7 +47,7 @@ int main()
     return 0;
     }
 
-void DraTrainFare()
+void DraTrainFare(int t)
     {
     if (t<=10)
         {
