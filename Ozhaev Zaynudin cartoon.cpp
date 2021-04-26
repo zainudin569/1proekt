@@ -245,7 +245,7 @@ void DrawHouse3(int x, int y)
 
 void DrawTrain (int x, int y, double sizeX, double sizeY)
     {
-    txSetColor  ( RGB (255, 255, 255), 1 );
+    txSetColor  ( RGB (100, 255, 255), 1 );
     txSetFillColor (RGB (50, 50, 200));
     txRectangle (        x              ,        y              ,
                   ROUND( x +  70*sizeX ), ROUND( y -  80*sizeY ) );
