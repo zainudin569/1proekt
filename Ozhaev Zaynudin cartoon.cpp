@@ -40,7 +40,7 @@ int main()
             {
             DrawTrain  (480-t*30, 370, .45, .45);
             }
-        if (t>10 ang t<=20)
+        if (t>10) and ( t<=20)
             {
             DrawTrain  (180, 370, .45, .45);
             }
