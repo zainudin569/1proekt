@@ -298,44 +298,44 @@ void DrawHouse3(int x, int y)
 
 void DrawTrain (int x, int y, double sizeX, double sizeY)
     {
-    txSetColor  ( RGB (100, 255, 255), 1 );
+    txSetColor  (RGB (100, 255, 255), 1);
     txSetFillColor (RGB (50, 50, 200));
-    txRectangle (        x              ,        y              ,
-                  ROUND( x +  70*sizeX ), ROUND( y -  80*sizeY ) );
-    txRectangle ( ROUND( x +  70*sizeX ),        y              ,
-                  ROUND( x + 160*sizeX ), ROUND( y - 100*sizeY ) );
-    txRectangle ( ROUND( x +  80*sizeX ), ROUND( y - 100*sizeY ),
-                  ROUND( x + 150*sizeX ), ROUND( y - 160*sizeY ) );
-    txRectangle ( ROUND( x + 160*sizeX ), ROUND( y -  30*sizeY ),
-                  ROUND( x + 180*sizeX ), ROUND( y -  50*sizeY ) );
+    txRectangle (       x              ,        y              ,
+                 ROUND( x +  70*sizeX ), ROUND( y -  80*sizeY ));
+    txRectangle (ROUND( x +  70*sizeX ),        y              ,
+                 ROUND( x + 160*sizeX ), ROUND( y - 100*sizeY ));
+    txRectangle (ROUND( x +  80*sizeX ), ROUND( y - 100*sizeY ),
+                 ROUND( x + 150*sizeX ), ROUND( y - 160*sizeY ));
+    txRectangle (ROUND( x + 160*sizeX ), ROUND( y -  30*sizeY ),
+                 ROUND( x + 180*sizeX ), ROUND( y -  50*sizeY ));
 
     POINT Spout [3] =      {{        x             ,        y              },
                             { ROUND( x - 50*sizeX ),        y              },
                             {        x             , ROUND( y - 50*sizeY ) }};
     txPolygon (Spout, 3);
     txSetFillColor (RGB (150, 200, 150));
-    txRectangle ( ROUND( x +  90*sizeX ), ROUND( y - 110*sizeY ),
-                  ROUND( x + 140*sizeX ), ROUND( y - 150*sizeY ) );
+    txRectangle (ROUND( x +  90*sizeX ), ROUND( y - 110*sizeY ),
+                 ROUND( x + 140*sizeX ), ROUND( y - 150*sizeY ));
     txSetFillColor (RGB (255, 255, 0));
-    txEllipse   ( ROUND( x +   3*sizeX ), ROUND( y - 33*sizeY ),
-                  ROUND( x +  66*sizeX ), ROUND( y + 33*sizeY ) );
-    txEllipse   ( ROUND( x +  82*sizeX ), ROUND( y - 33*sizeY ),
-                  ROUND( x + 148*sizeX ), ROUND( y + 33*sizeY ) );
+    txEllipse   (ROUND( x +   3*sizeX ), ROUND( y -  33*sizeY ),
+                 ROUND( x +  66*sizeX ), ROUND( y +  33*sizeY ));
+    txEllipse   (ROUND( x +  82*sizeX ), ROUND( y -  33*sizeY ),
+                 ROUND( x + 148*sizeX ), ROUND( y +  33*sizeY ));
     int corX = 0;
     for (int temp = 1; temp <= 2; temp += 1 )
         {
         txSetFillColor (RGB (255, 0, 0));
-        txRectangle ( ROUND( (x + 180*sizeX) + corX ),        y              ,
-                      ROUND( (x + 270*sizeX) + corX ), ROUND( y - 100*sizeY ) );
-        txRectangle ( ROUND( (x + 270*sizeX) + corX ),        y              ,
-                      ROUND( (x + 360*sizeX) + corX ), ROUND( y - 100*sizeY ) );
-        txRectangle ( ROUND( (x + 360*sizeX) + corX ), ROUND( y -  30*sizeY ),
-                      ROUND( (x + 380*sizeX) + corX ), ROUND( y -  50*sizeY ) );
+        txRectangle (ROUND(( x + 180*sizeX) + corX ),        y              ,
+                     ROUND(( x + 270*sizeX) + corX ), ROUND( y - 100*sizeY ));
+        txRectangle (ROUND(( x + 270*sizeX) + corX ),        y              ,
+                     ROUND(( x + 360*sizeX) + corX ), ROUND( y - 100*sizeY ));
+        txRectangle (ROUND(( x + 360*sizeX) + corX ), ROUND( y -  30*sizeY ),
+                     ROUND(( x + 380*sizeX) + corX ), ROUND( y -  50*sizeY ));
         txSetFillColor (RGB (255, 255, 0));
-        txEllipse   ( ROUND( (x + 192*sizeX) + corX ), ROUND( y - 33*sizeY ),
-                      ROUND( (x + 258*sizeX) + corX ), ROUND( y + 33*sizeY ) );
-        txEllipse   ( ROUND( (x + 282*sizeX) + corX ), ROUND( y - 33*sizeY ),
-                      ROUND( (x + 348*sizeX) + corX ), ROUND( y + 33*sizeY ));
+        txEllipse   (ROUND(( x + 192*sizeX) + corX ), ROUND( y -  33*sizeY ),
+                     ROUND(( x + 258*sizeX) + corX ), ROUND( y +  33*sizeY ));
+        txEllipse   (ROUND(( x + 282*sizeX) + corX ), ROUND( y -  33*sizeY ),
+                     ROUND(( x + 348*sizeX) + corX ), ROUND( y +  33*sizeY ));
         corX = ROUND( corX + 200*sizeX );
         }
     }
