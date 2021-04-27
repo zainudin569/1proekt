@@ -347,9 +347,9 @@ void DrawEnd (int t)
     {
     int corX = ( 320 - 150 );
     txSetFillColor (RGB (0, 0, 0));
-    POINT Window [4] = {{ corX     , y - 120 },
-                        { corX     , y - 100 },
-                        { corX + 20, y - 100 },
-                        { corX + 20, y - 120 }};
+    POINT Window [4] = {{ corX     , 260 - 120 },
+                        { corX     , 260 - 100 },
+                        { corX + 20, 260 - 100 },
+                        { corX + 20, 260 - 120 }};
     txPolygon (Window, 4);
     }
