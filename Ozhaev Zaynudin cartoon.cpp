@@ -1,6 +1,6 @@
 #include "TXLib.h"
 
-void DrawEnd (int t)
+void DrawEnd (int t);
 void DrawMir(int t);
 void DraTrainFare(int t);
 void DrawTrain   (int x,     int y);
