@@ -1,5 +1,6 @@
 #include "TXLib.h"
 
+void DrawEnd (int t)
 void DrawMir(int t);
 void DraTrainFare(int t);
 void DrawTrain   (int x,     int y);
@@ -29,6 +30,7 @@ int main()
 
         DrawMir(t);
         DraTrainFare(t);
+        DrawEnd(t);
         t ++;
         txSleep (120);
         }
@@ -340,4 +342,14 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
                      ROUND(( x + 348*sizeX) + corX ), ROUND( y +  33*sizeY ));
         corX = ROUND( corX + 200*sizeX );
         }
+    }
+void DrawEnd (int t)
+    {
+    int corX = ( 320 - 150 )
+    txSetFillColor (RGB (0, 0, 0));
+    POINT Window [4] = {{ corX     , y - 120 },
+                        { corX     , y - 100 },
+                        { corX + 20, y - 100 },
+                        { corX + 20, y - 120 }};
+    txPolygon (Window, 4);
     }
