@@ -36,6 +36,7 @@ int main()
 
         if (t>100)
             {
+            DrawMir(t);
             DrawEnd(t);
             }
 
