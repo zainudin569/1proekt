@@ -34,7 +34,7 @@ int main()
 
 
 
-            DrawFamily (0 + t, 0 + t, .03 * t, .04 * t);
+            DrawFamily (240 - t, 200 - t, .03 * t, .04 * t);
 
 
         t ++;
