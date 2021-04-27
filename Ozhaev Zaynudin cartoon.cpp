@@ -24,13 +24,21 @@ int main()
     txBegin();
 
     int t = 0;
-    while ( t <=100 )
+    while ( t <=200 )
         {
         txClear ();
 
-        DrawMir(t);
-        DraTrainFare(t);
-        DrawEnd(t);
+        if (t<100)
+            {
+            DrawMir(t);
+            DraTrainFare(t);
+            }
+
+        if (t>100)
+            {
+            DrawEnd(t);
+            }
+
         t ++;
         txSleep (120);
         }
