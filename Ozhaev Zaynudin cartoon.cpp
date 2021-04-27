@@ -30,7 +30,7 @@ int main()
         DrawMir(t);
         DraTrainFare(t);
         t ++;
-        txSleep (100);
+        txSleep (120);
         }
 
     txEnd();
@@ -47,11 +47,9 @@ void DraTrainFare(int t)
     if (t>10 and t<=20)
         {
         DrawTrain  (180, 370, .45, .45);
-
         DrawGirl   (220 + (t-10)*5, 220 + (t-10)*5 + ((t%2)*5), 0.7, 0.7, RGB (  0, 255,   0), 1,  3);
         DrawMan    (250 + (t-10)*5, 220 + (t-10)*5 + ((t%2)*2), 0.7, 0.7, RGB (228, 100, 100), 1,  3);
-
-        }
+         }
     if (t>20 and t<=70)
         {
         DrawTrain  (480 - (t-10)*30, 370, .45, .45);
@@ -86,9 +84,6 @@ void DrawMir(int t)
     DrawHouse3 (355, 120);
     DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
     DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
-   // DrawGirl   (220, 220, 0.7, 0.7, RGB (  0, 255,   0), 1,  3);
-    //DrawMan    (250, 220, 0.7, 0.7, RGB (228, 100, 100), 1,  3);
-
     }
 
 void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
