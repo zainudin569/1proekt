@@ -345,7 +345,7 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
     }
 void DrawEnd (int t)
     {
-    int corX = ( 320 - 150 )
+    int corX = ( 320 - 150 );
     txSetFillColor (RGB (0, 0, 0));
     POINT Window [4] = {{ corX     , y - 120 },
                         { corX     , y - 100 },
