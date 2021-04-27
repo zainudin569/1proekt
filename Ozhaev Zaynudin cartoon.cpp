@@ -25,20 +25,17 @@ int main()
     txBegin();
 
     int t = 0;
-    while ( t <=200 )
+    while ( t <=100 )
         {
         txClear ();
 
-        if (t<100)
-            {
             DrawMir(t);
             DraTrainFare(t);
-            }
 
-        if (t>100)
-            {
+
+
             DrawFamily (0 + t, 0 + t, .03 * t, .04 * t);
-            }
+
 
         t ++;
         txSleep (120);
