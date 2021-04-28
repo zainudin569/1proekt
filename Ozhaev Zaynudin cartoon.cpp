@@ -93,8 +93,9 @@ void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
                               double eyes,  double smayl)
 
     {
-    txSetFillColor (GirlColor);
+    txSetFillColor (RGB (240, 234, 182));
     txEllipse     (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
+    txSetFillColor (GirlColor);
     POINT Body [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )},
                        { ROUND( x +  5*sizeX ), ROUND( y + 75*sizeY )},
                        { ROUND( x + 25*sizeX ), ROUND( y + 75*sizeY )}};
@@ -117,8 +118,9 @@ void DrawMan  (int x, int y, double sizeX, double sizeY, COLORREF ManColor,
                              double eyes,  double smayl)
 
     {
-    txSetFillColor (ManColor);
+    txSetFillColor (RGB (240, 234, 182));
     txEllipse    (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
+    txSetFillColor (ManColor);
     POINT Body [3] =  {{ ROUND( x +  1*sizeX ), ROUND( y + 30*sizeY )},
                       { ROUND( x + 29*sizeX ), ROUND( y + 30*sizeY )},
                       { ROUND( x + 15*sizeX ), ROUND( y + 75*sizeY )}};
