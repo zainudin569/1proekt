@@ -1,7 +1,7 @@
 #include "TXLib.h"
 
-void DrawEnd (int t);
-void DrawMir(int t);
+void DrawFamily  ();
+void DrawMir     ();
 void DraTrainFare(int t);
 void DrawTrain   (int x,     int y);
 void DrawHouse2  (int x,     int y);
@@ -14,7 +14,7 @@ void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlCol
                                     double eyes,  double smayl);
 void DrawMan     (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
                                     double eyes,  double smayl);
-void DrawHouse1 (int x,     int y, COLORREF HoleColor);
+void DrawHouse1  (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
 int main()
@@ -23,26 +23,8 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    int t = 0;
-    while ( t <=200 )
-        {
-        txClear ();
-
-        if (t<100)
-            {
-            DrawMir(t);
-            DraTrainFare(t);
-            }
-
-        if (t>100)
-            {
-            DrawMir(t);
-            DrawEnd(t);
-            }
-
-        t ++;
-        txSleep (120);
-        }
+    DrawMir();
+    DrawFamily ();
 
     txEnd();
 
@@ -58,8 +40,8 @@ void DraTrainFare(int t)
     if (t>10 and t<=20)
         {
         DrawTrain  (180, 370, .45, .45);
-        DrawGirl   (220 + (t-10)*5, 220 + (t-10)*5 + ((t%2)*5), 0.7, 0.7, RGB (  0, 255,   0), 1,  3);
-        DrawMan    (250 + (t-10)*5, 220 + (t-10)*5 + ((t%2)*2), 0.7, 0.7, RGB (228, 100, 100), 1,  3);
+        DrawGirl   (220 + (t-10)*5, 220 + (t-10)*5 + ((t%2)*5), 0.7, 0.7, RGB (  255, 130, 1), 1,  3);
+        DrawMan    (250 + (t-10)*5, 220 + (t-10)*5 + ((t%2)*2), 0.7, 0.7, RGB (135, 219, 255), 1,  3);
          }
     if (t>20 and t<=70)
         {
@@ -72,8 +54,8 @@ void DraTrainFare(int t)
     if (t>80 and t<=90)
         {
         DrawTrain  (400, 370, -.45, .45);
-        DrawGirl   (270 - (t-80)*5, 270 - (t-80)*5 + ((t%2)*5), 0.8, 0.8, RGB (  0, 255,   0), 0.8,  -1);
-        DrawMan    (300 - (t-80)*5, 270 - (t-80)*5 + ((t%2)*2), 0.8, 0.8, RGB (228, 100, 100), 0.8,  -1);
+        DrawGirl   (270 - (t-80)*5, 270 - (t-80)*5 + ((t%2)*5), 0.8, 0.8, RGB (  255, 130, 1), 0.8,  -1);
+        DrawMan    (300 - (t-80)*5, 270 - (t-80)*5 + ((t%2)*2), 0.8, 0.8, RGB (135, 219, 255), 0.8,  -1);
         }
     if (t>90 and t<=100)
         {
@@ -81,28 +63,39 @@ void DraTrainFare(int t)
         }
     }
 
-void DrawMir(int t)
+void DrawMir()
     {
-    DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
-                            180 - pow(t-50,2)/25));
-    DrawSun    (  7 + 5*t              ,
-                 75 + pow(t-50,2)/100*3,
-                1.2 - pow(t-50,2)/2000 ,
-                1.2 - pow(t-50,2)/2000 ,
-                RGB (255 - pow(t-50,2)/50, 255 - pow(t-50,2)/50, 0));
-    DrawHouse2 (290,  60);
-    DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
-    DrawHouse3 (355, 120);
-    DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
-    DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
+    int t = 0;
+    while ( t <=100 )
+        {
+        txClear ();
+
+        DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
+                                180 - pow(t-50,2)/25));
+        DrawSun    (  7 + 5*t              ,
+                     75 + pow(t-50,2)/100*3,
+                    1.2 - pow(t-50,2)/2000 ,
+                    1.2 - pow(t-50,2)/2000 ,
+                    RGB (255 - pow(t-50,2)/50, 255 - pow(t-50,2)/50, 0));
+        DrawHouse2 (290,  60);
+        DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
+        DrawHouse3 (355, 120);
+        DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
+        DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
+        DraTrainFare(t);
+        t ++;
+        txSleep (120);
+        }
+
     }
 
 void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
                               double eyes,  double smayl)
 
     {
-    txSetFillColor (GirlColor);
+    txSetFillColor (RGB (240, 234, 182));
     txEllipse     (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
+    txSetFillColor (GirlColor);
     POINT Body [3] =  {{ ROUND( x + 15*sizeX ), ROUND( y + 30*sizeY )},
                        { ROUND( x +  5*sizeX ), ROUND( y + 75*sizeY )},
                        { ROUND( x + 25*sizeX ), ROUND( y + 75*sizeY )}};
@@ -125,8 +118,9 @@ void DrawMan  (int x, int y, double sizeX, double sizeY, COLORREF ManColor,
                              double eyes,  double smayl)
 
     {
-    txSetFillColor (ManColor);
+    txSetFillColor (RGB (240, 234, 182));
     txEllipse    (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
+    txSetFillColor (ManColor);
     POINT Body [3] =  {{ ROUND( x +  1*sizeX ), ROUND( y + 30*sizeY )},
                       { ROUND( x + 29*sizeX ), ROUND( y + 30*sizeY )},
                       { ROUND( x + 15*sizeX ), ROUND( y + 75*sizeY )}};
@@ -308,9 +302,6 @@ void DrawHouse3(int x, int y)
 
 void DrawTrain (int x, int y, double sizeX, double sizeY)
     {
-
-
-
     txSetColor  (RGB (100, 255, 255), 1);
     txSetFillColor (RGB (50, 50, 200));
     txRectangle (       x              ,        y              ,
@@ -352,13 +343,215 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
         corX = ROUND( corX + 200*sizeX );
         }
     }
-void DrawEnd (int t)
+
+void DrawFamily ()
     {
-    int corX = ( 320 - 70 );
-    txSetFillColor (RGB (0, 0, 0));
-    POINT Window [4] = {{ corX     , 260 - 120 },
-                        { corX     , 260 - 100 },
-                        { corX + 20, 260 - 100 },
-                        { corX + 20, 260 - 120 }};
-    txPolygon (Window, 4);
+
+    int t = 0;
+    while ( t <=100 )
+        {
+        txSetFillColor (TX_BLACK);
+        txClear ();
+        int x = ROUND( 240 - t*2.4 );
+        int y = 200 - t*2;
+        double sizeX = 0.006*t;
+        double sizeY = 0.0037*t;
+
+        txSetColor     (RGB (255, 255, 255), 1);
+        txSetFillColor (RGB (240, 234, 182));
+        txEllipse   (ROUND( x + 110*sizeX ), ROUND( y +  80*sizeY ),
+                     ROUND( x + 320*sizeX ), ROUND( y + 290*sizeY ));
+
+        txSetFillColor (RGB (0, 0, 0));
+        txRectangle (ROUND( x + 170*sizeX ), ROUND( y + 180*sizeY ),
+                     ROUND( x + 230*sizeX ), ROUND( y + 200*sizeY ));
+        POINT EyeGirl [4] =   {{ ROUND( x + 260*sizeX ), ROUND( y + 205*sizeY )},
+                               { ROUND( x + 270*sizeX ), ROUND( y + 190*sizeY )},
+                               { ROUND( x + 300*sizeX ), ROUND( y + 215*sizeY )},
+                               { ROUND( x + 290*sizeX ), ROUND( y + 230*sizeY )}};
+        txPolygon (EyeGirl, 4);
+
+        txSetFillColor (RGB (239, 23, 2));
+        POINT MouthGirl [3] = {{ ROUND( x + 190*sizeX ), ROUND( y + 240*sizeY )},
+                               { ROUND( x + 255*sizeX ), ROUND( y + 255*sizeY )},
+                               { ROUND( x + 220*sizeX ), ROUND( y + 270*sizeY )}};
+        txPolygon (MouthGirl, 3);
+
+        txSetFillColor (RGB (255, 130, 1));
+        POINT TorsoGirl [3] = {{ ROUND( x + 170*sizeX ), ROUND( y + 280*sizeY )},
+                               { ROUND( x +  22*sizeX ), ROUND( y + 700*sizeY )},
+                               { ROUND( x + 320*sizeX ), ROUND( y + 700*sizeY )}};
+        txPolygon (TorsoGirl, 3);
+
+        txSetFillColor (RGB (255,254, 233));
+        POINT ArmGirl1 [3] = {{ ROUND( x + 150*sizeX ), ROUND( y + 407*sizeY )},
+                              { ROUND( x + 202*sizeX ), ROUND( y + 375*sizeY )},
+                              { ROUND( x + 330*sizeX ), ROUND( y + 630*sizeY )}};
+        txPolygon (ArmGirl1, 3);
+
+        POINT ArmGirl2 [3] = {{ ROUND( x + 185*sizeX ), ROUND( y + 320*sizeY )},
+                              { ROUND( x + 206*sizeX ), ROUND( y + 380*sizeY )},
+                              { ROUND( x + 415*sizeX ), ROUND( y + 420*sizeY )}};
+        txPolygon (ArmGirl2, 3);
+
+        txSetFillColor (RGB (236, 237, 242));
+        POINT LegGirl1 [3] = {{ ROUND( x + 115*sizeX ), ROUND( y + 710*sizeY )},
+                              { ROUND( x + 170*sizeX ), ROUND( y + 710*sizeY )},
+                              { ROUND( x + 140*sizeX ), ROUND( y + 970*sizeY )}};
+        txPolygon (LegGirl1, 3);
+
+        POINT LegGirl2 [3] = {{ ROUND( x + 195*sizeX ), ROUND( y + 710*sizeY )},
+                              { ROUND( x + 255*sizeX ), ROUND( y + 710*sizeY )},
+                              { ROUND( x + 225*sizeX ), ROUND( y + 970*sizeY )}};
+        txPolygon (LegGirl2, 3);
+
+        txSetFillColor (RGB (176, 34, 20));
+        txRectangle (ROUND( x + 110*sizeX ), ROUND( y +  970*sizeY ),
+                     ROUND( x + 180*sizeX ), ROUND( y + 1020*sizeY ));
+
+        txRectangle (ROUND( x + 190*sizeX ), ROUND( y +  970*sizeY ),
+                     ROUND( x + 260*sizeX ), ROUND( y + 1020*sizeY ));
+
+    //_________________________________________
+
+        txSetFillColor (RGB (240, 234, 182));
+        txRectangle (ROUND( x + 575*sizeX ), ROUND( y +  50*sizeY ),
+                     ROUND( x + 720*sizeX ), ROUND( y + 228*sizeY ));
+
+        POINT NoseMen [3] = {{ ROUND( x + 575*sizeX ), ROUND( y + 130*sizeY )},
+                             { ROUND( x + 556*sizeX ), ROUND( y + 155*sizeY )},
+                             { ROUND( x + 575*sizeX ), ROUND( y + 158*sizeY )}};
+        txPolygon (NoseMen, 3);
+
+        txSetFillColor (RGB (0, 0, 0));
+        POINT EyeMen [4] =  {{ ROUND( x + 586*sizeX ), ROUND( y + 129*sizeY )},
+                             { ROUND( x + 596*sizeX ), ROUND( y + 116*sizeY )},
+                             { ROUND( x + 646*sizeX ), ROUND( y + 148*sizeY )},
+                             { ROUND( x + 634*sizeX ), ROUND( y + 161*sizeY )}};
+        txPolygon (EyeMen, 4);
+
+        txSetFillColor (RGB (0, 138, 253));
+        txRectangle (ROUND( x + 650*sizeX ), ROUND( y + 557*sizeY ),
+                     ROUND( x + 696*sizeX ), ROUND( y + 723*sizeY ));
+        POINT HipMen [4] =    {{ ROUND( x + 643*sizeX ), ROUND( y + 553*sizeY )},
+                               { ROUND( x + 599*sizeX ), ROUND( y + 541*sizeY )},
+                               { ROUND( x + 552*sizeX ), ROUND( y + 699*sizeY )},
+                               { ROUND( x + 598*sizeX ), ROUND( y + 712*sizeY )}};
+        txPolygon (HipMen, 4);
+
+        txSetFillColor (RGB (135, 219, 255));
+        POINT TorsoMen [3] =  {{ ROUND( x + 512*sizeX ), ROUND( y + 245*sizeY )},
+                               { ROUND( x + 780*sizeX ), ROUND( y + 245*sizeY )},
+                               { ROUND( x + 640*sizeX ), ROUND( y + 590*sizeY )}};
+        txPolygon (TorsoMen, 3);
+
+        txSetFillColor (RGB (236, 237, 242));
+        POINT ArmMen1 [3] =  {{ ROUND( x + 414*sizeX ), ROUND( y + 425*sizeY )},
+                              { ROUND( x + 549*sizeX ), ROUND( y + 342*sizeY )},
+                              { ROUND( x + 560*sizeX ), ROUND( y + 381*sizeY )}};
+        txPolygon (ArmMen1, 3);
+
+        POINT ArmMen2 [3] =  {{ ROUND( x + 480*sizeX ), ROUND( y + 600*sizeY )},
+                              { ROUND( x + 616*sizeX ), ROUND( y + 343*sizeY )},
+                              { ROUND( x + 667*sizeX ), ROUND( y + 377*sizeY )}};
+        txPolygon (ArmMen2, 3);
+
+        txSetFillColor (RGB (0, 138, 253));
+        POINT LegMen1 [3] =  {{ ROUND( x + 542*sizeX ), ROUND( y + 715*sizeY )},
+                              { ROUND( x + 598*sizeX ), ROUND( y + 715*sizeY )},
+                              { ROUND( x + 567*sizeX ), ROUND( y + 970*sizeY )}};
+        txPolygon (LegMen1, 3);
+
+        POINT LegMen2 [3] =  {{ ROUND( x + 642*sizeX ), ROUND( y + 736*sizeY )},
+                              { ROUND( x + 698*sizeX ), ROUND( y + 729*sizeY )},
+                              { ROUND( x + 695*sizeX ), ROUND( y + 970*sizeY )}};
+        txPolygon (LegMen2, 3);
+
+        txRectangle (ROUND( x + 532*sizeX ), ROUND( y +  970*sizeY ),
+                     ROUND( x + 601*sizeX ), ROUND( y + 1026*sizeY ));
+
+        txRectangle (ROUND( x + 641*sizeX ), ROUND( y +  970*sizeY ),
+                     ROUND( x + 709*sizeX ), ROUND( y + 1026*sizeY ));
+
+    //_________________________________________
+
+        txSetFillColor (RGB (3, 196, 152));
+        POINT SleeveBoy1 [4] = {{ ROUND( x + 288*sizeX ), ROUND( y + 678*sizeY )},
+                                { ROUND( x + 334*sizeX ), ROUND( y + 650*sizeY )},
+                                { ROUND( x + 358*sizeX ), ROUND( y + 683*sizeY )},
+                                { ROUND( x + 322*sizeX ), ROUND( y + 730*sizeY )}};
+        txPolygon (SleeveBoy1, 4);
+
+        POINT SleeveBoy2 [4] = {{ ROUND( x + 465*sizeX ), ROUND( y + 646*sizeY )},
+                                { ROUND( x + 514*sizeX ), ROUND( y + 668*sizeY )},
+                                { ROUND( x + 494*sizeX ), ROUND( y + 719*sizeY )},
+                                { ROUND( x + 454*sizeX ), ROUND( y + 672*sizeY )}};
+        txPolygon (SleeveBoy2, 4);
+
+        txEllipse   (ROUND( x + 319*sizeX ), ROUND( y + 661*sizeY ),
+                     ROUND( x + 502*sizeX ), ROUND( y + 841*sizeY ));
+
+        txRectangle (ROUND( x + 333*sizeX ), ROUND( y +  962*sizeY ),
+                     ROUND( x + 402*sizeX ), ROUND( y + 1015*sizeY ));
+
+        txRectangle (ROUND( x + 415*sizeX ), ROUND( y +  967*sizeY ),
+                     ROUND( x + 484*sizeX ), ROUND( y + 1022*sizeY ));
+
+        txSetFillColor (RGB (236, 237, 242));
+        POINT NoseBoy [3] = {{ ROUND( x + 413*sizeX ), ROUND( y + 510*sizeY )},
+                             { ROUND( x + 405*sizeX ), ROUND( y + 532*sizeY )},
+                             { ROUND( x + 418*sizeX ), ROUND( y + 532*sizeY )}};
+        txPolygon (NoseBoy, 3);
+
+        txEllipse   (ROUND( x + 340*sizeX ), ROUND( y + 531*sizeY ),
+                     ROUND( x + 480*sizeX ), ROUND( y + 671*sizeY ));
+
+        POINT ArmBoy1 [3] =  {{ ROUND( x + 278*sizeX ), ROUND( y + 580*sizeY )},
+                              { ROUND( x + 329*sizeX ), ROUND( y + 653*sizeY )},
+                              { ROUND( x + 312*sizeX ), ROUND( y + 664*sizeY )}};
+        txPolygon (ArmBoy1, 3);
+
+        POINT ArmBoy2 [3] =  {{ ROUND( x + 523*sizeX ), ROUND( y + 583*sizeY )},
+                              { ROUND( x + 474*sizeX ), ROUND( y + 648*sizeY )},
+                              { ROUND( x + 490*sizeX ), ROUND( y + 656*sizeY )}};
+        txPolygon (ArmBoy2, 3);
+
+        txSetFillColor (RGB (236, 237, 242));
+        txRectangle (ROUND( x + 345*sizeX ), ROUND( y + 824*sizeY ),
+                     ROUND( x + 390*sizeX ), ROUND( y + 960*sizeY ));
+
+        txRectangle (ROUND( x + 427*sizeX ), ROUND( y + 822*sizeY ),
+                     ROUND( x + 473*sizeX ), ROUND( y + 966*sizeY ));
+
+        txSetFillColor (RGB (0, 0, 0));
+        POINT EyeBoy1 [4] = {{ ROUND( x + 372*sizeX ), ROUND( y + 560*sizeY )},
+                             { ROUND( x + 405*sizeX ), ROUND( y + 550*sizeY )},
+                             { ROUND( x + 410*sizeX ), ROUND( y + 560*sizeY )},
+                             { ROUND( x + 375*sizeX ), ROUND( y + 570*sizeY )}};
+        txPolygon (EyeBoy1, 4);
+
+        POINT EyeBoy2 [4] = {{ ROUND( x + 418*sizeX ), ROUND( y + 560*sizeY )},
+                             { ROUND( x + 424*sizeX ), ROUND( y + 550*sizeY )},
+                             { ROUND( x + 454*sizeX ), ROUND( y + 567*sizeY )},
+                             { ROUND( x + 448*sizeX ), ROUND( y + 575*sizeY )}};
+        txPolygon (EyeBoy2, 4);
+
+        //_________________________________________
+
+        txSetColor     (RGB (255, 0, 0), 3);
+        txSetFillColor (RGB (255, 0, 0));
+        POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
+                             { ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )},
+                             { ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )}};
+        txPolygon (ArmBoy, 3);
+
+        txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),
+                     ROUND( x + 415*sizeX ), ROUND( y + 405*sizeY ));
+
+        txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
+                     ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
+        t ++;
+        txSleep (60);
+        }
     }
+
