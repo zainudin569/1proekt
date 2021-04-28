@@ -1,6 +1,6 @@
 #include "TXLib.h"
 
-void DrawMir     (int    t);
+void DrawMir     ();
 void DraTrainFare(int    t);
 void DrawTrain   (int    x,     int y);
 void DrawHouse2  (int    x,     int y);
@@ -23,23 +23,8 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    int t = 0;
-    while ( t <=100 )
-        {
-        txClear ();
-
-            DrawMir(t);
-            DraTrainFare(t);
-
-
-
-            DrawFamily (ROUND( 240 - t*2.4 ), 200 - t*2, .006*t, .0037*t);
-
-
-        t ++;
-        txSleep (120);
-        }
-
+    DrawMir();
+    //DrawFamily (ROUND( 240 - t*2.4 ), 200 - t*2, .006*t, .0037*t);
     txEnd();
 
     return 0;
@@ -77,20 +62,30 @@ void DraTrainFare(int t)
         }
     }
 
-void DrawMir(int t)
+void DrawMir()
     {
-    DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
-                            180 - pow(t-50,2)/25));
-    DrawSun    (  7 + 5*t              ,
-                 75 + pow(t-50,2)/100*3,
-                1.2 - pow(t-50,2)/2000 ,
-                1.2 - pow(t-50,2)/2000 ,
-                RGB (255 - pow(t-50,2)/50, 255 - pow(t-50,2)/50, 0));
-    DrawHouse2 (290,  60);
-    DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
-    DrawHouse3 (355, 120);
-    DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
-    DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
+    int t = 0;
+    while ( t <=100 )
+        {
+        txClear ();
+
+        DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
+                                180 - pow(t-50,2)/25));
+        DrawSun    (  7 + 5*t              ,
+                     75 + pow(t-50,2)/100*3,
+                    1.2 - pow(t-50,2)/2000 ,
+                    1.2 - pow(t-50,2)/2000 ,
+                    RGB (255 - pow(t-50,2)/50, 255 - pow(t-50,2)/50, 0));
+        DrawHouse2 (290,  60);
+        DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
+        DrawHouse3 (355, 120);
+        DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
+        DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
+        DraTrainFare(t);
+        t ++;
+        txSleep (120);
+        }
+
     }
 
 void DrawGirl  (int x, int y, double sizeX, double sizeY, COLORREF GirlColor,
