@@ -6,7 +6,7 @@ void DrawTrain   (int    x,     int y);
 void DrawHouse2  (int    x,     int y);
 void DrawHouse3  (int    x,     int y);
 void DrawTrain   (int    x,     int y, double sizeX, double sizeY);
-void DrawFamily  (double x,     int y, double sizeX, double sizeY);
+void DrawFamily  (int x, int y, double sizeX, double sizeY);
 void DrawTree1   (int    x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawTree2   (int    x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawSun     (int    x,  double y, double sizeX, double sizeY, COLORREF SunColor);
@@ -33,7 +33,7 @@ int main()
 
 
 
-            DrawFamily (240 - t*2.4, 200 - t*2, .006*t, .0037*t);
+            DrawFamily (ROUND( 240 - t*2.4 ), 200 - t*2, .006*t, .0037*t);
 
 
         t ++;
