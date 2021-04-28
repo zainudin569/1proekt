@@ -351,7 +351,7 @@ void DrawFamily ()
         int x = ROUND( 240 - t*2.4 );
         int y = 200 - t*2;
         double sizeX = 0.006*t;
-        double sizey = 0.0037*t;
+        double sizeY = 0.0037*t;
 
         txSetFillColor (RGB (240, 234, 182));
         txEllipse   (ROUND( x + 110*sizeX ), ROUND( y +  80*sizeY ),
