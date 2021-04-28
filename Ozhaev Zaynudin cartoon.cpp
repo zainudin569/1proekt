@@ -1,20 +1,19 @@
 #include "TXLib.h"
 
-void DrawEnd (int t);
-void DrawMir(int t);
-void DraTrainFare(int t);
-void DrawTrain   (int x,     int y);
-void DrawHouse2  (int x,     int y);
-void DrawHouse3  (int x,     int y);
-void DrawTrain   (int x,     int y, double sizeX, double sizeY);
-void DrawFamily  (int x,     int y, double sizeX, double sizeY);
-void DrawTree1   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawTree2   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawSun     (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
-void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
-                                    double eyes,  double smayl);
-void DrawMan     (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
-                                    double eyes,  double smayl);
+void DrawMir     (int    t);
+void DraTrainFare(int    t);
+void DrawTrain   (int    x,     int y);
+void DrawHouse2  (int    x,     int y);
+void DrawHouse3  (int    x,     int y);
+void DrawTrain   (int    x,     int y, double sizeX, double sizeY);
+void DrawFamily  (double x,     int y, double sizeX, double sizeY);
+void DrawTree1   (int    x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawTree2   (int    x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawSun     (int    x,  double y, double sizeX, double sizeY, COLORREF SunColor);
+void DrawGirl    (int    x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
+                                       double eyes,  double smayl);
+void DrawMan     (int    x,     int y, double sizeX, double sizeY, COLORREF ManColor,
+                                       double eyes,  double smayl);
 void DrawHouse1 (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
