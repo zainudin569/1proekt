@@ -23,8 +23,9 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    DrawMir();
+    //DrawMir();
     DrawFamily ();
+
     txEnd();
 
     return 0;
@@ -347,6 +348,7 @@ void DrawFamily ()
     int t = 0;
     while ( t <=100 )
         {
+        txSetFillColor (TX_BLACK);
         txClear ();
         int x = ROUND( 240 - t*2.4 );
         int y = 200 - t*2;
