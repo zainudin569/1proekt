@@ -547,6 +547,6 @@ void DrawFamily ()
                      ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
         t ++;
         txSleep (120);
-
+        }
     }
 
