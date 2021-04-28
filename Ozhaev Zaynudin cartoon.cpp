@@ -23,7 +23,7 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    //DrawMir();
+    DrawMir();
     DrawFamily ();
 
     txEnd();
