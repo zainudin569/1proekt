@@ -1,20 +1,20 @@
 #include "TXLib.h"
 
-void DrawFamily  ();
-void DrawMir     ();
-void DrawTrainFare(int t);
-void DrawTrain   (int x,     int y);
-void DrawHouse2  (int x,     int y);
-void DrawHouse3  (int x,     int y);
-void DrawTrain   (int x,     int y, double sizeX, double sizeY);
-void DrawTree1   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawTree2   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawSun     (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
-void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
+void DrawFamily     ();
+void DrawMir        ();
+void DrawTrainFare  (int t);
+void DrawTrain      (int x,     int y);
+void DrawHouse2     (int x,     int y);
+void DrawHouse3     (int x,     int y);
+void DrawTrain      (int x,     int y, double sizeX, double sizeY);
+void DrawTree1      (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawTree2      (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawSun        (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
+void DrawGirl       (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
                                     double eyes,  double smayl);
-void DrawMan     (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
+void DrawMan        (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
                                     double eyes,  double smayl);
-void DrawHouse1  (int x,     int y, COLORREF HoleColor);
+void DrawHouse1     (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
 int main()
@@ -535,6 +535,8 @@ void DrawFamily ()
                              { ROUND( x + 454*sizeX ), ROUND( y + 567*sizeY )},
                              { ROUND( x + 448*sizeX ), ROUND( y + 575*sizeY )}};
         txPolygon (EyeBoy2, 4);
+
+    //_________________________________________
 
         txSetColor     (RGB (255, 0, 0), 4);
         txSetFillColor (RGB (255, 0, 0));
