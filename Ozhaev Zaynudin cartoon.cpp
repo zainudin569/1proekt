@@ -536,14 +536,12 @@ void DrawFamily ()
                              { ROUND( x + 448*sizeX ), ROUND( y + 575*sizeY )}};
         txPolygon (EyeBoy2, 4);
 
-        //_________________________________________
-
-        txSetColor     (RGB (255, 0, 0), 3);
+        txSetColor     (RGB (255, 0, 0), 4);
         txSetFillColor (RGB (255, 0, 0));
-        POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
+        POINT Heart [3] =   {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
                              { ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )},
                              { ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )}};
-        txPolygon (ArmBoy, 3);
+        txPolygon (Heart, 3);
 
         txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),
                      ROUND( x + 415*sizeX ), ROUND( y + 405*sizeY ));
