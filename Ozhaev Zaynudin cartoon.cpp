@@ -2,7 +2,7 @@
 
 void DrawFamily  ();
 void DrawMir     ();
-void DraTrainFare(int t);
+void DrawTrainFare(int t);
 void DrawTrain   (int x,     int y);
 void DrawHouse2  (int x,     int y);
 void DrawHouse3  (int x,     int y);
@@ -31,7 +31,7 @@ int main()
     return 0;
     }
 
-void DraTrainFare(int t)
+void DrawTrainFare(int t)
     {
     if (t<=10)
         {
@@ -82,7 +82,7 @@ void DrawMir()
         DrawHouse3 (355, 120);
         DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
         DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
-        DraTrainFare(t);
+        DrawTrainFare(t);
         t ++;
         txSleep (120);
         }
@@ -554,4 +554,3 @@ void DrawFamily ()
         txSleep (60);
         }
     }
-
