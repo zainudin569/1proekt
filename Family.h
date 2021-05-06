@@ -1,10 +1,9 @@
 
-void DrawFamily  ();
+void DrawFamily  (int t);
 
-void DrawFamily ()
+void DrawFamily (int t)
     {
     int n = 0;
-    int t = 0;
     while ( n <= 5 )
         {
         while ( t <=120 )
