@@ -26,7 +26,11 @@ void DrawMan        (   int x,     int y, double sizeX, double sizeY, COLORREF M
                                        double eyes , double smayl);
 void DrawHouse1     (double x,  double y, double sizeX, double sizeY, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
-
+//{===========================================================================
+//! Рисуется небо и земля
+//!
+//! @param COLORREF SkyColor   COLORREF SkyColor - цвет небо которая зависит от положения сонлца
+//}===========================================================================
 int main()
 
     {
