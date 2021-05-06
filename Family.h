@@ -209,7 +209,7 @@ void DrawFamily ()
         txSleep (60);
         }
  */
-    int n = 0
+    int n = 0;
     while ( n <= 5 )
         {
         int t = 100;
