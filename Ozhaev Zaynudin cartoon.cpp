@@ -358,12 +358,12 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
 
 void DrawZoomHouse1()
 {
-int t = 1;
+int t = 0;
     while ( t <= 7 )
         {
         txSetFillColor (TX_BLACK);
         txClear ();
-        DrawHouse1 (320+t*100, 260+t*100, t, t, RGB (0, 80, 80));
+        DrawHouse1 (320+t*100, 260+t*100, 1+t, 1+t, RGB (0, 80, 80));
         t ++;
         txSleep (500);
         }
