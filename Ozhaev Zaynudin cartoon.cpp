@@ -35,8 +35,8 @@ int main()
     txBegin();
 
     DrawMir();
-    DrawFamily ();
-    //DrawZoomHouse1();
+    //DrawFamily ();
+    DrawZoomHouse1();
 
     txEnd();
 
