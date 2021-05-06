@@ -34,7 +34,7 @@ int main()
     txBegin();
 
     DrawMir();
-    DrawFamily ();
+    //DrawFamily ();
 
     txEnd();
 
