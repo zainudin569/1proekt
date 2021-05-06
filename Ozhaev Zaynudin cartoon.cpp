@@ -213,12 +213,12 @@ void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
 
     {
     txSetFillColor (RGB (255, 255, 255));
-    POINT stena [4] =  {{ x      , y       },
-                        { x - 120 * sizeX, y       },
-                        { x - 120 * sizeX, y - 140 * sizeY },
-                        { x      ,         y - 140 * sizeY }};
+    POINT stena [4] =  {{        x               ,        y                },
+                        { ROUND( x - 120 * sizeX),        y                },
+                        { ROUND( x - 120 * sizeX), ROUND( y - 140 * sizeY )},
+                        {        x               , ROUND( y - 140 * sizeY )}};
     txPolygon (stena, 4);
-    for (int corX = ( x - 110 * sizeX ); corX <= (x - 30 * sizeX); corX += 40 * sizeX )
+    for (int corX = ( ROUND( x - 110 * sizeX )); corX <= ( ROUND( x - 30 * sizeX )); corX += ROUND( 40 * sizeX ))
         {
         txSetFillColor (RGB (0, 0, 0));
         POINT Window [4] = {{ corX     , y - 120 },
