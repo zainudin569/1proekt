@@ -130,8 +130,7 @@ void DrawMan  (int x, int y, double sizeX, double sizeY, COLORREF ManColor,
 
     {
     txSetFillColor (RGB (240, 234, 182));
-    //txEllipse    (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
-    txRectangle (x, y, ROUND( x + 28*sizeX ), ROUND( y + 28*sizeY ));
+    txRectangle (x, y, ROUND( x + 30*sizeX ), ROUND( y + 30*sizeY ));
     txSetFillColor (ManColor);
     POINT Body [3] =  {{ ROUND( x +  1*sizeX ), ROUND( y + 30*sizeY )},
                       { ROUND( x + 29*sizeX ), ROUND( y + 30*sizeY )},
