@@ -11,7 +11,7 @@
 #include "TXLib.h"
 #include "Family.h"
 
-void DrawFamily  ();
+//void DrawFamily  ();
 void DrawMir     ();
 void DraTrainFare(int t);
 void DrawTrain   (int x,     int y);
