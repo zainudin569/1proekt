@@ -8,6 +8,7 @@ void DrawFamily ()
             while ( t <=120 )
                 {
                 if (t<=100)
+                    {
                     txSetFillColor (TX_BLACK);
                     txClear ();
                     int x = ROUND( 240 - t*2.4 );
@@ -210,8 +211,10 @@ void DrawFamily ()
                                  ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
                     t ++;
                     txSleep (60);
+                    }
                 else
-                        int x = ROUND( 240 - t*2.4 );
+                    {
+                    int x = ROUND( 240 - t*2.4 );
                     int y = 200 - t*2;
                     double sizeX = 0.006*t;
                     double sizeY = 0.0037*t;
@@ -229,6 +232,7 @@ void DrawFamily ()
                                  ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));
                     t ++;
                     txSleep (20);
+                    }
                 }
 
    /* int n = 0;

@@ -3,39 +3,6 @@ C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h: In function 'void DrawFami
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:2:6: warning: no previous declaration for 'void DrawFamily()' [-Wmissing-declarations]
  void DrawFamily ()
       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:213:17: error: 'else' without a previous 'if'
-                 else
-                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:214:29: error: redeclaration of 'int x'
-                         int x = ROUND( 240 - t*2.4 );
-                             ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:13:25: error: 'int x' previously declared here
-                     int x = ROUND( 240 - t*2.4 );
-                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:215:25: error: redeclaration of 'int y'
-                     int y = 200 - t*2;
-                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:14:25: error: 'int y' previously declared here
-                     int y = 200 - t*2;
-                         ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:216:28: error: redeclaration of 'double sizeX'
-                     double sizeX = 0.006*t;
-                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:15:28: error: 'double sizeX' previously declared here
-                     double sizeX = 0.006*t;
-                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:217:28: error: redeclaration of 'double sizeY'
-                     double sizeY = 0.0037*t;
-                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:16:28: error: 'double sizeY' previously declared here
-                     double sizeY = 0.0037*t;
-                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:220:36: error: redeclaration of 'POINT ArmBoy [3]'
-                     POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
-                                    ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Family.h:201:27: error: 'POINT ArmBoy [3]' previously declared here
-                     POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
-                           ^
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:33:5: error: a function-definition is not allowed here before '{' token
      {
      ^
@@ -46,5 +13,5 @@ C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:356:5: e
      }
      ^
 ---------------------------------------------------------------------------------------------
-[06.05.2021 16:24:42,36 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
+[06.05.2021 16:27:00,32 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt> g++.exe "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp" -o "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC
