@@ -39,12 +39,12 @@ int main()
 
     {
     txCreateWindow (480, 400);
-    //txBegin();
+    txBegin();
 
     DrawMir();
     DrawZoomHouse1();
 
-    //txEnd();
+    txEnd();
 
     return 0;
     }
@@ -90,7 +90,6 @@ void DrawMir()
     int t = 0;
     while ( t <=100 )
         {
-        txBegin();
         txClear ();
 
         DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
@@ -107,7 +106,6 @@ void DrawMir()
         DrawTree1  (  3, 163, 1, 1, RGB ( 50, 200,   0));
         DraTrainFare(t);
         t ++;
-        txEnd();
         txSleep (120);
         }
 
@@ -363,7 +361,6 @@ void DrawZoomHouse1()
             {
             if (t <=100 )
                 {
-                txBegin();
                 txClear ();
                 DrawBackground (RGB (0, 80, 80));
                 DrawHouse1 (320 + t*14.2, 260 + t*22.5 , 1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
@@ -566,7 +563,6 @@ void DrawZoomHouse1()
                 txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
                              ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
                 t ++;
-                txEnd();
                 txSleep (60);
                 }
             else
@@ -588,7 +584,6 @@ void DrawZoomHouse1()
                 txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 354*sizeY ),
                              ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));
                 t ++;
-                txEnd();
                 txSleep (20);
                 }
             }
