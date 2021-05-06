@@ -359,10 +359,10 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
 void DrawZoomHouse1()
 {
 int t = 1;
-    while ( t <=100 )
+    while ( t <=10 )
         {
         txClear ();
-        DrawHouse1 (320, 260, t, t, RGB (0, 80, 80));
+        DrawHouse1 (320, 260, t/10, t/10, RGB (0, 80, 80));
         t ++;
         txSleep (120);
         }
