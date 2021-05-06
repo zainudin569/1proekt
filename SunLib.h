@@ -1,16 +1,16 @@
 //{===========================================================================
-//! https://github.com/zainudin569/1proekt.git
-//!
-//!
-//!
-//! @author     Ожаев Зайнудин
-//! @date       2021
-//!
-//!
+/*! @par Ссылка на github.com
+         https://github.com/zainudin569/1proekt.git
+    @par Рисуем солнце:
+    @param x        - координта центра солца по оси x
+    @param y        - координта центра солца по оси y
+    @param sizeX    - размер солнца по оси Х
+    @param sizeY    - размер солнца по оси Y
+    @param SunColor - цвет соллца
+
+
+*/
 //}===========================================================================
-
-void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor);
-
 
 void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
 

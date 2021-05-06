@@ -2,21 +2,20 @@
 //! @mainpage
 //!
 //!   "Мультик не о чём!"
-//!
-//!   https://github.com/zainudin569/1proekt.git
+//! @par Ссылка на github.com
+//!      https://github.com/zainudin569/1proekt.git
 //!
 //! @author     Ожаев Зайнудин
-//! @date       2021
+//! @date       Аксай 2021 год.
 //!
 //!
 //!
 //!
 //!  @par     Функции:
 //!                         - @ref DrawMir()
+//!                           @image html im1.jpg
 //!                         - @ref DrawZoomHouse1()
-//!
-//!
-//! @image html im1.jpg
+//!                           @image html im2.jpg
 //! @note Познание нового!
 //}===========================================================================
 #include "TXLib.h"
@@ -37,11 +36,6 @@ void DrawMan        (   int x,     int y, double sizeX, double sizeY, COLORREF M
                                        double eyes , double smayl);
 void DrawHouse1     (double x,  double y, double sizeX, double sizeY, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
-//{===========================================================================
-//! Рисуется небо и земля
-//!
-//! @param COLORREF SkyColor   COLORREF SkyColor - цвет небо которая зависит от положения сонлца
-//}===========================================================================
 int main()
 
     {
@@ -55,7 +49,11 @@ int main()
 
     return 0;
     }
-
+//{===========================================================================
+//! @par Рисуется проезд поезда
+//!
+//!
+//}===========================================================================
 void DraTrainFare(int t)
     {
     if (t<=10)
@@ -191,6 +189,11 @@ void DrawTree2 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
     txPolygon (Tree2, 7);
     }
 
+//{===========================================================================
+//! @par Рисуется небо и земля
+//!
+//! @param SkyColor   - цвет неба которая зависит от положения солнца
+//}===========================================================================
 void DrawBackground (COLORREF SkyColor)
 
     {
