@@ -221,7 +221,7 @@ void DrawFamily ()
             int y = 200 - t*2;
             double sizeX = 0.006*t;
             double sizeY = 0.0037*t;
-            txSetColor     (RGB (255, 0, 0), 4);
+            txSetColor     (RGB (255, 0, 0), 5);
             txSetFillColor (RGB (255, 0, 0));
             POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
                                  { ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )},
