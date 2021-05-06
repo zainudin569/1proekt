@@ -12,7 +12,7 @@ void DrawFamily ()
             {
             if (t <=100 )
                 {
-                txSetFillColor (TX_BLACK);
+                //txSetFillColor (TX_BLACK);
                 txClear ();
                 txSetColor     (RGB (255, 255, 255), 1);
                 txSetFillColor (RGB (180, 180, 180));
