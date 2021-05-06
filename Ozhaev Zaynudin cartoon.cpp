@@ -363,7 +363,7 @@ int t = 0;
         {
         txSetFillColor (TX_BLACK);
         txClear ();
-        DrawHouse1 (320+t*5.7, 260+t*12, 1+t*0.15, 1+t*0.15, RGB (0, 80, 80));
+        DrawHouse1 (320+t*10.14, 260+t*18, 1+t*0.15, 1+t*0.15, RGB (0, 80, 80));
         t ++;
         txSleep (100);
         }
