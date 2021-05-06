@@ -25,7 +25,7 @@ void DrawGirl       (int x,     int y, double sizeX, double sizeY, COLORREF Girl
                                        double eyes,  double smayl);
 void DrawMan        (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
                                        double eyes,  double smayl);
-void DrawHouse1     (int x,     int y, double sizeX, double sizeY, COLORREF HoleColor)
+void DrawHouse1     (int x,     int y, double sizeX, double sizeY, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
 int main()

@@ -1,24 +1,7 @@
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:29:1: error: expected initializer before 'void'
- void DrawBackground (COLORREF SkyColor);
- ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawMir()':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:86:54: error: 'DrawBackground' was not declared in this scope
-                                 180 - pow(t-50,2)/25));
-                                                      ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:93:88: error: 'DrawHouse1' was not declared in this scope
-         DrawHouse1 (320, 260, 1, 1, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
-                                                                                        ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawBackground(COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:202:6: warning: no previous declaration for 'void DrawBackground(COLORREF)' [-Wmissing-declarations]
- void DrawBackground (COLORREF SkyColor)
-      ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawHouse1(int, int, double, double, COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:212:6: warning: no previous declaration for 'void DrawHouse1(int, int, double, double, COLORREF)' [-Wmissing-declarations]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:212:6: warning: unused parameter 'sizeX' [-Wunused-parameter]
  void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
       ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: At global scope:
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:212:6: warning: unused parameter 'sizeX' [-Wunused-parameter]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:212:6: warning: unused parameter 'sizeY' [-Wunused-parameter]
 ---------------------------------------------------------------------------------------------
-[06.05.2021 17:01:22,58 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
+[06.05.2021 17:01:38,71 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt> g++.exe "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp" -o "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC
