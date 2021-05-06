@@ -14,6 +14,11 @@ void DrawFamily ()
                 {
                 txSetFillColor (TX_BLACK);
                 txClear ();
+                txSetColor     (RGB (255, 255, 255), 1);
+                txSetFillColor (RGB (180, 180, 180));
+                txRectangle (0, 150, 480, 400);
+                txSetFillColor (SkyColor);
+                txRectangle (0, 0, 480, 150);
                 txSetColor  (RGB (255, 255, 255), 1);
                 DrawHouse ( ROUND( 320 + t*14.2 ), ROUND( 260 + t*22.5 ),
                     1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
