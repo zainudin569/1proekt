@@ -9,7 +9,7 @@
 //
 //}===========================================================================
 #include "TXLib.h"
-//#include "Family.h"
+#include "Sun.h"
 
 void DrawMir        ();
 void DrawZoomHouse1 ();
@@ -20,7 +20,7 @@ void DrawHouse3     (   int x,     int y);
 void DrawTrain      (   int x,     int y, double sizeX, double sizeY);
 void DrawTree1      (   int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
 void DrawTree2      (   int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawSun        (   int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
+//void DrawSun        (   int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
 void DrawGirl       (   int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
                                        double eyes , double smayl);
 void DrawMan        (   int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
@@ -177,7 +177,7 @@ void DrawTree2 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
     txPolygon (Tree2, 7);
     }
 
-void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
+/*void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
 
     {
     txSetFillColor (SunColor);
@@ -196,7 +196,7 @@ void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
     txSetFillColor (SunColor);
     txEllipse ( ROUND( x - 27*sizeX ), ROUND( y - 27*sizeY ),
                 ROUND( x + 27*sizeX ), ROUND( y + 27*sizeY ));
-    }
+    }*/
 
 void DrawBackground (COLORREF SkyColor)
 
