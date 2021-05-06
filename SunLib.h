@@ -1,12 +1,12 @@
 //{===========================================================================
-//! @file       https://github.com/zainudin569/1proekt.git
-//!
-//! @brief      Мультфильм "Мультик не о чём!"
+//! https://github.com/zainudin569/1proekt.git
 //!
 //!
-//! @date       2021
+//!
 //! @author     Ожаев Зайнудин
-//
+//! @date       2021
+//!
+//!
 //}===========================================================================
 
 void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor);
