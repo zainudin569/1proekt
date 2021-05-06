@@ -232,6 +232,7 @@ void DrawFamily ()
                                  ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));
                     t ++;
                     txSleep (20);
+                    int n = 100;
                     }
                 }
 
