@@ -2,7 +2,7 @@
 void DrawFamily ()
     {
 
-    int t = 0;
+    /*int t = 0;
     while ( t <=100 )
         {
         txSetFillColor (TX_BLACK);
@@ -193,6 +193,32 @@ void DrawFamily ()
 
         //_________________________________________
 
+        txSetColor     (RGB (255, 0, 0), 3);
+        txSetFillColor (RGB (255, 0, 0));
+        POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
+                             { ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )},
+                             { ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )}};
+        txPolygon (ArmBoy, 3);
+
+        txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),
+                     ROUND( x + 415*sizeX ), ROUND( y + 405*sizeY ));
+
+        txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
+                     ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
+        t ++;
+        txSleep (60);
+        }
+ */
+
+    int t = 0;
+    while ( t <=100 )
+        {
+        txSetFillColor (TX_BLACK);
+        txClear ();
+        int x = ROUND( 240 - t*2.4 );
+        int y = 200 - t*2;
+        double sizeX = 0.006*t;
+        double sizeY = 0.0037*t;
         txSetColor     (RGB (255, 0, 0), 3);
         txSetFillColor (RGB (255, 0, 0));
         POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
