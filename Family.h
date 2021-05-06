@@ -229,8 +229,8 @@ void DrawFamily ()
         txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),
                      ROUND( x + 415*sizeX ), ROUND( y + 405*sizeY ));
 
-        txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
-                     ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
+        txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 353*sizeY ),
+                     ROUND( x + 463*sizeX ), ROUND( y + 403*sizeY ));
         t ++;
         txSleep (60);
         }
