@@ -11,7 +11,6 @@
 #include "TXLib.h"
 #include "Family.h"
 
-//void DrawFamily  ();
 void DrawMir     ();
 void DraTrainFare(int t);
 void DrawTrain   (int x,     int y);
@@ -34,7 +33,7 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    //DrawMir();
+    DrawMir();
     DrawFamily ();
 
     txEnd();
