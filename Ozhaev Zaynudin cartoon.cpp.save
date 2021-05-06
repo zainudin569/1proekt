@@ -2,22 +2,20 @@
 //! @mainpage
 //!
 //!   "Мультик не о чём!"
+//!
 //! @par Ссылка на github.com
 //!      https://github.com/zainudin569/1proekt.git
 //!
 //! @author     Ожаев Зайнудин
-//! @date       Аксай 2021
-//!
-//!
-//!
+//! @date       Аксай 2021 год.
 //!
 //!  @par     Функции:
 //!                         - @ref DrawMir()
+//!                           @image html im1.jpg
+//!                           @image html im2.jpg
 //!                         - @ref DrawZoomHouse1()
-//!
-//!
-//! @image html im1.jpg
-//! @note Познание нового!
+//!                           @image html im3.jpg
+//! @note Любите! И цените Счастье! Оно рождается в Семье! Что может быть Семьи дороже на этой сказочной земле.
 //}===========================================================================
 #include "TXLib.h"
 #include "SunLib.h"
@@ -41,12 +39,12 @@ int main()
 
     {
     txCreateWindow (480, 400);
-    txBegin();
+    //txBegin();
 
     DrawMir();
     DrawZoomHouse1();
 
-    txEnd();
+    //txEnd();
 
     return 0;
     }
@@ -92,6 +90,7 @@ void DrawMir()
     int t = 0;
     while ( t <=100 )
         {
+        txBegin();
         txClear ();
 
         DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
@@ -108,6 +107,7 @@ void DrawMir()
         DrawTree1  (  3, 163, 1, 1, RGB ( 50, 200,   0));
         DraTrainFare(t);
         t ++;
+        txEnd();
         txSleep (120);
         }
 
@@ -565,6 +565,7 @@ void DrawZoomHouse1()
                 txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
                              ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
                 t ++;
+                txEnd();
                 txSleep (60);
                 }
             else
@@ -586,6 +587,7 @@ void DrawZoomHouse1()
                 txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 354*sizeY ),
                              ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));
                 t ++;
+                txEnd();
                 txSleep (20);
                 }
             }
