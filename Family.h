@@ -9,7 +9,7 @@ void DrawFamily ()
         {
         while ( t <=120 )
             {
-            if (t<=100)
+            if (t <=100 )
                 {
                 txSetFillColor (TX_BLACK);
                 txClear ();
