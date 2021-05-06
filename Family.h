@@ -1,9 +1,10 @@
 
-void DrawFamily  (int t);
+void DrawFamily  ();
 
-void DrawFamily (int t)
+void DrawFamily ()
     {
     int n = 0;
+    int t = 0;
     while ( n <= 5 )
         {
         while ( t <=120 )
@@ -12,6 +13,8 @@ void DrawFamily (int t)
                 {
                 txSetFillColor (TX_BLACK);
                 txClear ();
+                DrawHouse1 ( ROUND( 320 + t*14.2 ), ROUND( 260 + t*22.5 ),
+                    1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
                 int x = ROUND( 240 - t*2.4 );
                 int y = 200 - t*2;
                 double sizeX = 0.006*t;
