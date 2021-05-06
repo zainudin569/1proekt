@@ -369,8 +369,8 @@ void DrawZoomHouse1()
                 txClear ();
                 DrawBackground (RGB (0, 80, 80));
                 DrawHouse1 (320 + t*14.2, 260 + t*22.5 , 1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
-                int x = ROUND( 260 - t*2.7 );
-                int y = 165 - t*1.7;
+                int x = ROUND( 260 - t*2.6 );
+                int y = 163 - t*1.7;
                 double sizeX = 0.006*t;
                 double sizeY = 0.0037*t;
 
