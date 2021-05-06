@@ -363,6 +363,7 @@ void DrawZoomHouse1()
             {
             if (t <=100 )
                 {
+                txBegin();
                 txClear ();
                 DrawBackground (RGB (0, 80, 80));
                 DrawHouse1 (320 + t*14.2, 260 + t*22.5 , 1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
@@ -565,6 +566,7 @@ void DrawZoomHouse1()
                 txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
                              ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));
                 t ++;
+                txEnd();
                 txSleep (60);
                 }
             else
@@ -586,6 +588,7 @@ void DrawZoomHouse1()
                 txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 354*sizeY ),
                              ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));
                 t ++;
+                txEnd();
                 txSleep (20);
                 }
             }
