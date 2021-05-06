@@ -243,7 +243,7 @@ void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
     txPolygon (Attic, 4);
 
     txSetFillColor (HoleColor);
-    txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY, 10 ));
+    txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY), 10 );
     }
 
 void DrawHouse2 (int x, int y)
