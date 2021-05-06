@@ -365,6 +365,6 @@ int t = 1;
         txClear ();
         DrawHouse1 (320+t*10, 260+t*10, t, t, RGB (0, 80, 80));
         t ++;
-        txSleep (1000);
+        txSleep (500);
         }
 }
