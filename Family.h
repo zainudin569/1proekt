@@ -216,7 +216,7 @@ void DrawFamily ()
         while ( t <= 120 )
             {
             txSetFillColor (TX_BLACK);
-            txClear ();
+           // txClear ();
             int x = ROUND( 240 - t*2.4 );
             int y = 200 - t*2;
             double sizeX = 0.006*t;
