@@ -254,8 +254,8 @@ void DrawHouse (double x, double y, double sizeX, double sizeY, COLORREF HoleCol
 
     {
     txSetFillColor (RGB (255, 255, 255));
-    POINT stena [4] =  {{        x                ,        y                },
-                        { ROUND( x - 120 * sizeX ),        y                },
+    POINT stena [4] =  {{ ROUND( x               ), ROUND( y               )},
+                        { ROUND( x - 120 * sizeX ), ROUND( y               )},
                         { ROUND( x - 120 * sizeX ), ROUND( y - 140 * sizeY )},
                         { ROUND( x               ), ROUND( y - 140 * sizeY )}};
     txPolygon (stena, 4);
@@ -270,7 +270,7 @@ void DrawHouse (double x, double y, double sizeX, double sizeY, COLORREF HoleCol
         }
 
     txSetFillColor (RGB (0, 0, 0));
-    POINT Door [4] =       {{ ROUND( x - 95 * sizeX ),        y               },
+    POINT Door [4] =       {{ ROUND( x - 95 * sizeX ), ROUND( y              )},
                             { ROUND( x - 95 * sizeX ), ROUND( y - 50 * sizeY )},
                             { ROUND( x - 50 * sizeX ), ROUND( y - 50 * sizeY )},
                             { ROUND( x - 50 * sizeX ), ROUND( y              )}};
