@@ -1,4 +1,6 @@
 
+void DrawFamily  ();
+
 void DrawFamily ()
     {
     int n = 0;
