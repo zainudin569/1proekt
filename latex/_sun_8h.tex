@@ -1,0 +1,46 @@
+\hypertarget{_sun_8h}{}\doxysection{Файл Sun.\+h}
+\label{_sun_8h}\index{Sun.h@{Sun.h}}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_sun_8h_a9a95e9439d334bfcfddd8d177607ac8e}{Draw\+Sun}} (int x, double y, double sizeX, double sizeY, COLORREF Sun\+Color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{_sun_8h_a9a95e9439d334bfcfddd8d177607ac8e}\label{_sun_8h_a9a95e9439d334bfcfddd8d177607ac8e}} 
+\index{Sun.h@{Sun.h}!DrawSun@{DrawSun}}
+\index{DrawSun@{DrawSun}!Sun.h@{Sun.h}}
+\doxysubsubsection{\texorpdfstring{DrawSun()}{DrawSun()}}
+{\footnotesize\ttfamily void Draw\+Sun (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{double}]{y,  }\item[{double}]{sizeX,  }\item[{double}]{sizeY,  }\item[{COLORREF}]{Sun\+Color }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле Sun.\+h строка 15
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18     txSetFillColor (SunColor);}
+\DoxyCodeLine{19     POINT Sun [8] = \{\{ ROUND( x -\/  2*sizeX ), ROUND( y -\/ 50*sizeY )\},}
+\DoxyCodeLine{20                      \{ ROUND( x -\/ 37*sizeX ), ROUND( y + 35*sizeY )\},}
+\DoxyCodeLine{21                      \{ ROUND( x + 50*sizeX ), ROUND( y            )\},}
+\DoxyCodeLine{22                      \{ ROUND( x -\/ 37*sizeX ), ROUND( y -\/ 35*sizeY )\},}
+\DoxyCodeLine{23                      \{ ROUND( x -\/  2*sizeX ), ROUND( y + 50*sizeY )\},}
+\DoxyCodeLine{24                      \{ ROUND( x + 33*sizeX ), ROUND( y -\/ 35*sizeY )\},}
+\DoxyCodeLine{25                      \{ ROUND( x -\/ 50*sizeX ), ROUND( y            )\},}
+\DoxyCodeLine{26                      \{ ROUND( x + 33*sizeX ), ROUND( y + 35*sizeY )\}\};}
+\DoxyCodeLine{27     txPolygon (Sun, 8);}
+\DoxyCodeLine{28     txSetFillColor (RGB (0, 180, 180));}
+\DoxyCodeLine{29     txEllipse ( ROUND( x -\/ 32*sizeX ), ROUND( y -\/ 32*sizeY ),}
+\DoxyCodeLine{30                 ROUND( x + 32*sizeX ), ROUND( y + 32*sizeY ));}
+\DoxyCodeLine{31     txSetFillColor (SunColor);}
+\DoxyCodeLine{32     txEllipse ( ROUND( x -\/ 27*sizeX ), ROUND( y -\/ 27*sizeY ),}
+\DoxyCodeLine{33                 ROUND( x + 27*sizeX ), ROUND( y + 27*sizeY ));}
+\DoxyCodeLine{34     \}}
+
+\end{DoxyCode}
+
+
+Используется в Draw\+Mir().
+
