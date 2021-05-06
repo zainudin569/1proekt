@@ -234,7 +234,7 @@ void DrawFamily ()
                 txSleep (20);
                 }
             }
-        int t = 100;
+        t = 100;
         n ++;
         }
     }
