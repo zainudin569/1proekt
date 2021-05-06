@@ -1,5 +1,6 @@
 
 void DrawFamily  ();
+void DrawHouse1  (double x,     double y, double sizeX, double sizeY, COLORREF HoleColor);
 
 void DrawFamily ()
     {
