@@ -1,15 +1,17 @@
 //{===========================================================================
-//! @brief      Мультфильм "Мультик не о чём!"
-//!
-//! @file       https://github.com/zainudin569/1proekt.git
-//!
-//!
-//!
-//!
-//! @date       2021
-//! @author     Ожаев Зайнудин
 //! @mainpage
-//!                     Функции:
+//!
+//!   "Мультик не о чём!"
+//! @par Ссылка на github.com
+//!      https://github.com/zainudin569/1proekt.git
+//!
+//! @author     Ожаев Зайнудин
+//! @date       Аксай 2021
+//!
+//!
+//!
+//!
+//!  @par     Функции:
 //!                         - @ref DrawMir()
 //!                         - @ref DrawZoomHouse1()
 //!
@@ -35,11 +37,6 @@ void DrawMan        (   int x,     int y, double sizeX, double sizeY, COLORREF M
                                        double eyes , double smayl);
 void DrawHouse1     (double x,  double y, double sizeX, double sizeY, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
-//{===========================================================================
-//! Рисуется небо и земля
-//!
-//! @param COLORREF SkyColor   COLORREF SkyColor - цвет небо которая зависит от положения сонлца
-//}===========================================================================
 int main()
 
     {
@@ -53,7 +50,11 @@ int main()
 
     return 0;
     }
-
+//{===========================================================================
+//! @par Рисуется проезд поезда
+//!
+//!
+//}===========================================================================
 void DraTrainFare(int t)
     {
     if (t<=10)
@@ -189,6 +190,11 @@ void DrawTree2 (int x, int y, double sizeX, double sizeY, COLORREF TreeColor)
     txPolygon (Tree2, 7);
     }
 
+//{===========================================================================
+//! @par Рисуется небо и земля
+//!
+//! @param SkyColor   - цвет неба которая зависит от положения солнца
+//}===========================================================================
 void DrawBackground (COLORREF SkyColor)
 
     {

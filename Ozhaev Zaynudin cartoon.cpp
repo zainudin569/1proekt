@@ -2,21 +2,20 @@
 //! @mainpage
 //!
 //!   "Мультик не о чём!"
+//!
 //! @par Ссылка на github.com
 //!      https://github.com/zainudin569/1proekt.git
 //!
 //! @author     Ожаев Зайнудин
 //! @date       Аксай 2021 год.
 //!
-//!
-//!
-//!
 //!  @par     Функции:
 //!                         - @ref DrawMir()
 //!                           @image html im1.jpg
-//!                         - @ref DrawZoomHouse1()
 //!                           @image html im2.jpg
-//! @note Познание нового!
+//!                         - @ref DrawZoomHouse1()
+//!                           @image html im3.jpg
+//! @note Любите! И цените Счастье! Оно рождается в Семье! Что может быть Семьи дороже на этой сказочной земле.
 //}===========================================================================
 #include "TXLib.h"
 #include "SunLib.h"
