@@ -214,36 +214,36 @@ void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
     {
     txSetFillColor (RGB (255, 255, 255));
     POINT stena [4] =  {{ x      , y       },
-                        { x - 120, y       },
-                        { x - 120, y - 140 },
-                        { x      , y - 140 }};
+                        { x - 120 * sizeX, y       },
+                        { x - 120 * sizeX, y - 140 * sizeY },
+                        { x      ,         y - 140 * sizeY }};
     txPolygon (stena, 4);
-    for (int corX = ( x - 110 ); corX <= (x - 30); corX += 40 )
+    for (int corX = ( x - 110 * sizeX ); corX <= (x - 30 * sizeX); corX += 40 * sizeX )
         {
         txSetFillColor (RGB (0, 0, 0));
         POINT Window [4] = {{ corX     , y - 120 },
                             { corX     , y - 100 },
-                            { corX + 20, y - 100 },
-                            { corX + 20, y - 120 }};
+                            { corX + 20 * sizeX, y - 100 * sizeY },
+                            { corX + 20 * sizeX, y - 120 * sizeY }};
         txPolygon (Window, 4);
         }
 
     txSetFillColor (RGB (0, 0, 0));
-    POINT Door [4] =       {{ x - 95, y      },
-                            { x - 95, y - 50 },
-                            { x - 50, y - 50 },
-                            { x - 50, y      }};
+    POINT Door [4] =       {{ x - 95 * sizeX, y      },
+                            { x - 95 * sizeX, y - 50 * sizeY },
+                            { x - 50 * sizeX, y - 50 * sizeY },
+                            { x - 50 * sizeX, y      }};
     txPolygon (Door, 4);
 
     txSetFillColor (RGB (230, 230, 230));
-    POINT Attic [4] =      {{ x - 65, y - 140 },
-                            { x - 65, y - 180 },
-                            { x - 30, y - 180 },
-                            { x - 30, y - 140 }};
+    POINT Attic [4] =      {{ x - 65 * sizeX, y - 140 * sizeY },
+                            { x - 65 * sizeX, y - 180 * sizeY },
+                            { x - 30 * sizeX, y - 180 * sizeY },
+                            { x - 30 * sizeX, y - 140 * sizeY }};
     txPolygon (Attic, 4);
 
     txSetFillColor (HoleColor);
-    txCircle ( x - 47, y - 160, 10 );
+    txCircle ( x - 47 * sizeX, y - 160 * sizeY, 10 );
     }
 
 void DrawHouse2 (int x, int y)
