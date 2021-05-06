@@ -14,6 +14,7 @@ void DrawFamily ()
                 {
                 txSetFillColor (TX_BLACK);
                 txClear ();
+                txSetColor  (RGB (0, 0, 0), 1);
                 DrawHouse ( ROUND( 320 + t*14.2 ), ROUND( 260 + t*22.5 ),
                     1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
                 int x = ROUND( 240 - t*2.4 );
