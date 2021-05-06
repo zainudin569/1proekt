@@ -221,8 +221,8 @@ void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
     for (int corX = ( ROUND( x - 110 * sizeX )); corX <= ( ROUND( x - 30 * sizeX )); corX += ROUND( 40 * sizeX ))
         {
         txSetFillColor (RGB (0, 0, 0));
-        POINT Window [4] = {{ corX     , y - 120 },
-                            { corX     , y - 100 },
+        POINT Window [4] = {{ corX     , y - 120 * sizeY },
+                            { corX     , y - 100 * sizeY },
                             { corX + 20 * sizeX, y - 100 * sizeY },
                             { corX + 20 * sizeX, y - 120 * sizeY }};
         txPolygon (Window, 4);
