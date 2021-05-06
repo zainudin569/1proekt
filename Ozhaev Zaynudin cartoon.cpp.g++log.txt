@@ -1,84 +1,12 @@
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:246:69: error: macro "ROUND" passed 2 arguments, but takes just 1
+     txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY, 10 ));
+                                                                     ^
+In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
+                 from C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:11:
 C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp: In function 'void DrawHouse1(int, int, double, double, COLORREF)':
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:224:44: warning: narrowing conversion of '((double)y - (sizeY * 1.2e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-         POINT Window [4] = {{ corX     , y - 120 * sizeY },
-                                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:224:44: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:225:44: warning: narrowing conversion of '((double)y - (sizeY * 1.0e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { corX     , y - 100 * sizeY },
-                                            ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:225:44: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:226:36: warning: narrowing conversion of '((double)corX + (sizeX * 2.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { corX + 20 * sizeX, y - 100 * sizeY },
-                                    ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:226:36: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:226:52: warning: narrowing conversion of '((double)y - (sizeY * 1.0e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { corX + 20 * sizeX, y - 100 * sizeY },
-                                                    ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:226:52: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:227:36: warning: narrowing conversion of '((double)corX + (sizeX * 2.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { corX + 20 * sizeX, y - 120 * sizeY }};
-                                    ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:227:36: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:227:52: warning: narrowing conversion of '((double)y - (sizeY * 1.2e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { corX + 20 * sizeX, y - 120 * sizeY }};
-                                                    ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:227:52: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:232:33: warning: narrowing conversion of '((double)x - (sizeX * 9.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Door [4] =       {{ x - 95 * sizeX, y      },
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:232:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:233:33: warning: narrowing conversion of '((double)x - (sizeX * 9.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 95 * sizeX, y - 50 * sizeY },
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:233:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:233:49: warning: narrowing conversion of '((double)y - (sizeY * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 95 * sizeX, y - 50 * sizeY },
-                                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:233:49: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:234:33: warning: narrowing conversion of '((double)x - (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 50 * sizeX, y - 50 * sizeY },
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:234:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:234:49: warning: narrowing conversion of '((double)y - (sizeY * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 50 * sizeX, y - 50 * sizeY },
-                                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:234:49: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:235:33: warning: narrowing conversion of '((double)x - (sizeX * 5.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 50 * sizeX, y      }};
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:235:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:239:33: warning: narrowing conversion of '((double)x - (sizeX * 6.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Attic [4] =      {{ x - 65 * sizeX, y - 140 * sizeY },
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:239:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:239:49: warning: narrowing conversion of '((double)y - (sizeY * 1.4e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-     POINT Attic [4] =      {{ x - 65 * sizeX, y - 140 * sizeY },
-                                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:239:49: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:240:33: warning: narrowing conversion of '((double)x - (sizeX * 6.5e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 65 * sizeX, y - 180 * sizeY },
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:240:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:240:49: warning: narrowing conversion of '((double)y - (sizeY * 1.8e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 65 * sizeX, y - 180 * sizeY },
-                                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:240:49: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:241:33: warning: narrowing conversion of '((double)x - (sizeX * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 30 * sizeX, y - 180 * sizeY },
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:241:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:241:49: warning: narrowing conversion of '((double)y - (sizeY * 1.8e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 30 * sizeX, y - 180 * sizeY },
-                                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:241:49: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:242:33: warning: narrowing conversion of '((double)x - (sizeX * 3.0e+1))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 30 * sizeX, y - 140 * sizeY }};
-                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:242:33: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:242:49: warning: narrowing conversion of '((double)y - (sizeY * 1.4e+2))' from 'double' to 'LONG {aka long int}' inside { } [-Wnarrowing]
-                             { x - 30 * sizeX, y - 140 * sizeY }};
-                                                 ^
-C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:242:49: warning: conversion to 'LONG {aka long int}' from 'double' may alter its value [-Wconversion]
+C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp:246:41: error: 'ROUND' was not declared in this scope
+     txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY, 10 ));
+                                         ^
 ---------------------------------------------------------------------------------------------
-[06.05.2021 17:13:28,69 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
+[06.05.2021 17:17:31,99 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
 C:\Users\zainu\Desktop\курс\1proekt\1proekt> g++.exe "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.cpp" -o "C:\Users\zainu\Desktop\курс\1proekt\1proekt\Ozhaev Zaynudin cartoon.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC
