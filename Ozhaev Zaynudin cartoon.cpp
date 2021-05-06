@@ -367,6 +367,7 @@ int t = 0;
         txClear ();
         DrawHouse1 ( ROUND( 320 + t*14.2 ), ROUND( 260 + t*22.5 ),
                     1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
+        DrawFamily (t);
         t ++;
 
         txEnd();
