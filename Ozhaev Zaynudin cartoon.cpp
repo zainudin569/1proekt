@@ -11,20 +11,21 @@
 #include "TXLib.h"
 #include "Family.h"
 
-void DrawMir     ();
-void DraTrainFare(int t);
-void DrawTrain   (int x,     int y);
-void DrawHouse2  (int x,     int y);
-void DrawHouse3  (int x,     int y);
-void DrawTrain   (int x,     int y, double sizeX, double sizeY);
-void DrawTree1   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawTree2   (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawSun     (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
-void DrawGirl    (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
-                                    double eyes,  double smayl);
-void DrawMan     (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
-                                    double eyes,  double smayl);
-void DrawHouse1  (int x,     int y, COLORREF HoleColor);
+void DrawMir        ();
+void DrawZoomHouse1 ();
+void DraTrainFare   (int t);
+void DrawTrain      (int x,     int y);
+void DrawHouse2     (int x,     int y);
+void DrawHouse3     (int x,     int y);
+void DrawTrain      (int x,     int y, double sizeX, double sizeY);
+void DrawTree1      (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawTree2      (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawSun        (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
+void DrawGirl       (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
+                                       double eyes,  double smayl);
+void DrawMan        (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
+                                       double eyes,  double smayl);
+void DrawHouse1     (int x,     int y, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
 int main()
@@ -34,7 +35,8 @@ int main()
     txBegin();
 
     DrawMir();
-    //DrawFamily ();
+    DrawFamily ();
+    DrawZoomHouse1;
 
     txEnd();
 
@@ -354,4 +356,7 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
         }
     }
 
-
+void DrawZoomHouse1()
+{
+DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
+}
