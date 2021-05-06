@@ -361,6 +361,7 @@ void DrawZoomHouse1()
 int t = 1;
     while ( t <=5 )
         {
+        txSetFillColor (TX_BLACK);
         txClear ();
         DrawHouse1 (320+t*10, 260+t*10, t, t, RGB (0, 80, 80));
         t ++;
