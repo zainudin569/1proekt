@@ -243,7 +243,7 @@ void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
     txPolygon (Attic, 4);
 
     txSetFillColor (HoleColor);
-    txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY), 10 );
+    txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY ), 10 );
     }
 
 void DrawHouse2 (int x, int y)
@@ -359,10 +359,10 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
 void DrawZoomHouse1()
 {
 int t = 1;
-    while ( t <=10 )
+    while ( t <=100 )
         {
         txClear ();
-        DrawHouse1 (320, 260, 1, t, RGB (0, 80, 80));
+        DrawHouse1 (320, 260, t, t, RGB (0, 80, 80));
         t ++;
         txSleep (1000);
         }
