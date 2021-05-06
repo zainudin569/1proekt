@@ -25,7 +25,7 @@ void DrawGirl       (int x,     int y, double sizeX, double sizeY, COLORREF Girl
                                        double eyes,  double smayl);
 void DrawMan        (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
                                        double eyes,  double smayl);
-void DrawHouse1     (int x,     int y, COLORREF HoleColor);
+void DrawHouse1     (int x,     int y, double sizeX, double sizeY, COLORREF HoleColor)
 void DrawBackground (COLORREF SkyColor);
 
 int main()
@@ -90,10 +90,10 @@ void DrawMir()
                     1.2 - pow(t-50,2)/2000 ,
                     RGB (255 - pow(t-50,2)/50, 255 - pow(t-50,2)/50, 0));
         DrawHouse2 (290,  60);
-        DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
+        DrawHouse1 (320, 260, 1, 1, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
         DrawHouse3 (355, 120);
-        DrawTree2  (100, 285,   1,   1, RGB ( 50, 150,   0));
-        DrawTree1  (  3, 163,   1,   1, RGB ( 50, 200,   0));
+        DrawTree2  (100, 285, 1, 1, RGB ( 50, 150,   0));
+        DrawTree1  (  3, 163, 1, 1, RGB ( 50, 200,   0));
         DraTrainFare(t);
         t ++;
         txSleep (120);
@@ -209,7 +209,7 @@ void DrawBackground (COLORREF SkyColor)
     txRectangle (0, 0, 480, 150);
     }
 
-void DrawHouse1 (int x, int y, COLORREF HoleColor)
+void DrawHouse1 (int x, int y, double sizeX, double sizeY, COLORREF HoleColor)
 
     {
     txSetFillColor (RGB (255, 255, 255));
@@ -362,7 +362,7 @@ int t = 0;
     while ( t <=100 )
         {
         txClear ();
-        DrawHouse1 (320+t, 260, RGB (0, 80, 80));
+        DrawHouse1 (320+t, 260, 1, 1, RGB (0, 80, 80));
         t ++;
         txSleep (120);
         }
