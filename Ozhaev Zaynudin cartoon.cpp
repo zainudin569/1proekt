@@ -12,7 +12,7 @@
 #include "Family.h"
 
 void DrawMir        ();
-void DrawZoomHouse1 (int t);
+void DrawZoomHouse1 ();
 void DraTrainFare   (int t);
 void DrawTrain      (int x,     int y);
 void DrawHouse2     (int x,     int y);
@@ -36,7 +36,7 @@ int main()
 
     DrawMir();
     DrawFamily ();
-    DrawZoomHouse1(t);
+    DrawZoomHouse1();
 
     txEnd();
 
@@ -356,7 +356,7 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
         }
     }
 
-void DrawZoomHouse1(int t)
+void DrawZoomHouse1()
 {
-DrawHouse1 (320, 260, RGB (0, 180 - pow(t-50,2)/25, 180 - pow(t-50,2)/25));
+DrawHouse1 (320, 260, RGB (0, 80, 80));
 }
