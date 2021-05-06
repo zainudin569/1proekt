@@ -2,9 +2,9 @@
 void DrawFamily ()
     {
     int n = 0;
+    int t = 0;
         while ( n <= 5 )
             {
-            int t = 0;
             while ( t <=120 )
                 {
                 if (t<=100)
