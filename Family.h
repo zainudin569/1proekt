@@ -210,8 +210,8 @@ void DrawFamily ()
         }
  */
 
-    int t = 0;
-    while ( t <=100 )
+    int t = 100;
+    while ( t <=120 )
         {
         txSetFillColor (TX_BLACK);
         txClear ();
