@@ -2,7 +2,7 @@
 void DrawFamily ()
     {
 
-    /*int t = 0;
+    int t = 0;
     while ( t <=100 )
         {
         txSetFillColor (TX_BLACK);
@@ -208,7 +208,7 @@ void DrawFamily ()
         t ++;
         txSleep (60);
         }
- */
+
     int n = 0;
     while ( n <= 5 )
         {
