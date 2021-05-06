@@ -34,8 +34,8 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    DrawMir();
-    DrawFamily ();
+    //DrawMir();
+    //DrawFamily ();
     DrawZoomHouse1();
 
     txEnd();
@@ -358,5 +358,12 @@ void DrawTrain (int x, int y, double sizeX, double sizeY)
 
 void DrawZoomHouse1()
 {
-DrawHouse1 (320, 260, RGB (0, 80, 80));
+int t = 0;
+    while ( t <=100 )
+        {
+        txClear ();
+        DrawHouse1 (320+t, 260, RGB (0, 80, 80));
+        t ++;
+        txSleep (120);
+        }
 }
