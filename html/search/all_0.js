@@ -8,7 +8,7 @@ var searchData=
   ['drawhouse3_5',['DrawHouse3',['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#ad5a89e92dd93f5768a9ca0924f7c629a',1,'Ozhaev Zaynudin cartoon.cpp']]],
   ['drawman_6',['DrawMan',['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#a28511dff4727367aeb7dd4b1ce3a395a',1,'Ozhaev Zaynudin cartoon.cpp']]],
   ['drawmir_7',['DrawMir',['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#a6484c6b48dd41123c803b7825f72c4c4',1,'Ozhaev Zaynudin cartoon.cpp']]],
-  ['drawsun_8',['DrawSun',['../_sun_8h.html#a9a95e9439d334bfcfddd8d177607ac8e',1,'Sun.h']]],
+  ['drawsun_8',['DrawSun',['../_sun_lib_8h.html#a9a95e9439d334bfcfddd8d177607ac8e',1,'SunLib.h']]],
   ['drawtrain_9',['DrawTrain',['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#a54f67f8c61380771c9191ed1645b057c',1,'DrawTrain(int x, int y):&#160;Ozhaev Zaynudin cartoon.cpp'],['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#a51d28c7c258d3a49f98df25142342f7b',1,'DrawTrain(int x, int y, double sizeX, double sizeY):&#160;Ozhaev Zaynudin cartoon.cpp']]],
   ['drawtree1_10',['DrawTree1',['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#a63771e9d89309ea4af1c9f5e13d51820',1,'Ozhaev Zaynudin cartoon.cpp']]],
   ['drawtree2_11',['DrawTree2',['../_ozhaev_01_zaynudin_01cartoon_8cpp.html#adb95400a6c45608a78e8ec05da59f79b',1,'Ozhaev Zaynudin cartoon.cpp']]],
