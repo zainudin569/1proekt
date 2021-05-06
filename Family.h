@@ -228,10 +228,10 @@ void DrawFamily ()
                                  { ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )}};
             txPolygon (ArmBoy, 3);
 
-            txEllipse   (ROUND( x + 363*sizeX ), ROUND( y + 353*sizeY ),
+            txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),
                          ROUND( x + 413*sizeX ), ROUND( y + 403*sizeY ));
 
-            txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 353*sizeY ),
+            txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),
                          ROUND( x + 463*sizeX ), ROUND( y + 403*sizeY ));
             t ++;
             txSleep (20);
