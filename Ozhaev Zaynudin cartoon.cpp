@@ -18,7 +18,7 @@
 //! @note Познание нового!
 //}===========================================================================
 #include "TXLib.h"
-#include "Sun.h"
+#include "SunLib.h"
 
 void DrawMir        ();
 void DrawZoomHouse1 ();
