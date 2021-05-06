@@ -39,12 +39,12 @@ int main()
 
     {
     txCreateWindow (480, 400);
-    txBegin();
+    //txBegin();
 
     DrawMir();
     DrawZoomHouse1();
 
-    txEnd();
+    //txEnd();
 
     return 0;
     }
@@ -90,6 +90,7 @@ void DrawMir()
     int t = 0;
     while ( t <=100 )
         {
+        txBegin();
         txClear ();
 
         DrawBackground (RGB (0, 180 - pow(t-50,2)/25,
@@ -106,6 +107,7 @@ void DrawMir()
         DrawTree1  (  3, 163, 1, 1, RGB ( 50, 200,   0));
         DraTrainFare(t);
         t ++;
+        txEnd();
         txSleep (120);
         }
 
