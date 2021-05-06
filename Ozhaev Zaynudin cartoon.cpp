@@ -13,19 +13,19 @@
 
 void DrawMir        ();
 void DrawZoomHouse1 ();
-void DraTrainFare   (int t);
-void DrawTrain      (int x,     int y);
-void DrawHouse2     (int x,     int y);
-void DrawHouse3     (int x,     int y);
-void DrawTrain      (int x,     int y, double sizeX, double sizeY);
-void DrawTree1      (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawTree2      (int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
-void DrawSun        (int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
-void DrawGirl       (int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
-                                       double eyes,  double smayl);
-void DrawMan        (int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
-                                       double eyes,  double smayl);
-void DrawHouse1     (double x,     double y, double sizeX, double sizeY, COLORREF HoleColor);
+void DraTrainFare   (   int t);
+void DrawTrain      (   int x,     int y);
+void DrawHouse2     (   int x,     int y);
+void DrawHouse3     (   int x,     int y);
+void DrawTrain      (   int x,     int y, double sizeX, double sizeY);
+void DrawTree1      (   int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawTree2      (   int x,     int y, double sizeX, double sizeY, COLORREF TreeColor);
+void DrawSun        (   int x,  double y, double sizeX, double sizeY, COLORREF SunColor);
+void DrawGirl       (   int x,     int y, double sizeX, double sizeY, COLORREF GirlColor,
+                                       double eyes , double smayl);
+void DrawMan        (   int x,     int y, double sizeX, double sizeY, COLORREF ManColor,
+                                       double eyes , double smayl);
+void DrawHouse1     (double x,  double y, double sizeX, double sizeY, COLORREF HoleColor);
 void DrawBackground (COLORREF SkyColor);
 
 int main()
@@ -368,8 +368,8 @@ void DrawZoomHouse1()
                 txClear ();
                 DrawBackground (RGB (0, 80, 80));
                 DrawHouse1 (320 + t*14.2, 260 + t*22.5 , 1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
-                int x = ROUND( 260 - t*2.6 );
-                int y = 163 - t*1.7;
+                double x = ROUND( 260 - t*2.6 );
+                double y = 163 - t*1.7;
                 double sizeX = 0.006*t;
                 double sizeY = 0.0037*t;
 
@@ -571,8 +571,8 @@ void DrawZoomHouse1()
                 }
             else
                 {
-                int x = ROUND( 260 - t*2.6 );
-                int y = 163 - t*1.7;
+                double x = ROUND( 260 - t*2.6 );
+                double y = 163 - t*1.7;
                 double sizeX = 0.006*t;
                 double sizeY = 0.0037*t;
                 txSetColor     (RGB (255, 0, 0), 5);
