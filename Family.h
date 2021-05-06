@@ -209,29 +209,33 @@ void DrawFamily ()
         txSleep (60);
         }
  */
-
-    int t = 100;
-    while ( t <= 120 )
+    int n = 0
+    while ( n <= 5 )
         {
-        txSetFillColor (TX_BLACK);
-        txClear ();
-        int x = ROUND( 240 - t*2.4 );
-        int y = 200 - t*2;
-        double sizeX = 0.006*t;
-        double sizeY = 0.0037*t;
-        txSetColor     (RGB (255, 0, 0), 4);
-        txSetFillColor (RGB (255, 0, 0));
-        POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
-                             { ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )},
-                             { ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )}};
-        txPolygon (ArmBoy, 3);
+        int t = 100;
+        while ( t <= 120 )
+            {
+            txSetFillColor (TX_BLACK);
+            txClear ();
+            int x = ROUND( 240 - t*2.4 );
+            int y = 200 - t*2;
+            double sizeX = 0.006*t;
+            double sizeY = 0.0037*t;
+            txSetColor     (RGB (255, 0, 0), 4);
+            txSetFillColor (RGB (255, 0, 0));
+            POINT ArmBoy [3] =  {{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )},
+                                 { ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )},
+                                 { ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )}};
+            txPolygon (ArmBoy, 3);
 
-        txEllipse   (ROUND( x + 363*sizeX ), ROUND( y + 353*sizeY ),
-                     ROUND( x + 413*sizeX ), ROUND( y + 403*sizeY ));
+            txEllipse   (ROUND( x + 363*sizeX ), ROUND( y + 353*sizeY ),
+                         ROUND( x + 413*sizeX ), ROUND( y + 403*sizeY ));
 
-        txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 353*sizeY ),
-                     ROUND( x + 463*sizeX ), ROUND( y + 403*sizeY ));
-        t ++;
-        txSleep (60);
+            txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 353*sizeY ),
+                         ROUND( x + 463*sizeX ), ROUND( y + 403*sizeY ));
+            t ++;
+            txSleep (60);
+            }
+        n ++;
         }
     }
