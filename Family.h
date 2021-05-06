@@ -1,6 +1,6 @@
 
-void DrawFamily  ();
-void DrawHouse1  (double x,     double y, double sizeX, double sizeY, COLORREF HoleColor);
+void DrawFamily ();
+void DrawHouse  ( double x, double y, double sizeX, double sizeY, COLORREF HoleColor );
 
 void DrawFamily ()
     {
@@ -14,7 +14,7 @@ void DrawFamily ()
                 {
                 txSetFillColor (TX_BLACK);
                 txClear ();
-                DrawHouse1 ( ROUND( 320 + t*14.2 ), ROUND( 260 + t*22.5 ),
+                DrawHouse ( ROUND( 320 + t*14.2 ), ROUND( 260 + t*22.5 ),
                     1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));
                 int x = ROUND( 240 - t*2.4 );
                 int y = 200 - t*2;
@@ -242,4 +242,41 @@ void DrawFamily ()
         t = 100;
         n ++;
         }
+    }
+
+void DrawHouse (double x, double y, double sizeX, double sizeY, COLORREF HoleColor)
+
+    {
+    txSetFillColor (RGB (255, 255, 255));
+    POINT stena [4] =  {{        x                ,        y                },
+                        { ROUND( x - 120 * sizeX ),        y                },
+                        { ROUND( x - 120 * sizeX ), ROUND( y - 140 * sizeY )},
+                        {        x                , ROUND( y - 140 * sizeY )}};
+    txPolygon (stena, 4);
+    for (int corX = ( ROUND( x - 110 * sizeX )); corX <= ( ROUND( x - 30 * sizeX )); corX += ROUND( 40 * sizeX ))
+        {
+        txSetFillColor (RGB (0, 0, 0));
+        POINT Window [4] = {{        corX               , ROUND( y - 120 * sizeY )},
+                            {        corX               , ROUND( y - 100 * sizeY )},
+                            { ROUND( corX + 20 * sizeX ), ROUND( y - 100 * sizeY )},
+                            { ROUND( corX + 20 * sizeX ), ROUND( y - 120 * sizeY )}};
+        txPolygon (Window, 4);
+        }
+
+    txSetFillColor (RGB (0, 0, 0));
+    POINT Door [4] =       {{ ROUND( x - 95 * sizeX ),        y                },
+                            { ROUND( x - 95 * sizeX ), ROUND( y - 50 * sizeY ) },
+                            { ROUND( x - 50 * sizeX ), ROUND( y - 50 * sizeY ) },
+                            { ROUND( x - 50 * sizeX ),        y                }};
+    txPolygon (Door, 4);
+
+    txSetFillColor (RGB (230, 230, 230));
+    POINT Attic [4] =      {{ ROUND( x - 65 * sizeX ), ROUND( y - 140 * sizeY )},
+                            { ROUND( x - 65 * sizeX ), ROUND( y - 180 * sizeY )},
+                            { ROUND( x - 30 * sizeX ), ROUND( y - 180 * sizeY )},
+                            { ROUND( x - 30 * sizeX ), ROUND( y - 140 * sizeY )}};
+    txPolygon (Attic, 4);
+
+    txSetFillColor (HoleColor);
+    txCircle ( ROUND( x - 47 * sizeX ), ROUND( y - 160 * sizeY ), 10 );
     }
