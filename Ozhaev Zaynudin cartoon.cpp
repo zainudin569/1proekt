@@ -34,8 +34,7 @@ int main()
     txCreateWindow (480, 400);
     txBegin();
 
-    DrawMir();
-    //DrawFamily ();
+    //DrawMir();
     DrawZoomHouse1();
 
     txEnd();
