@@ -203,6 +203,16 @@ void DrawBackground (COLORREF SkyColor)
     txRectangle (0, 0, 480, 150);
     }
 
+//{===========================================================================
+/*! @par Рисуется дом белого цвета
+
+    @param x         -
+    @param y         -
+    @param sizeX     -
+    @param sizeY     -
+    @param HoleColor -
+*/
+//}===========================================================================
 void DrawHouse1 (double x, double y, double sizeX, double sizeY, COLORREF HoleColor)
 
     {
