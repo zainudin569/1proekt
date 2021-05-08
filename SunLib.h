@@ -11,6 +11,7 @@
 
 */
 //}===========================================================================
+void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor);
 
 void DrawSun   (int x, double y, double sizeX, double sizeY, COLORREF SunColor)
 
