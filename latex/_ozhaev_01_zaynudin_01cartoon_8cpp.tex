@@ -169,47 +169,63 @@ int \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_ae66f6b31b5ad750f1fe042a
 \doxysubsubsection{\texorpdfstring{DrawHouse1()}{DrawHouse1()}}
 {\footnotesize\ttfamily void Draw\+House1 (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{sizeX,  }\item[{double}]{sizeY,  }\item[{COLORREF}]{Hole\+Color }\end{DoxyParamCaption})}
 
+\begin{DoxyParagraph}{Рисуется дом белого цвета}
+
+\end{DoxyParagraph}
+
+\begin{DoxyParams}{Аргументы}
+{\em x} & -\/ \\
+\hline
+{\em y} & -\/ \\
+\hline
+{\em sizeX} & -\/ \\
+\hline
+{\em sizeY} & -\/ \\
+\hline
+{\em Hole\+Color} & -\/ \\
+\hline
+\end{DoxyParams}
 
 
-См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 206
+См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 216
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{208     \{}
-\DoxyCodeLine{209     txSetFillColor (RGB (255, 255, 255));}
-\DoxyCodeLine{210     POINT stena [4] =  \{\{ ROUND( x               ), ROUND( y               )\},}
-\DoxyCodeLine{211                         \{ ROUND( x -\/ 120 * sizeX ), ROUND( y               )\},}
-\DoxyCodeLine{212                         \{ ROUND( x -\/ 120 * sizeX ), ROUND( y -\/ 140 * sizeY )\},}
-\DoxyCodeLine{213                         \{ ROUND( x               ), ROUND( y -\/ 140 * sizeY )\}\};}
-\DoxyCodeLine{214     txPolygon (stena, 4);}
-\DoxyCodeLine{215     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} corX = ( ROUND( x -\/ 110 * sizeX )); corX <= ( ROUND( x -\/ 30 * sizeX )); corX += ROUND( 40 * sizeX ))}
-\DoxyCodeLine{216         \{}
-\DoxyCodeLine{217         txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{218         POINT Window [4] = \{\{        corX               , ROUND( y -\/ 120 * sizeY )\},}
-\DoxyCodeLine{219                             \{        corX               , ROUND( y -\/ 100 * sizeY )\},}
-\DoxyCodeLine{220                             \{ ROUND( corX + 20 * sizeX ), ROUND( y -\/ 100 * sizeY )\},}
-\DoxyCodeLine{221                             \{ ROUND( corX + 20 * sizeX ), ROUND( y -\/ 120 * sizeY )\}\};}
-\DoxyCodeLine{222         txPolygon (Window, 4);}
-\DoxyCodeLine{223         \}}
-\DoxyCodeLine{224 }
-\DoxyCodeLine{225     txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{226     POINT Door [4] =       \{\{ ROUND( x -\/ 95 * sizeX ), ROUND( y              )\},}
-\DoxyCodeLine{227                             \{ ROUND( x -\/ 95 * sizeX ), ROUND( y -\/ 50 * sizeY )\},}
-\DoxyCodeLine{228                             \{ ROUND( x -\/ 50 * sizeX ), ROUND( y -\/ 50 * sizeY )\},}
-\DoxyCodeLine{229                             \{ ROUND( x -\/ 50 * sizeX ), ROUND( y              )\}\};}
-\DoxyCodeLine{230     txPolygon (Door, 4);}
-\DoxyCodeLine{231 }
-\DoxyCodeLine{232     txSetFillColor (RGB (230, 230, 230));}
-\DoxyCodeLine{233     POINT Attic [4] =      \{\{ ROUND( x -\/ 65 * sizeX ), ROUND( y -\/ 140 * sizeY )\},}
-\DoxyCodeLine{234                             \{ ROUND( x -\/ 65 * sizeX ), ROUND( y -\/ 180 * sizeY )\},}
-\DoxyCodeLine{235                             \{ ROUND( x -\/ 30 * sizeX ), ROUND( y -\/ 180 * sizeY )\},}
-\DoxyCodeLine{236                             \{ ROUND( x -\/ 30 * sizeX ), ROUND( y -\/ 140 * sizeY )\}\};}
-\DoxyCodeLine{237     txPolygon (Attic, 4);}
-\DoxyCodeLine{238 }
-\DoxyCodeLine{239     txSetFillColor (HoleColor);}
-\DoxyCodeLine{240     txEllipse ( ROUND( x -\/ 37 * sizeX ), ROUND( y -\/ 150 * sizeY ),}
-\DoxyCodeLine{241                 ROUND( x -\/ 57 * sizeX ), ROUND( y -\/ 170 * sizeY ));}
-\DoxyCodeLine{242     \}}
+\DoxyCodeLine{218     \{}
+\DoxyCodeLine{219     txSetFillColor (RGB (255, 255, 255));}
+\DoxyCodeLine{220     POINT stena [4] =  \{\{ ROUND( x               ), ROUND( y               )\},}
+\DoxyCodeLine{221                         \{ ROUND( x -\/ 120 * sizeX ), ROUND( y               )\},}
+\DoxyCodeLine{222                         \{ ROUND( x -\/ 120 * sizeX ), ROUND( y -\/ 140 * sizeY )\},}
+\DoxyCodeLine{223                         \{ ROUND( x               ), ROUND( y -\/ 140 * sizeY )\}\};}
+\DoxyCodeLine{224     txPolygon (stena, 4);}
+\DoxyCodeLine{225     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} corX = ( ROUND( x -\/ 110 * sizeX )); corX <= ( ROUND( x -\/ 30 * sizeX )); corX += ROUND( 40 * sizeX ))}
+\DoxyCodeLine{226         \{}
+\DoxyCodeLine{227         txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{228         POINT Window [4] = \{\{        corX               , ROUND( y -\/ 120 * sizeY )\},}
+\DoxyCodeLine{229                             \{        corX               , ROUND( y -\/ 100 * sizeY )\},}
+\DoxyCodeLine{230                             \{ ROUND( corX + 20 * sizeX ), ROUND( y -\/ 100 * sizeY )\},}
+\DoxyCodeLine{231                             \{ ROUND( corX + 20 * sizeX ), ROUND( y -\/ 120 * sizeY )\}\};}
+\DoxyCodeLine{232         txPolygon (Window, 4);}
+\DoxyCodeLine{233         \}}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{235     txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{236     POINT Door [4] =       \{\{ ROUND( x -\/ 95 * sizeX ), ROUND( y              )\},}
+\DoxyCodeLine{237                             \{ ROUND( x -\/ 95 * sizeX ), ROUND( y -\/ 50 * sizeY )\},}
+\DoxyCodeLine{238                             \{ ROUND( x -\/ 50 * sizeX ), ROUND( y -\/ 50 * sizeY )\},}
+\DoxyCodeLine{239                             \{ ROUND( x -\/ 50 * sizeX ), ROUND( y              )\}\};}
+\DoxyCodeLine{240     txPolygon (Door, 4);}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242     txSetFillColor (RGB (230, 230, 230));}
+\DoxyCodeLine{243     POINT Attic [4] =      \{\{ ROUND( x -\/ 65 * sizeX ), ROUND( y -\/ 140 * sizeY )\},}
+\DoxyCodeLine{244                             \{ ROUND( x -\/ 65 * sizeX ), ROUND( y -\/ 180 * sizeY )\},}
+\DoxyCodeLine{245                             \{ ROUND( x -\/ 30 * sizeX ), ROUND( y -\/ 180 * sizeY )\},}
+\DoxyCodeLine{246                             \{ ROUND( x -\/ 30 * sizeX ), ROUND( y -\/ 140 * sizeY )\}\};}
+\DoxyCodeLine{247     txPolygon (Attic, 4);}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249     txSetFillColor (HoleColor);}
+\DoxyCodeLine{250     txEllipse ( ROUND( x -\/ 37 * sizeX ), ROUND( y -\/ 150 * sizeY ),}
+\DoxyCodeLine{251                 ROUND( x -\/ 57 * sizeX ), ROUND( y -\/ 170 * sizeY ));}
+\DoxyCodeLine{252     \}}
 
 \end{DoxyCode}
 
@@ -224,45 +240,45 @@ int \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_ae66f6b31b5ad750f1fe042a
 
 
 
-См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 244
+См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 254
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{246     \{}
-\DoxyCodeLine{247 }
-\DoxyCodeLine{248     txSetFillColor (RGB (255, 0, 0));}
-\DoxyCodeLine{249     POINT Roof [3] =    \{\{ x      , y      \},}
-\DoxyCodeLine{250                          \{ x +  60, y -\/ 30 \},}
-\DoxyCodeLine{251                          \{ x + 130, y      \}\};}
-\DoxyCodeLine{252     txPolygon (Roof, 3);}
-\DoxyCodeLine{253 }
-\DoxyCodeLine{254     txSetFillColor (RGB (150, 0, 0));}
-\DoxyCodeLine{255     POINT stena [4] =   \{\{ x +  20, y       \},}
-\DoxyCodeLine{256                          \{ x +  20, y + 117 \},}
-\DoxyCodeLine{257                          \{ x + 110, y + 117 \},}
-\DoxyCodeLine{258                          \{ x + 110, y       \}\};}
-\DoxyCodeLine{259     txPolygon (stena, 4);}
-\DoxyCodeLine{260 }
-\DoxyCodeLine{261     txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{262     POINT Window1 [4] = \{\{ x + 30, y + 40 \},}
-\DoxyCodeLine{263                          \{ x + 30, y + 20 \},}
-\DoxyCodeLine{264                          \{ x + 55, y + 20 \},}
-\DoxyCodeLine{265                          \{ x + 55, y + 40 \}\};}
-\DoxyCodeLine{266     txPolygon (Window1, 4);}
-\DoxyCodeLine{267 }
-\DoxyCodeLine{268     POINT Window2 [4] = \{\{ x +  90, y + 25 \},}
-\DoxyCodeLine{269                          \{ x +  90, y + 10 \},}
-\DoxyCodeLine{270                          \{ x + 105, y + 10 \},}
-\DoxyCodeLine{271                          \{ x + 105, y + 25 \}\};}
-\DoxyCodeLine{272     txPolygon (Window2, 4);}
-\DoxyCodeLine{273 }
-\DoxyCodeLine{274     POINT Window3 [4] = \{\{ x +  90, y + 55 \},}
-\DoxyCodeLine{275                          \{ x +  90, y + 40 \},}
-\DoxyCodeLine{276                          \{ x + 105, y + 40 \},}
-\DoxyCodeLine{277                          \{ x + 105, y + 55 \}\};}
-\DoxyCodeLine{278     txPolygon (Window3, 4);}
-\DoxyCodeLine{279 }
-\DoxyCodeLine{280     \}}
+\DoxyCodeLine{256     \{}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258     txSetFillColor (RGB (255, 0, 0));}
+\DoxyCodeLine{259     POINT Roof [3] =    \{\{ x      , y      \},}
+\DoxyCodeLine{260                          \{ x +  60, y -\/ 30 \},}
+\DoxyCodeLine{261                          \{ x + 130, y      \}\};}
+\DoxyCodeLine{262     txPolygon (Roof, 3);}
+\DoxyCodeLine{263 }
+\DoxyCodeLine{264     txSetFillColor (RGB (150, 0, 0));}
+\DoxyCodeLine{265     POINT stena [4] =   \{\{ x +  20, y       \},}
+\DoxyCodeLine{266                          \{ x +  20, y + 117 \},}
+\DoxyCodeLine{267                          \{ x + 110, y + 117 \},}
+\DoxyCodeLine{268                          \{ x + 110, y       \}\};}
+\DoxyCodeLine{269     txPolygon (stena, 4);}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{271     txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{272     POINT Window1 [4] = \{\{ x + 30, y + 40 \},}
+\DoxyCodeLine{273                          \{ x + 30, y + 20 \},}
+\DoxyCodeLine{274                          \{ x + 55, y + 20 \},}
+\DoxyCodeLine{275                          \{ x + 55, y + 40 \}\};}
+\DoxyCodeLine{276     txPolygon (Window1, 4);}
+\DoxyCodeLine{277 }
+\DoxyCodeLine{278     POINT Window2 [4] = \{\{ x +  90, y + 25 \},}
+\DoxyCodeLine{279                          \{ x +  90, y + 10 \},}
+\DoxyCodeLine{280                          \{ x + 105, y + 10 \},}
+\DoxyCodeLine{281                          \{ x + 105, y + 25 \}\};}
+\DoxyCodeLine{282     txPolygon (Window2, 4);}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{284     POINT Window3 [4] = \{\{ x +  90, y + 55 \},}
+\DoxyCodeLine{285                          \{ x +  90, y + 40 \},}
+\DoxyCodeLine{286                          \{ x + 105, y + 40 \},}
+\DoxyCodeLine{287                          \{ x + 105, y + 55 \}\};}
+\DoxyCodeLine{288     txPolygon (Window3, 4);}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290     \}}
 
 \end{DoxyCode}
 
@@ -277,35 +293,35 @@ int \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_ae66f6b31b5ad750f1fe042a
 
 
 
-См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 282
+См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 292
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{284     \{}
-\DoxyCodeLine{285 }
-\DoxyCodeLine{286     txSetFillColor (RGB (0, 100, 0));}
-\DoxyCodeLine{287     POINT Roof [3] =  \{\{ x     , y      \},}
-\DoxyCodeLine{288                        \{ x -\/ 60, y + 70 \},}
-\DoxyCodeLine{289                        \{ x + 60, y + 70 \}\};}
-\DoxyCodeLine{290     txPolygon (Roof, 3);}
-\DoxyCodeLine{291 }
-\DoxyCodeLine{292     txSetFillColor (RGB (50, 100, 0));}
-\DoxyCodeLine{293     POINT stena [4] = \{\{ x + 40, y +  70 \},}
-\DoxyCodeLine{294                        \{ x + 40, y + 170 \},}
-\DoxyCodeLine{295                        \{ x -\/ 45, y + 170 \},}
-\DoxyCodeLine{296                        \{ x -\/ 45, y +  70 \}\};}
-\DoxyCodeLine{297     txPolygon (stena, 4);}
-\DoxyCodeLine{298 }
-\DoxyCodeLine{299     txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{300     POINT Door [4] =  \{\{ x -\/ 35, y + 170 \},}
-\DoxyCodeLine{301                        \{ x -\/ 35, y + 135 \},}
-\DoxyCodeLine{302                        \{ x     , y + 135 \},}
-\DoxyCodeLine{303                        \{ x     , y + 170 \}\};}
-\DoxyCodeLine{304     txPolygon (Door, 4);}
-\DoxyCodeLine{305 }
-\DoxyCodeLine{306     txCircle ( x + 15, y + 100, 15 );}
-\DoxyCodeLine{307 }
-\DoxyCodeLine{308     \}}
+\DoxyCodeLine{294     \{}
+\DoxyCodeLine{295 }
+\DoxyCodeLine{296     txSetFillColor (RGB (0, 100, 0));}
+\DoxyCodeLine{297     POINT Roof [3] =  \{\{ x     , y      \},}
+\DoxyCodeLine{298                        \{ x -\/ 60, y + 70 \},}
+\DoxyCodeLine{299                        \{ x + 60, y + 70 \}\};}
+\DoxyCodeLine{300     txPolygon (Roof, 3);}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302     txSetFillColor (RGB (50, 100, 0));}
+\DoxyCodeLine{303     POINT stena [4] = \{\{ x + 40, y +  70 \},}
+\DoxyCodeLine{304                        \{ x + 40, y + 170 \},}
+\DoxyCodeLine{305                        \{ x -\/ 45, y + 170 \},}
+\DoxyCodeLine{306                        \{ x -\/ 45, y +  70 \}\};}
+\DoxyCodeLine{307     txPolygon (stena, 4);}
+\DoxyCodeLine{308 }
+\DoxyCodeLine{309     txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{310     POINT Door [4] =  \{\{ x -\/ 35, y + 170 \},}
+\DoxyCodeLine{311                        \{ x -\/ 35, y + 135 \},}
+\DoxyCodeLine{312                        \{ x     , y + 135 \},}
+\DoxyCodeLine{313                        \{ x     , y + 170 \}\};}
+\DoxyCodeLine{314     txPolygon (Door, 4);}
+\DoxyCodeLine{315 }
+\DoxyCodeLine{316     txCircle ( x + 15, y + 100, 15 );}
+\DoxyCodeLine{317 }
+\DoxyCodeLine{318     \}}
 
 \end{DoxyCode}
 
@@ -415,52 +431,52 @@ int \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_ae66f6b31b5ad750f1fe042a
 
 
 
-См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 310
+См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 320
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{311     \{}
-\DoxyCodeLine{312     txSetColor  (RGB (100, 255, 255), 1);}
-\DoxyCodeLine{313     txSetFillColor (RGB (50, 50, 200));}
-\DoxyCodeLine{314     txRectangle (       x              ,        y              ,}
-\DoxyCodeLine{315                  ROUND( x +  70*sizeX ), ROUND( y -\/  80*sizeY ));}
-\DoxyCodeLine{316     txRectangle (ROUND( x +  70*sizeX ),        y              ,}
-\DoxyCodeLine{317                  ROUND( x + 160*sizeX ), ROUND( y -\/ 100*sizeY ));}
-\DoxyCodeLine{318     txRectangle (ROUND( x +  80*sizeX ), ROUND( y -\/ 100*sizeY ),}
-\DoxyCodeLine{319                  ROUND( x + 150*sizeX ), ROUND( y -\/ 160*sizeY ));}
-\DoxyCodeLine{320     txRectangle (ROUND( x + 160*sizeX ), ROUND( y -\/  30*sizeY ),}
-\DoxyCodeLine{321                  ROUND( x + 180*sizeX ), ROUND( y -\/  50*sizeY ));}
-\DoxyCodeLine{322 }
-\DoxyCodeLine{323     POINT Spout [3] =      \{\{        x             ,        y              \},}
-\DoxyCodeLine{324                             \{ ROUND( x -\/ 50*sizeX ),        y              \},}
-\DoxyCodeLine{325                             \{        x             , ROUND( y -\/ 50*sizeY ) \}\};}
-\DoxyCodeLine{326     txPolygon (Spout, 3);}
-\DoxyCodeLine{327     txSetFillColor (RGB (150, 200, 150));}
-\DoxyCodeLine{328     txRectangle (ROUND( x +  90*sizeX ), ROUND( y -\/ 110*sizeY ),}
-\DoxyCodeLine{329                  ROUND( x + 140*sizeX ), ROUND( y -\/ 150*sizeY ));}
-\DoxyCodeLine{330     txSetFillColor (RGB (255, 255, 0));}
-\DoxyCodeLine{331     txEllipse   (ROUND( x +   3*sizeX ), ROUND( y -\/  33*sizeY ),}
-\DoxyCodeLine{332                  ROUND( x +  66*sizeX ), ROUND( y +  33*sizeY ));}
-\DoxyCodeLine{333     txEllipse   (ROUND( x +  82*sizeX ), ROUND( y -\/  33*sizeY ),}
-\DoxyCodeLine{334                  ROUND( x + 148*sizeX ), ROUND( y +  33*sizeY ));}
-\DoxyCodeLine{335     \textcolor{keywordtype}{int} corX = 0;}
-\DoxyCodeLine{336     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} temp = 1; temp <= 2; temp += 1 )}
-\DoxyCodeLine{337         \{}
-\DoxyCodeLine{338         txSetFillColor (RGB (255, 0, 0));}
-\DoxyCodeLine{339         txRectangle (ROUND(( x + 180*sizeX) + corX ),        y              ,}
-\DoxyCodeLine{340                      ROUND(( x + 270*sizeX) + corX ), ROUND( y -\/ 100*sizeY ));}
-\DoxyCodeLine{341         txRectangle (ROUND(( x + 270*sizeX) + corX ),        y              ,}
-\DoxyCodeLine{342                      ROUND(( x + 360*sizeX) + corX ), ROUND( y -\/ 100*sizeY ));}
-\DoxyCodeLine{343         txRectangle (ROUND(( x + 360*sizeX) + corX ), ROUND( y -\/  30*sizeY ),}
-\DoxyCodeLine{344                      ROUND(( x + 380*sizeX) + corX ), ROUND( y -\/  50*sizeY ));}
-\DoxyCodeLine{345         txSetFillColor (RGB (255, 255, 0));}
-\DoxyCodeLine{346         txEllipse   (ROUND(( x + 192*sizeX) + corX ), ROUND( y -\/  33*sizeY ),}
-\DoxyCodeLine{347                      ROUND(( x + 258*sizeX) + corX ), ROUND( y +  33*sizeY ));}
-\DoxyCodeLine{348         txEllipse   (ROUND(( x + 282*sizeX) + corX ), ROUND( y -\/  33*sizeY ),}
-\DoxyCodeLine{349                      ROUND(( x + 348*sizeX) + corX ), ROUND( y +  33*sizeY ));}
-\DoxyCodeLine{350         corX = ROUND( corX + 200*sizeX );}
-\DoxyCodeLine{351         \}}
-\DoxyCodeLine{352     \}}
+\DoxyCodeLine{321     \{}
+\DoxyCodeLine{322     txSetColor  (RGB (100, 255, 255), 1);}
+\DoxyCodeLine{323     txSetFillColor (RGB (50, 50, 200));}
+\DoxyCodeLine{324     txRectangle (       x              ,        y              ,}
+\DoxyCodeLine{325                  ROUND( x +  70*sizeX ), ROUND( y -\/  80*sizeY ));}
+\DoxyCodeLine{326     txRectangle (ROUND( x +  70*sizeX ),        y              ,}
+\DoxyCodeLine{327                  ROUND( x + 160*sizeX ), ROUND( y -\/ 100*sizeY ));}
+\DoxyCodeLine{328     txRectangle (ROUND( x +  80*sizeX ), ROUND( y -\/ 100*sizeY ),}
+\DoxyCodeLine{329                  ROUND( x + 150*sizeX ), ROUND( y -\/ 160*sizeY ));}
+\DoxyCodeLine{330     txRectangle (ROUND( x + 160*sizeX ), ROUND( y -\/  30*sizeY ),}
+\DoxyCodeLine{331                  ROUND( x + 180*sizeX ), ROUND( y -\/  50*sizeY ));}
+\DoxyCodeLine{332 }
+\DoxyCodeLine{333     POINT Spout [3] =      \{\{        x             ,        y              \},}
+\DoxyCodeLine{334                             \{ ROUND( x -\/ 50*sizeX ),        y              \},}
+\DoxyCodeLine{335                             \{        x             , ROUND( y -\/ 50*sizeY ) \}\};}
+\DoxyCodeLine{336     txPolygon (Spout, 3);}
+\DoxyCodeLine{337     txSetFillColor (RGB (150, 200, 150));}
+\DoxyCodeLine{338     txRectangle (ROUND( x +  90*sizeX ), ROUND( y -\/ 110*sizeY ),}
+\DoxyCodeLine{339                  ROUND( x + 140*sizeX ), ROUND( y -\/ 150*sizeY ));}
+\DoxyCodeLine{340     txSetFillColor (RGB (255, 255, 0));}
+\DoxyCodeLine{341     txEllipse   (ROUND( x +   3*sizeX ), ROUND( y -\/  33*sizeY ),}
+\DoxyCodeLine{342                  ROUND( x +  66*sizeX ), ROUND( y +  33*sizeY ));}
+\DoxyCodeLine{343     txEllipse   (ROUND( x +  82*sizeX ), ROUND( y -\/  33*sizeY ),}
+\DoxyCodeLine{344                  ROUND( x + 148*sizeX ), ROUND( y +  33*sizeY ));}
+\DoxyCodeLine{345     \textcolor{keywordtype}{int} corX = 0;}
+\DoxyCodeLine{346     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} temp = 1; temp <= 2; temp += 1 )}
+\DoxyCodeLine{347         \{}
+\DoxyCodeLine{348         txSetFillColor (RGB (255, 0, 0));}
+\DoxyCodeLine{349         txRectangle (ROUND(( x + 180*sizeX) + corX ),        y              ,}
+\DoxyCodeLine{350                      ROUND(( x + 270*sizeX) + corX ), ROUND( y -\/ 100*sizeY ));}
+\DoxyCodeLine{351         txRectangle (ROUND(( x + 270*sizeX) + corX ),        y              ,}
+\DoxyCodeLine{352                      ROUND(( x + 360*sizeX) + corX ), ROUND( y -\/ 100*sizeY ));}
+\DoxyCodeLine{353         txRectangle (ROUND(( x + 360*sizeX) + corX ), ROUND( y -\/  30*sizeY ),}
+\DoxyCodeLine{354                      ROUND(( x + 380*sizeX) + corX ), ROUND( y -\/  50*sizeY ));}
+\DoxyCodeLine{355         txSetFillColor (RGB (255, 255, 0));}
+\DoxyCodeLine{356         txEllipse   (ROUND(( x + 192*sizeX) + corX ), ROUND( y -\/  33*sizeY ),}
+\DoxyCodeLine{357                      ROUND(( x + 258*sizeX) + corX ), ROUND( y +  33*sizeY ));}
+\DoxyCodeLine{358         txEllipse   (ROUND(( x + 282*sizeX) + corX ), ROUND( y -\/  33*sizeY ),}
+\DoxyCodeLine{359                      ROUND(( x + 348*sizeX) + corX ), ROUND( y +  33*sizeY ));}
+\DoxyCodeLine{360         corX = ROUND( corX + 200*sizeX );}
+\DoxyCodeLine{361         \}}
+\DoxyCodeLine{362     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{_ozhaev_01_zaynudin_01cartoon_8cpp_a63771e9d89309ea4af1c9f5e13d51820}\label{_ozhaev_01_zaynudin_01cartoon_8cpp_a63771e9d89309ea4af1c9f5e13d51820}} 
@@ -528,249 +544,249 @@ int \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_ae66f6b31b5ad750f1fe042a
 
 
 
-См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 354
+См. определение в файле Ozhaev Zaynudin cartoon.\+cpp строка 364
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{355     \{}
-\DoxyCodeLine{356     \textcolor{keywordtype}{int} n = 0;}
-\DoxyCodeLine{357     \textcolor{keywordtype}{int} t = 0;}
-\DoxyCodeLine{358     \textcolor{keywordflow}{while} ( n <= 5 )}
-\DoxyCodeLine{359         \{}
-\DoxyCodeLine{360         \textcolor{keywordflow}{while} ( t <=120 )}
-\DoxyCodeLine{361             \{}
-\DoxyCodeLine{362             \textcolor{keywordflow}{if} (t <=100 )}
-\DoxyCodeLine{363                 \{}
-\DoxyCodeLine{364                 txClear ();}
-\DoxyCodeLine{365                 \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_af592ddca7f918e46c67b73c0093a0537}{DrawBackground}} (RGB (0, 80, 80));}
-\DoxyCodeLine{366                 \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_a9037b59f5b78b7974cfc5d0b2b8c6ee8}{DrawHouse1}} (320 + t*14.2, 260 + t*22.5 , 1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));}
-\DoxyCodeLine{367                 \textcolor{keywordtype}{double} x = ROUND( 260 -\/ t*2.6 );}
-\DoxyCodeLine{368                 \textcolor{keywordtype}{double} y = 163 -\/ t*1.7;}
-\DoxyCodeLine{369                 \textcolor{keywordtype}{double} sizeX = 0.006*t;}
-\DoxyCodeLine{370                 \textcolor{keywordtype}{double} sizeY = 0.0037*t;}
-\DoxyCodeLine{371 }
-\DoxyCodeLine{372                 txSetColor     (RGB (255, 255, 255), 1);}
-\DoxyCodeLine{373                 txSetFillColor (RGB (240, 234, 182));}
-\DoxyCodeLine{374                 txEllipse   (ROUND( x + 110*sizeX ), ROUND( y +  80*sizeY ),}
-\DoxyCodeLine{375                              ROUND( x + 320*sizeX ), ROUND( y + 290*sizeY ));}
-\DoxyCodeLine{376 }
-\DoxyCodeLine{377                 txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{378                 txRectangle (ROUND( x + 170*sizeX ), ROUND( y + 180*sizeY ),}
-\DoxyCodeLine{379                              ROUND( x + 230*sizeX ), ROUND( y + 200*sizeY ));}
-\DoxyCodeLine{380                 POINT EyeGirl [4] =   \{\{ ROUND( x + 260*sizeX ), ROUND( y + 205*sizeY )\},}
-\DoxyCodeLine{381                                        \{ ROUND( x + 270*sizeX ), ROUND( y + 190*sizeY )\},}
-\DoxyCodeLine{382                                        \{ ROUND( x + 300*sizeX ), ROUND( y + 215*sizeY )\},}
-\DoxyCodeLine{383                                        \{ ROUND( x + 290*sizeX ), ROUND( y + 230*sizeY )\}\};}
-\DoxyCodeLine{384                 txPolygon (EyeGirl, 4);}
-\DoxyCodeLine{385 }
-\DoxyCodeLine{386                 txSetFillColor (RGB (239, 23, 2));}
-\DoxyCodeLine{387                 POINT MouthGirl [3] = \{\{ ROUND( x + 190*sizeX ), ROUND( y + 240*sizeY )\},}
-\DoxyCodeLine{388                                        \{ ROUND( x + 255*sizeX ), ROUND( y + 255*sizeY )\},}
-\DoxyCodeLine{389                                        \{ ROUND( x + 220*sizeX ), ROUND( y + 270*sizeY )\}\};}
-\DoxyCodeLine{390                 txPolygon (MouthGirl, 3);}
-\DoxyCodeLine{391 }
-\DoxyCodeLine{392                 txSetFillColor (RGB (255, 130, 1));}
-\DoxyCodeLine{393                 POINT TorsoGirl [3] = \{\{ ROUND( x + 170*sizeX ), ROUND( y + 280*sizeY )\},}
-\DoxyCodeLine{394                                        \{ ROUND( x +  22*sizeX ), ROUND( y + 700*sizeY )\},}
-\DoxyCodeLine{395                                        \{ ROUND( x + 320*sizeX ), ROUND( y + 700*sizeY )\}\};}
-\DoxyCodeLine{396                 txPolygon (TorsoGirl, 3);}
-\DoxyCodeLine{397 }
-\DoxyCodeLine{398                 txSetFillColor (RGB (255,254, 233));}
-\DoxyCodeLine{399                 POINT ArmGirl1 [3] = \{\{ ROUND( x + 150*sizeX ), ROUND( y + 407*sizeY )\},}
-\DoxyCodeLine{400                                       \{ ROUND( x + 202*sizeX ), ROUND( y + 375*sizeY )\},}
-\DoxyCodeLine{401                                       \{ ROUND( x + 330*sizeX ), ROUND( y + 630*sizeY )\}\};}
-\DoxyCodeLine{402                 txPolygon (ArmGirl1, 3);}
-\DoxyCodeLine{403 }
-\DoxyCodeLine{404                 POINT ArmGirl2 [3] = \{\{ ROUND( x + 185*sizeX ), ROUND( y + 320*sizeY )\},}
-\DoxyCodeLine{405                                       \{ ROUND( x + 206*sizeX ), ROUND( y + 380*sizeY )\},}
-\DoxyCodeLine{406                                       \{ ROUND( x + 415*sizeX ), ROUND( y + 420*sizeY )\}\};}
-\DoxyCodeLine{407                 txPolygon (ArmGirl2, 3);}
-\DoxyCodeLine{408 }
-\DoxyCodeLine{409                 txSetFillColor (RGB (236, 237, 242));}
-\DoxyCodeLine{410                 POINT LegGirl1 [3] = \{\{ ROUND( x + 115*sizeX ), ROUND( y + 710*sizeY )\},}
-\DoxyCodeLine{411                                       \{ ROUND( x + 170*sizeX ), ROUND( y + 710*sizeY )\},}
-\DoxyCodeLine{412                                       \{ ROUND( x + 140*sizeX ), ROUND( y + 970*sizeY )\}\};}
-\DoxyCodeLine{413                 txPolygon (LegGirl1, 3);}
-\DoxyCodeLine{414 }
-\DoxyCodeLine{415                 POINT LegGirl2 [3] = \{\{ ROUND( x + 195*sizeX ), ROUND( y + 710*sizeY )\},}
-\DoxyCodeLine{416                                       \{ ROUND( x + 255*sizeX ), ROUND( y + 710*sizeY )\},}
-\DoxyCodeLine{417                                       \{ ROUND( x + 225*sizeX ), ROUND( y + 970*sizeY )\}\};}
-\DoxyCodeLine{418                 txPolygon (LegGirl2, 3);}
-\DoxyCodeLine{419 }
-\DoxyCodeLine{420                 txSetFillColor (RGB (176, 34, 20));}
-\DoxyCodeLine{421                 txRectangle (ROUND( x + 110*sizeX ), ROUND( y +  970*sizeY ),}
-\DoxyCodeLine{422                              ROUND( x + 180*sizeX ), ROUND( y + 1020*sizeY ));}
-\DoxyCodeLine{423 }
-\DoxyCodeLine{424                 txRectangle (ROUND( x + 190*sizeX ), ROUND( y +  970*sizeY ),}
-\DoxyCodeLine{425                              ROUND( x + 260*sizeX ), ROUND( y + 1020*sizeY ));}
-\DoxyCodeLine{426 }
-\DoxyCodeLine{427             \textcolor{comment}{//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}}
-\DoxyCodeLine{428 }
-\DoxyCodeLine{429                 txSetFillColor (RGB (240, 234, 182));}
-\DoxyCodeLine{430                 txRectangle (ROUND( x + 575*sizeX ), ROUND( y +  50*sizeY ),}
-\DoxyCodeLine{431                              ROUND( x + 720*sizeX ), ROUND( y + 228*sizeY ));}
-\DoxyCodeLine{432 }
-\DoxyCodeLine{433                 POINT NoseMen [3] = \{\{ ROUND( x + 575*sizeX ), ROUND( y + 130*sizeY )\},}
-\DoxyCodeLine{434                                      \{ ROUND( x + 556*sizeX ), ROUND( y + 155*sizeY )\},}
-\DoxyCodeLine{435                                      \{ ROUND( x + 575*sizeX ), ROUND( y + 158*sizeY )\}\};}
-\DoxyCodeLine{436                 txPolygon (NoseMen, 3);}
-\DoxyCodeLine{437 }
-\DoxyCodeLine{438                 txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{439                 POINT EyeMen [4] =  \{\{ ROUND( x + 586*sizeX ), ROUND( y + 129*sizeY )\},}
-\DoxyCodeLine{440                                      \{ ROUND( x + 596*sizeX ), ROUND( y + 116*sizeY )\},}
-\DoxyCodeLine{441                                      \{ ROUND( x + 646*sizeX ), ROUND( y + 148*sizeY )\},}
-\DoxyCodeLine{442                                      \{ ROUND( x + 634*sizeX ), ROUND( y + 161*sizeY )\}\};}
-\DoxyCodeLine{443                 txPolygon (EyeMen, 4);}
-\DoxyCodeLine{444 }
-\DoxyCodeLine{445                 txSetFillColor (RGB (0, 138, 253));}
-\DoxyCodeLine{446                 txRectangle (ROUND( x + 650*sizeX ), ROUND( y + 557*sizeY ),}
-\DoxyCodeLine{447                              ROUND( x + 696*sizeX ), ROUND( y + 723*sizeY ));}
-\DoxyCodeLine{448                 POINT HipMen [4] =    \{\{ ROUND( x + 643*sizeX ), ROUND( y + 553*sizeY )\},}
-\DoxyCodeLine{449                                        \{ ROUND( x + 599*sizeX ), ROUND( y + 541*sizeY )\},}
-\DoxyCodeLine{450                                        \{ ROUND( x + 552*sizeX ), ROUND( y + 699*sizeY )\},}
-\DoxyCodeLine{451                                        \{ ROUND( x + 598*sizeX ), ROUND( y + 712*sizeY )\}\};}
-\DoxyCodeLine{452                 txPolygon (HipMen, 4);}
-\DoxyCodeLine{453 }
-\DoxyCodeLine{454                 txSetFillColor (RGB (135, 219, 255));}
-\DoxyCodeLine{455                 POINT TorsoMen [3] =  \{\{ ROUND( x + 512*sizeX ), ROUND( y + 245*sizeY )\},}
-\DoxyCodeLine{456                                        \{ ROUND( x + 780*sizeX ), ROUND( y + 245*sizeY )\},}
-\DoxyCodeLine{457                                        \{ ROUND( x + 640*sizeX ), ROUND( y + 590*sizeY )\}\};}
-\DoxyCodeLine{458                 txPolygon (TorsoMen, 3);}
-\DoxyCodeLine{459 }
-\DoxyCodeLine{460                 txSetFillColor (RGB (236, 237, 242));}
-\DoxyCodeLine{461                 POINT ArmMen1 [3] =  \{\{ ROUND( x + 414*sizeX ), ROUND( y + 425*sizeY )\},}
-\DoxyCodeLine{462                                       \{ ROUND( x + 549*sizeX ), ROUND( y + 342*sizeY )\},}
-\DoxyCodeLine{463                                       \{ ROUND( x + 560*sizeX ), ROUND( y + 381*sizeY )\}\};}
-\DoxyCodeLine{464                 txPolygon (ArmMen1, 3);}
-\DoxyCodeLine{465 }
-\DoxyCodeLine{466                 POINT ArmMen2 [3] =  \{\{ ROUND( x + 480*sizeX ), ROUND( y + 600*sizeY )\},}
-\DoxyCodeLine{467                                       \{ ROUND( x + 616*sizeX ), ROUND( y + 343*sizeY )\},}
-\DoxyCodeLine{468                                       \{ ROUND( x + 667*sizeX ), ROUND( y + 377*sizeY )\}\};}
-\DoxyCodeLine{469                 txPolygon (ArmMen2, 3);}
-\DoxyCodeLine{470 }
-\DoxyCodeLine{471                 txSetFillColor (RGB (0, 138, 253));}
-\DoxyCodeLine{472                 POINT LegMen1 [3] =  \{\{ ROUND( x + 542*sizeX ), ROUND( y + 715*sizeY )\},}
-\DoxyCodeLine{473                                       \{ ROUND( x + 598*sizeX ), ROUND( y + 715*sizeY )\},}
-\DoxyCodeLine{474                                       \{ ROUND( x + 567*sizeX ), ROUND( y + 970*sizeY )\}\};}
-\DoxyCodeLine{475                 txPolygon (LegMen1, 3);}
-\DoxyCodeLine{476 }
-\DoxyCodeLine{477                 POINT LegMen2 [3] =  \{\{ ROUND( x + 642*sizeX ), ROUND( y + 736*sizeY )\},}
-\DoxyCodeLine{478                                       \{ ROUND( x + 698*sizeX ), ROUND( y + 729*sizeY )\},}
-\DoxyCodeLine{479                                       \{ ROUND( x + 695*sizeX ), ROUND( y + 970*sizeY )\}\};}
-\DoxyCodeLine{480                 txPolygon (LegMen2, 3);}
-\DoxyCodeLine{481 }
-\DoxyCodeLine{482                 txRectangle (ROUND( x + 532*sizeX ), ROUND( y +  970*sizeY ),}
-\DoxyCodeLine{483                              ROUND( x + 601*sizeX ), ROUND( y + 1026*sizeY ));}
-\DoxyCodeLine{484 }
-\DoxyCodeLine{485                 txRectangle (ROUND( x + 641*sizeX ), ROUND( y +  970*sizeY ),}
-\DoxyCodeLine{486                              ROUND( x + 709*sizeX ), ROUND( y + 1026*sizeY ));}
-\DoxyCodeLine{487 }
-\DoxyCodeLine{488             \textcolor{comment}{//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}}
-\DoxyCodeLine{489 }
-\DoxyCodeLine{490                 txSetFillColor (RGB (3, 196, 152));}
-\DoxyCodeLine{491                 POINT SleeveBoy1 [4] = \{\{ ROUND( x + 288*sizeX ), ROUND( y + 678*sizeY )\},}
-\DoxyCodeLine{492                                         \{ ROUND( x + 334*sizeX ), ROUND( y + 650*sizeY )\},}
-\DoxyCodeLine{493                                         \{ ROUND( x + 358*sizeX ), ROUND( y + 683*sizeY )\},}
-\DoxyCodeLine{494                                         \{ ROUND( x + 322*sizeX ), ROUND( y + 730*sizeY )\}\};}
-\DoxyCodeLine{495                 txPolygon (SleeveBoy1, 4);}
-\DoxyCodeLine{496 }
-\DoxyCodeLine{497                 POINT SleeveBoy2 [4] = \{\{ ROUND( x + 465*sizeX ), ROUND( y + 646*sizeY )\},}
-\DoxyCodeLine{498                                         \{ ROUND( x + 514*sizeX ), ROUND( y + 668*sizeY )\},}
-\DoxyCodeLine{499                                         \{ ROUND( x + 494*sizeX ), ROUND( y + 719*sizeY )\},}
-\DoxyCodeLine{500                                         \{ ROUND( x + 454*sizeX ), ROUND( y + 672*sizeY )\}\};}
-\DoxyCodeLine{501                 txPolygon (SleeveBoy2, 4);}
-\DoxyCodeLine{502 }
-\DoxyCodeLine{503                 txEllipse   (ROUND( x + 319*sizeX ), ROUND( y + 661*sizeY ),}
-\DoxyCodeLine{504                              ROUND( x + 502*sizeX ), ROUND( y + 841*sizeY ));}
-\DoxyCodeLine{505 }
-\DoxyCodeLine{506                 txRectangle (ROUND( x + 333*sizeX ), ROUND( y +  962*sizeY ),}
-\DoxyCodeLine{507                              ROUND( x + 402*sizeX ), ROUND( y + 1015*sizeY ));}
-\DoxyCodeLine{508 }
-\DoxyCodeLine{509                 txRectangle (ROUND( x + 415*sizeX ), ROUND( y +  967*sizeY ),}
-\DoxyCodeLine{510                              ROUND( x + 484*sizeX ), ROUND( y + 1022*sizeY ));}
-\DoxyCodeLine{511 }
-\DoxyCodeLine{512                 txSetFillColor (RGB (236, 237, 242));}
-\DoxyCodeLine{513                 POINT NoseBoy [3] = \{\{ ROUND( x + 413*sizeX ), ROUND( y + 510*sizeY )\},}
-\DoxyCodeLine{514                                      \{ ROUND( x + 405*sizeX ), ROUND( y + 532*sizeY )\},}
-\DoxyCodeLine{515                                      \{ ROUND( x + 418*sizeX ), ROUND( y + 532*sizeY )\}\};}
-\DoxyCodeLine{516                 txPolygon (NoseBoy, 3);}
-\DoxyCodeLine{517 }
-\DoxyCodeLine{518                 txEllipse   (ROUND( x + 340*sizeX ), ROUND( y + 531*sizeY ),}
-\DoxyCodeLine{519                              ROUND( x + 480*sizeX ), ROUND( y + 671*sizeY ));}
-\DoxyCodeLine{520 }
-\DoxyCodeLine{521                 POINT ArmBoy1 [3] =  \{\{ ROUND( x + 278*sizeX ), ROUND( y + 580*sizeY )\},}
-\DoxyCodeLine{522                                       \{ ROUND( x + 329*sizeX ), ROUND( y + 653*sizeY )\},}
-\DoxyCodeLine{523                                       \{ ROUND( x + 312*sizeX ), ROUND( y + 664*sizeY )\}\};}
-\DoxyCodeLine{524                 txPolygon (ArmBoy1, 3);}
-\DoxyCodeLine{525 }
-\DoxyCodeLine{526                 POINT ArmBoy2 [3] =  \{\{ ROUND( x + 523*sizeX ), ROUND( y + 583*sizeY )\},}
-\DoxyCodeLine{527                                       \{ ROUND( x + 474*sizeX ), ROUND( y + 648*sizeY )\},}
-\DoxyCodeLine{528                                       \{ ROUND( x + 490*sizeX ), ROUND( y + 656*sizeY )\}\};}
-\DoxyCodeLine{529                 txPolygon (ArmBoy2, 3);}
+\DoxyCodeLine{365     \{}
+\DoxyCodeLine{366     \textcolor{keywordtype}{int} n = 0;}
+\DoxyCodeLine{367     \textcolor{keywordtype}{int} t = 0;}
+\DoxyCodeLine{368     \textcolor{keywordflow}{while} ( n <= 5 )}
+\DoxyCodeLine{369         \{}
+\DoxyCodeLine{370         \textcolor{keywordflow}{while} ( t <=120 )}
+\DoxyCodeLine{371             \{}
+\DoxyCodeLine{372             \textcolor{keywordflow}{if} (t <=100 )}
+\DoxyCodeLine{373                 \{}
+\DoxyCodeLine{374                 txClear ();}
+\DoxyCodeLine{375                 \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_af592ddca7f918e46c67b73c0093a0537}{DrawBackground}} (RGB (0, 80, 80));}
+\DoxyCodeLine{376                 \mbox{\hyperlink{_ozhaev_01_zaynudin_01cartoon_8cpp_a9037b59f5b78b7974cfc5d0b2b8c6ee8}{DrawHouse1}} (320 + t*14.2, 260 + t*22.5 , 1 + t*0.24, 1 + t*0.2, RGB (0, 80, 80));}
+\DoxyCodeLine{377                 \textcolor{keywordtype}{double} x = ROUND( 260 -\/ t*2.6 );}
+\DoxyCodeLine{378                 \textcolor{keywordtype}{double} y = 163 -\/ t*1.7;}
+\DoxyCodeLine{379                 \textcolor{keywordtype}{double} sizeX = 0.006*t;}
+\DoxyCodeLine{380                 \textcolor{keywordtype}{double} sizeY = 0.0037*t;}
+\DoxyCodeLine{381 }
+\DoxyCodeLine{382                 txSetColor     (RGB (255, 255, 255), 1);}
+\DoxyCodeLine{383                 txSetFillColor (RGB (240, 234, 182));}
+\DoxyCodeLine{384                 txEllipse   (ROUND( x + 110*sizeX ), ROUND( y +  80*sizeY ),}
+\DoxyCodeLine{385                              ROUND( x + 320*sizeX ), ROUND( y + 290*sizeY ));}
+\DoxyCodeLine{386 }
+\DoxyCodeLine{387                 txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{388                 txRectangle (ROUND( x + 170*sizeX ), ROUND( y + 180*sizeY ),}
+\DoxyCodeLine{389                              ROUND( x + 230*sizeX ), ROUND( y + 200*sizeY ));}
+\DoxyCodeLine{390                 POINT EyeGirl [4] =   \{\{ ROUND( x + 260*sizeX ), ROUND( y + 205*sizeY )\},}
+\DoxyCodeLine{391                                        \{ ROUND( x + 270*sizeX ), ROUND( y + 190*sizeY )\},}
+\DoxyCodeLine{392                                        \{ ROUND( x + 300*sizeX ), ROUND( y + 215*sizeY )\},}
+\DoxyCodeLine{393                                        \{ ROUND( x + 290*sizeX ), ROUND( y + 230*sizeY )\}\};}
+\DoxyCodeLine{394                 txPolygon (EyeGirl, 4);}
+\DoxyCodeLine{395 }
+\DoxyCodeLine{396                 txSetFillColor (RGB (239, 23, 2));}
+\DoxyCodeLine{397                 POINT MouthGirl [3] = \{\{ ROUND( x + 190*sizeX ), ROUND( y + 240*sizeY )\},}
+\DoxyCodeLine{398                                        \{ ROUND( x + 255*sizeX ), ROUND( y + 255*sizeY )\},}
+\DoxyCodeLine{399                                        \{ ROUND( x + 220*sizeX ), ROUND( y + 270*sizeY )\}\};}
+\DoxyCodeLine{400                 txPolygon (MouthGirl, 3);}
+\DoxyCodeLine{401 }
+\DoxyCodeLine{402                 txSetFillColor (RGB (255, 130, 1));}
+\DoxyCodeLine{403                 POINT TorsoGirl [3] = \{\{ ROUND( x + 170*sizeX ), ROUND( y + 280*sizeY )\},}
+\DoxyCodeLine{404                                        \{ ROUND( x +  22*sizeX ), ROUND( y + 700*sizeY )\},}
+\DoxyCodeLine{405                                        \{ ROUND( x + 320*sizeX ), ROUND( y + 700*sizeY )\}\};}
+\DoxyCodeLine{406                 txPolygon (TorsoGirl, 3);}
+\DoxyCodeLine{407 }
+\DoxyCodeLine{408                 txSetFillColor (RGB (255,254, 233));}
+\DoxyCodeLine{409                 POINT ArmGirl1 [3] = \{\{ ROUND( x + 150*sizeX ), ROUND( y + 407*sizeY )\},}
+\DoxyCodeLine{410                                       \{ ROUND( x + 202*sizeX ), ROUND( y + 375*sizeY )\},}
+\DoxyCodeLine{411                                       \{ ROUND( x + 330*sizeX ), ROUND( y + 630*sizeY )\}\};}
+\DoxyCodeLine{412                 txPolygon (ArmGirl1, 3);}
+\DoxyCodeLine{413 }
+\DoxyCodeLine{414                 POINT ArmGirl2 [3] = \{\{ ROUND( x + 185*sizeX ), ROUND( y + 320*sizeY )\},}
+\DoxyCodeLine{415                                       \{ ROUND( x + 206*sizeX ), ROUND( y + 380*sizeY )\},}
+\DoxyCodeLine{416                                       \{ ROUND( x + 415*sizeX ), ROUND( y + 420*sizeY )\}\};}
+\DoxyCodeLine{417                 txPolygon (ArmGirl2, 3);}
+\DoxyCodeLine{418 }
+\DoxyCodeLine{419                 txSetFillColor (RGB (236, 237, 242));}
+\DoxyCodeLine{420                 POINT LegGirl1 [3] = \{\{ ROUND( x + 115*sizeX ), ROUND( y + 710*sizeY )\},}
+\DoxyCodeLine{421                                       \{ ROUND( x + 170*sizeX ), ROUND( y + 710*sizeY )\},}
+\DoxyCodeLine{422                                       \{ ROUND( x + 140*sizeX ), ROUND( y + 970*sizeY )\}\};}
+\DoxyCodeLine{423                 txPolygon (LegGirl1, 3);}
+\DoxyCodeLine{424 }
+\DoxyCodeLine{425                 POINT LegGirl2 [3] = \{\{ ROUND( x + 195*sizeX ), ROUND( y + 710*sizeY )\},}
+\DoxyCodeLine{426                                       \{ ROUND( x + 255*sizeX ), ROUND( y + 710*sizeY )\},}
+\DoxyCodeLine{427                                       \{ ROUND( x + 225*sizeX ), ROUND( y + 970*sizeY )\}\};}
+\DoxyCodeLine{428                 txPolygon (LegGirl2, 3);}
+\DoxyCodeLine{429 }
+\DoxyCodeLine{430                 txSetFillColor (RGB (176, 34, 20));}
+\DoxyCodeLine{431                 txRectangle (ROUND( x + 110*sizeX ), ROUND( y +  970*sizeY ),}
+\DoxyCodeLine{432                              ROUND( x + 180*sizeX ), ROUND( y + 1020*sizeY ));}
+\DoxyCodeLine{433 }
+\DoxyCodeLine{434                 txRectangle (ROUND( x + 190*sizeX ), ROUND( y +  970*sizeY ),}
+\DoxyCodeLine{435                              ROUND( x + 260*sizeX ), ROUND( y + 1020*sizeY ));}
+\DoxyCodeLine{436 }
+\DoxyCodeLine{437             \textcolor{comment}{//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}}
+\DoxyCodeLine{438 }
+\DoxyCodeLine{439                 txSetFillColor (RGB (240, 234, 182));}
+\DoxyCodeLine{440                 txRectangle (ROUND( x + 575*sizeX ), ROUND( y +  50*sizeY ),}
+\DoxyCodeLine{441                              ROUND( x + 720*sizeX ), ROUND( y + 228*sizeY ));}
+\DoxyCodeLine{442 }
+\DoxyCodeLine{443                 POINT NoseMen [3] = \{\{ ROUND( x + 575*sizeX ), ROUND( y + 130*sizeY )\},}
+\DoxyCodeLine{444                                      \{ ROUND( x + 556*sizeX ), ROUND( y + 155*sizeY )\},}
+\DoxyCodeLine{445                                      \{ ROUND( x + 575*sizeX ), ROUND( y + 158*sizeY )\}\};}
+\DoxyCodeLine{446                 txPolygon (NoseMen, 3);}
+\DoxyCodeLine{447 }
+\DoxyCodeLine{448                 txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{449                 POINT EyeMen [4] =  \{\{ ROUND( x + 586*sizeX ), ROUND( y + 129*sizeY )\},}
+\DoxyCodeLine{450                                      \{ ROUND( x + 596*sizeX ), ROUND( y + 116*sizeY )\},}
+\DoxyCodeLine{451                                      \{ ROUND( x + 646*sizeX ), ROUND( y + 148*sizeY )\},}
+\DoxyCodeLine{452                                      \{ ROUND( x + 634*sizeX ), ROUND( y + 161*sizeY )\}\};}
+\DoxyCodeLine{453                 txPolygon (EyeMen, 4);}
+\DoxyCodeLine{454 }
+\DoxyCodeLine{455                 txSetFillColor (RGB (0, 138, 253));}
+\DoxyCodeLine{456                 txRectangle (ROUND( x + 650*sizeX ), ROUND( y + 557*sizeY ),}
+\DoxyCodeLine{457                              ROUND( x + 696*sizeX ), ROUND( y + 723*sizeY ));}
+\DoxyCodeLine{458                 POINT HipMen [4] =    \{\{ ROUND( x + 643*sizeX ), ROUND( y + 553*sizeY )\},}
+\DoxyCodeLine{459                                        \{ ROUND( x + 599*sizeX ), ROUND( y + 541*sizeY )\},}
+\DoxyCodeLine{460                                        \{ ROUND( x + 552*sizeX ), ROUND( y + 699*sizeY )\},}
+\DoxyCodeLine{461                                        \{ ROUND( x + 598*sizeX ), ROUND( y + 712*sizeY )\}\};}
+\DoxyCodeLine{462                 txPolygon (HipMen, 4);}
+\DoxyCodeLine{463 }
+\DoxyCodeLine{464                 txSetFillColor (RGB (135, 219, 255));}
+\DoxyCodeLine{465                 POINT TorsoMen [3] =  \{\{ ROUND( x + 512*sizeX ), ROUND( y + 245*sizeY )\},}
+\DoxyCodeLine{466                                        \{ ROUND( x + 780*sizeX ), ROUND( y + 245*sizeY )\},}
+\DoxyCodeLine{467                                        \{ ROUND( x + 640*sizeX ), ROUND( y + 590*sizeY )\}\};}
+\DoxyCodeLine{468                 txPolygon (TorsoMen, 3);}
+\DoxyCodeLine{469 }
+\DoxyCodeLine{470                 txSetFillColor (RGB (236, 237, 242));}
+\DoxyCodeLine{471                 POINT ArmMen1 [3] =  \{\{ ROUND( x + 414*sizeX ), ROUND( y + 425*sizeY )\},}
+\DoxyCodeLine{472                                       \{ ROUND( x + 549*sizeX ), ROUND( y + 342*sizeY )\},}
+\DoxyCodeLine{473                                       \{ ROUND( x + 560*sizeX ), ROUND( y + 381*sizeY )\}\};}
+\DoxyCodeLine{474                 txPolygon (ArmMen1, 3);}
+\DoxyCodeLine{475 }
+\DoxyCodeLine{476                 POINT ArmMen2 [3] =  \{\{ ROUND( x + 480*sizeX ), ROUND( y + 600*sizeY )\},}
+\DoxyCodeLine{477                                       \{ ROUND( x + 616*sizeX ), ROUND( y + 343*sizeY )\},}
+\DoxyCodeLine{478                                       \{ ROUND( x + 667*sizeX ), ROUND( y + 377*sizeY )\}\};}
+\DoxyCodeLine{479                 txPolygon (ArmMen2, 3);}
+\DoxyCodeLine{480 }
+\DoxyCodeLine{481                 txSetFillColor (RGB (0, 138, 253));}
+\DoxyCodeLine{482                 POINT LegMen1 [3] =  \{\{ ROUND( x + 542*sizeX ), ROUND( y + 715*sizeY )\},}
+\DoxyCodeLine{483                                       \{ ROUND( x + 598*sizeX ), ROUND( y + 715*sizeY )\},}
+\DoxyCodeLine{484                                       \{ ROUND( x + 567*sizeX ), ROUND( y + 970*sizeY )\}\};}
+\DoxyCodeLine{485                 txPolygon (LegMen1, 3);}
+\DoxyCodeLine{486 }
+\DoxyCodeLine{487                 POINT LegMen2 [3] =  \{\{ ROUND( x + 642*sizeX ), ROUND( y + 736*sizeY )\},}
+\DoxyCodeLine{488                                       \{ ROUND( x + 698*sizeX ), ROUND( y + 729*sizeY )\},}
+\DoxyCodeLine{489                                       \{ ROUND( x + 695*sizeX ), ROUND( y + 970*sizeY )\}\};}
+\DoxyCodeLine{490                 txPolygon (LegMen2, 3);}
+\DoxyCodeLine{491 }
+\DoxyCodeLine{492                 txRectangle (ROUND( x + 532*sizeX ), ROUND( y +  970*sizeY ),}
+\DoxyCodeLine{493                              ROUND( x + 601*sizeX ), ROUND( y + 1026*sizeY ));}
+\DoxyCodeLine{494 }
+\DoxyCodeLine{495                 txRectangle (ROUND( x + 641*sizeX ), ROUND( y +  970*sizeY ),}
+\DoxyCodeLine{496                              ROUND( x + 709*sizeX ), ROUND( y + 1026*sizeY ));}
+\DoxyCodeLine{497 }
+\DoxyCodeLine{498             \textcolor{comment}{//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}}
+\DoxyCodeLine{499 }
+\DoxyCodeLine{500                 txSetFillColor (RGB (3, 196, 152));}
+\DoxyCodeLine{501                 POINT SleeveBoy1 [4] = \{\{ ROUND( x + 288*sizeX ), ROUND( y + 678*sizeY )\},}
+\DoxyCodeLine{502                                         \{ ROUND( x + 334*sizeX ), ROUND( y + 650*sizeY )\},}
+\DoxyCodeLine{503                                         \{ ROUND( x + 358*sizeX ), ROUND( y + 683*sizeY )\},}
+\DoxyCodeLine{504                                         \{ ROUND( x + 322*sizeX ), ROUND( y + 730*sizeY )\}\};}
+\DoxyCodeLine{505                 txPolygon (SleeveBoy1, 4);}
+\DoxyCodeLine{506 }
+\DoxyCodeLine{507                 POINT SleeveBoy2 [4] = \{\{ ROUND( x + 465*sizeX ), ROUND( y + 646*sizeY )\},}
+\DoxyCodeLine{508                                         \{ ROUND( x + 514*sizeX ), ROUND( y + 668*sizeY )\},}
+\DoxyCodeLine{509                                         \{ ROUND( x + 494*sizeX ), ROUND( y + 719*sizeY )\},}
+\DoxyCodeLine{510                                         \{ ROUND( x + 454*sizeX ), ROUND( y + 672*sizeY )\}\};}
+\DoxyCodeLine{511                 txPolygon (SleeveBoy2, 4);}
+\DoxyCodeLine{512 }
+\DoxyCodeLine{513                 txEllipse   (ROUND( x + 319*sizeX ), ROUND( y + 661*sizeY ),}
+\DoxyCodeLine{514                              ROUND( x + 502*sizeX ), ROUND( y + 841*sizeY ));}
+\DoxyCodeLine{515 }
+\DoxyCodeLine{516                 txRectangle (ROUND( x + 333*sizeX ), ROUND( y +  962*sizeY ),}
+\DoxyCodeLine{517                              ROUND( x + 402*sizeX ), ROUND( y + 1015*sizeY ));}
+\DoxyCodeLine{518 }
+\DoxyCodeLine{519                 txRectangle (ROUND( x + 415*sizeX ), ROUND( y +  967*sizeY ),}
+\DoxyCodeLine{520                              ROUND( x + 484*sizeX ), ROUND( y + 1022*sizeY ));}
+\DoxyCodeLine{521 }
+\DoxyCodeLine{522                 txSetFillColor (RGB (236, 237, 242));}
+\DoxyCodeLine{523                 POINT NoseBoy [3] = \{\{ ROUND( x + 413*sizeX ), ROUND( y + 510*sizeY )\},}
+\DoxyCodeLine{524                                      \{ ROUND( x + 405*sizeX ), ROUND( y + 532*sizeY )\},}
+\DoxyCodeLine{525                                      \{ ROUND( x + 418*sizeX ), ROUND( y + 532*sizeY )\}\};}
+\DoxyCodeLine{526                 txPolygon (NoseBoy, 3);}
+\DoxyCodeLine{527 }
+\DoxyCodeLine{528                 txEllipse   (ROUND( x + 340*sizeX ), ROUND( y + 531*sizeY ),}
+\DoxyCodeLine{529                              ROUND( x + 480*sizeX ), ROUND( y + 671*sizeY ));}
 \DoxyCodeLine{530 }
-\DoxyCodeLine{531                 txSetFillColor (RGB (236, 237, 242));}
-\DoxyCodeLine{532                 txRectangle (ROUND( x + 345*sizeX ), ROUND( y + 824*sizeY ),}
-\DoxyCodeLine{533                              ROUND( x + 390*sizeX ), ROUND( y + 960*sizeY ));}
-\DoxyCodeLine{534 }
-\DoxyCodeLine{535                 txRectangle (ROUND( x + 427*sizeX ), ROUND( y + 822*sizeY ),}
-\DoxyCodeLine{536                              ROUND( x + 473*sizeX ), ROUND( y + 966*sizeY ));}
-\DoxyCodeLine{537 }
-\DoxyCodeLine{538                 txSetFillColor (RGB (0, 0, 0));}
-\DoxyCodeLine{539                 POINT EyeBoy1 [4] = \{\{ ROUND( x + 372*sizeX ), ROUND( y + 560*sizeY )\},}
-\DoxyCodeLine{540                                      \{ ROUND( x + 405*sizeX ), ROUND( y + 550*sizeY )\},}
-\DoxyCodeLine{541                                      \{ ROUND( x + 410*sizeX ), ROUND( y + 560*sizeY )\},}
-\DoxyCodeLine{542                                      \{ ROUND( x + 375*sizeX ), ROUND( y + 570*sizeY )\}\};}
-\DoxyCodeLine{543                 txPolygon (EyeBoy1, 4);}
+\DoxyCodeLine{531                 POINT ArmBoy1 [3] =  \{\{ ROUND( x + 278*sizeX ), ROUND( y + 580*sizeY )\},}
+\DoxyCodeLine{532                                       \{ ROUND( x + 329*sizeX ), ROUND( y + 653*sizeY )\},}
+\DoxyCodeLine{533                                       \{ ROUND( x + 312*sizeX ), ROUND( y + 664*sizeY )\}\};}
+\DoxyCodeLine{534                 txPolygon (ArmBoy1, 3);}
+\DoxyCodeLine{535 }
+\DoxyCodeLine{536                 POINT ArmBoy2 [3] =  \{\{ ROUND( x + 523*sizeX ), ROUND( y + 583*sizeY )\},}
+\DoxyCodeLine{537                                       \{ ROUND( x + 474*sizeX ), ROUND( y + 648*sizeY )\},}
+\DoxyCodeLine{538                                       \{ ROUND( x + 490*sizeX ), ROUND( y + 656*sizeY )\}\};}
+\DoxyCodeLine{539                 txPolygon (ArmBoy2, 3);}
+\DoxyCodeLine{540 }
+\DoxyCodeLine{541                 txSetFillColor (RGB (236, 237, 242));}
+\DoxyCodeLine{542                 txRectangle (ROUND( x + 345*sizeX ), ROUND( y + 824*sizeY ),}
+\DoxyCodeLine{543                              ROUND( x + 390*sizeX ), ROUND( y + 960*sizeY ));}
 \DoxyCodeLine{544 }
-\DoxyCodeLine{545                 POINT EyeBoy2 [4] = \{\{ ROUND( x + 418*sizeX ), ROUND( y + 560*sizeY )\},}
-\DoxyCodeLine{546                                      \{ ROUND( x + 424*sizeX ), ROUND( y + 550*sizeY )\},}
-\DoxyCodeLine{547                                      \{ ROUND( x + 454*sizeX ), ROUND( y + 567*sizeY )\},}
-\DoxyCodeLine{548                                      \{ ROUND( x + 448*sizeX ), ROUND( y + 575*sizeY )\}\};}
-\DoxyCodeLine{549                 txPolygon (EyeBoy2, 4);}
-\DoxyCodeLine{550 }
-\DoxyCodeLine{551                 \textcolor{comment}{//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}}
-\DoxyCodeLine{552 }
-\DoxyCodeLine{553                 txSetColor     (RGB (255, 0, 0), 3);}
-\DoxyCodeLine{554                 txSetFillColor (RGB (255, 0, 0));}
-\DoxyCodeLine{555                 POINT ArmBoy [3] =  \{\{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )\},}
-\DoxyCodeLine{556                                      \{ ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )\},}
-\DoxyCodeLine{557                                      \{ ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )\}\};}
-\DoxyCodeLine{558                 txPolygon (ArmBoy, 3);}
-\DoxyCodeLine{559 }
-\DoxyCodeLine{560                 txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),}
-\DoxyCodeLine{561                              ROUND( x + 415*sizeX ), ROUND( y + 405*sizeY ));}
+\DoxyCodeLine{545                 txRectangle (ROUND( x + 427*sizeX ), ROUND( y + 822*sizeY ),}
+\DoxyCodeLine{546                              ROUND( x + 473*sizeX ), ROUND( y + 966*sizeY ));}
+\DoxyCodeLine{547 }
+\DoxyCodeLine{548                 txSetFillColor (RGB (0, 0, 0));}
+\DoxyCodeLine{549                 POINT EyeBoy1 [4] = \{\{ ROUND( x + 372*sizeX ), ROUND( y + 560*sizeY )\},}
+\DoxyCodeLine{550                                      \{ ROUND( x + 405*sizeX ), ROUND( y + 550*sizeY )\},}
+\DoxyCodeLine{551                                      \{ ROUND( x + 410*sizeX ), ROUND( y + 560*sizeY )\},}
+\DoxyCodeLine{552                                      \{ ROUND( x + 375*sizeX ), ROUND( y + 570*sizeY )\}\};}
+\DoxyCodeLine{553                 txPolygon (EyeBoy1, 4);}
+\DoxyCodeLine{554 }
+\DoxyCodeLine{555                 POINT EyeBoy2 [4] = \{\{ ROUND( x + 418*sizeX ), ROUND( y + 560*sizeY )\},}
+\DoxyCodeLine{556                                      \{ ROUND( x + 424*sizeX ), ROUND( y + 550*sizeY )\},}
+\DoxyCodeLine{557                                      \{ ROUND( x + 454*sizeX ), ROUND( y + 567*sizeY )\},}
+\DoxyCodeLine{558                                      \{ ROUND( x + 448*sizeX ), ROUND( y + 575*sizeY )\}\};}
+\DoxyCodeLine{559                 txPolygon (EyeBoy2, 4);}
+\DoxyCodeLine{560 }
+\DoxyCodeLine{561                 \textcolor{comment}{//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}}
 \DoxyCodeLine{562 }
-\DoxyCodeLine{563                 txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),}
-\DoxyCodeLine{564                              ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));}
-\DoxyCodeLine{565                 t ++;}
-\DoxyCodeLine{566                 txSleep (60);}
-\DoxyCodeLine{567                 \}}
-\DoxyCodeLine{568             \textcolor{keywordflow}{else}}
-\DoxyCodeLine{569                 \{}
-\DoxyCodeLine{570                 \textcolor{keywordtype}{double} x = ROUND( 260 -\/ t*2.6 );}
-\DoxyCodeLine{571                 \textcolor{keywordtype}{double} y = 163 -\/ t*1.7;}
-\DoxyCodeLine{572                 \textcolor{keywordtype}{double} sizeX = 0.006*t;}
-\DoxyCodeLine{573                 \textcolor{keywordtype}{double} sizeY = 0.0037*t;}
-\DoxyCodeLine{574                 txSetColor     (RGB (255, 0, 0), 5);}
-\DoxyCodeLine{575                 txSetFillColor (RGB (255, 0, 0));}
-\DoxyCodeLine{576                 POINT ArmBoy [3] =  \{\{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )\},}
-\DoxyCodeLine{577                                      \{ ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )\},}
-\DoxyCodeLine{578                                      \{ ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )\}\};}
-\DoxyCodeLine{579                 txPolygon (ArmBoy, 3);}
-\DoxyCodeLine{580 }
-\DoxyCodeLine{581                 txEllipse   (ROUND( x + 364*sizeX ), ROUND( y + 354*sizeY ),}
-\DoxyCodeLine{582                              ROUND( x + 413*sizeX ), ROUND( y + 404*sizeY ));}
-\DoxyCodeLine{583 }
-\DoxyCodeLine{584                 txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 354*sizeY ),}
-\DoxyCodeLine{585                              ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));}
-\DoxyCodeLine{586                 t ++;}
-\DoxyCodeLine{587                 txSleep (20);}
-\DoxyCodeLine{588                 \}}
-\DoxyCodeLine{589             \}}
-\DoxyCodeLine{590         t = 100;}
-\DoxyCodeLine{591         n ++;}
-\DoxyCodeLine{592         \}}
-\DoxyCodeLine{593     \}}
+\DoxyCodeLine{563                 txSetColor     (RGB (255, 0, 0), 3);}
+\DoxyCodeLine{564                 txSetFillColor (RGB (255, 0, 0));}
+\DoxyCodeLine{565                 POINT ArmBoy [3] =  \{\{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )\},}
+\DoxyCodeLine{566                                      \{ ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )\},}
+\DoxyCodeLine{567                                      \{ ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )\}\};}
+\DoxyCodeLine{568                 txPolygon (ArmBoy, 3);}
+\DoxyCodeLine{569 }
+\DoxyCodeLine{570                 txEllipse   (ROUND( x + 365*sizeX ), ROUND( y + 355*sizeY ),}
+\DoxyCodeLine{571                              ROUND( x + 415*sizeX ), ROUND( y + 405*sizeY ));}
+\DoxyCodeLine{572 }
+\DoxyCodeLine{573                 txEllipse   (ROUND( x + 415*sizeX ), ROUND( y + 355*sizeY ),}
+\DoxyCodeLine{574                              ROUND( x + 465*sizeX ), ROUND( y + 405*sizeY ));}
+\DoxyCodeLine{575                 t ++;}
+\DoxyCodeLine{576                 txSleep (60);}
+\DoxyCodeLine{577                 \}}
+\DoxyCodeLine{578             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{579                 \{}
+\DoxyCodeLine{580                 \textcolor{keywordtype}{double} x = ROUND( 260 -\/ t*2.6 );}
+\DoxyCodeLine{581                 \textcolor{keywordtype}{double} y = 163 -\/ t*1.7;}
+\DoxyCodeLine{582                 \textcolor{keywordtype}{double} sizeX = 0.006*t;}
+\DoxyCodeLine{583                 \textcolor{keywordtype}{double} sizeY = 0.0037*t;}
+\DoxyCodeLine{584                 txSetColor     (RGB (255, 0, 0), 5);}
+\DoxyCodeLine{585                 txSetFillColor (RGB (255, 0, 0));}
+\DoxyCodeLine{586                 POINT ArmBoy [3] =  \{\{ ROUND( x + 413*sizeX ), ROUND( y + 464*sizeY )\},}
+\DoxyCodeLine{587                                      \{ ROUND( x + 371*sizeX ), ROUND( y + 396*sizeY )\},}
+\DoxyCodeLine{588                                      \{ ROUND( x + 455*sizeX ), ROUND( y + 396*sizeY )\}\};}
+\DoxyCodeLine{589                 txPolygon (ArmBoy, 3);}
+\DoxyCodeLine{590 }
+\DoxyCodeLine{591                 txEllipse   (ROUND( x + 364*sizeX ), ROUND( y + 354*sizeY ),}
+\DoxyCodeLine{592                              ROUND( x + 413*sizeX ), ROUND( y + 404*sizeY ));}
+\DoxyCodeLine{593 }
+\DoxyCodeLine{594                 txEllipse   (ROUND( x + 413*sizeX ), ROUND( y + 354*sizeY ),}
+\DoxyCodeLine{595                              ROUND( x + 463*sizeX ), ROUND( y + 404*sizeY ));}
+\DoxyCodeLine{596                 t ++;}
+\DoxyCodeLine{597                 txSleep (20);}
+\DoxyCodeLine{598                 \}}
+\DoxyCodeLine{599             \}}
+\DoxyCodeLine{600         t = 100;}
+\DoxyCodeLine{601         n ++;}
+\DoxyCodeLine{602         \}}
+\DoxyCodeLine{603     \}}
 
 \end{DoxyCode}
 
